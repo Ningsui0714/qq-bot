@@ -1,22 +1,21 @@
-// utils.h£ºÉùÃ÷Í¨ÓÃ¹¤¾ßº¯Êı£¬¹©ÆäËûÎÄ¼şµ÷ÓÃ
+// utils.hï¼šé€šç”¨å·¥å…·å‡½æ•°å£°æ˜æ–‡ä»¶
 #ifndef UTILS_H
 #define UTILS_H
 
 #include <string>
-#include <nlohmann/json.hpp>  // ÓÃµ½JSON£¬Òª°üº¬Í·ÎÄ¼ş
+#include <nlohmann/json.hpp>
 using json = nlohmann::json;
 
-// ¹¤¾ß1£ºÈ¥³ı×Ö·û´®ËùÓĞ¿Õ¸ñ£¨±ÈÈç¡° 1 ¡±¡ú¡°1¡±£©
+// å‡½æ•°1ï¼šå»é™¤å­—ç¬¦ä¸²æ‰€æœ‰ç©ºæ ¼ï¼ˆæ¯”å¦‚" 1 "å˜æˆ"1"ï¼‰
 std::string trim_space(const std::string& s);
 
-// ¹¤¾ß2£º¼ì²âÏûÏ¢ÊÇ·ñ@»úÆ÷ÈË£¨²ÎÊıÊÇNapCat·¢À´µÄJSONÏûÏ¢£©
+// å‡½æ•°2ï¼šæ£€æŸ¥æ¶ˆæ¯æ˜¯å¦@æœºå™¨äºº
 bool is_at_bot(const json& msg_data);
 
-// ¹¤¾ß3£ºĞ´ÈÕÖ¾µ½ÎÄ¼ş£¨²ÎÊıÊÇÈÕÖ¾ÄÚÈİ£¬×Ô¶¯¼ÓÊ±¼ä´Á£©
+// å‡½æ•°3ï¼šå†™æ—¥å¿—åˆ°æ–‡ä»¶ï¼Œè‡ªåŠ¨åŠ æ—¶é—´æˆ³
 void write_log(const std::string& content);
 
-//gbk±àÂë×ª»»Îªutf8±àÂë
-std::string gbk_to_utf8(const std::string& gbk_str);
+// å‡½æ•°4ï¼šç¡®ä¿å­—ç¬¦ä¸²æ˜¯æœ‰æ•ˆçš„UTF-8ç¼–ç ï¼ˆæ¸…ç†æ— æ•ˆå­—èŠ‚ï¼‰
+std::string ensure_utf8(const std::string& input);
 
-
-#endif // UTILS_H#pragma once
+#endif // UTILS_H

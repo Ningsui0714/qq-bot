@@ -1,4 +1,4 @@
-// group_message.h£ºÉùÃ÷ÈºÏûÏ¢Ïà¹Ø¹¦ÄÜ
+// group_message.hï¼šç¾¤æ¶ˆæ¯å¤„ç†ç›¸å…³å£°æ˜
 #pragma once
 
 #include "nlohmann/json.hpp"
@@ -9,6 +9,7 @@ using json = nlohmann::json;
 using namespace boost::beast;
 using tcp = boost::asio::ip::tcp;
 
-// ´¦ÀíÈºÏûÏ¢£¨ºËĞÄÒµÎñ£º@»Ø¸´true¡¢¹Ø¼ü´Ê»Ø¸´£©
-// ²ÎÊı1£ºNapCat·¢À´µÄJSONÏûÏ¢£»²ÎÊı2£ºWebSocketÁ¬½Ó£¨ÓÃÀ´·¢»Ø¸´£©
+// å¤„ç†ç¾¤æ¶ˆæ¯ï¼ˆä¸šåŠ¡é€»è¾‘ï¼š@å›å¤trueã€å…³é”®è¯å›å¤ç­‰ï¼‰
+// å‚æ•°1ï¼šNapCatå‘æ¥çš„JSONæ¶ˆæ¯æ•°æ®
+// å‚æ•°2ï¼šWebSocketè¿æ¥ï¼Œç”¨äºå‘é€å›å¤
 void handle_group_message(const json& msg_data, websocket::stream<tcp::socket>& ws);

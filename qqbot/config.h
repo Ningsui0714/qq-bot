@@ -1,12 +1,14 @@
-// config.h£º´æ·ÅÈ«¾ÖÅäÖÃ£¬ËùÓĞÎÄ¼ş¶¼ÄÜÒıÓÃ
-#ifndef CONFIG_H  // ·ÀÖ¹ÖØ¸´ÒıÓÃ£¨C++¹Ì¶¨Ğ´·¨£¬²»ÓÃ¶®£¬ÕÕ³­¾ÍĞĞ£©
+// config.hï¼šæœºå™¨äººå…¨å±€é…ç½®æ–‡ä»¶
+#ifndef CONFIG_H
 #define CONFIG_H
 
-// »úÆ÷ÈËºËĞÄÅäÖÃ£¨ĞŞ¸ÄÕâÀï¾ÍĞĞ£¬²»ÓÃ¶¯ÆäËûÎÄ¼ş£©
-const std::string BOT_QQ = "3373368470";  // »úÆ÷ÈËQQ
-const std::string WS_HOST = "127.0.0.1";     // NapCat WSµØÖ·
-const std::string WS_PORT = "3001";          // NapCat WS¶Ë¿Ú
-const std::string LOG_FILE = "robot_log.txt";// ÈÕÖ¾±£´æÂ·¾¶£¨±ÈÈçµ±Ç°Ä¿Â¼µÄrobot_log.txt£©
+#include <string>
+
+// æœºå™¨äººé…ç½®é¡¹
+const std::string BOT_QQ = "3373368470";      // æœºå™¨äººQQå·
+const std::string WS_HOST = "127.0.0.1";      // NapCat WebSocketåœ°å€
+const std::string WS_PORT = "3001";           // NapCat WebSocketç«¯å£
+const std::string LOG_FILE = "robot_log.txt"; // æ—¥å¿—æ–‡ä»¶è·¯å¾„
 
 #endif // CONFIG_H
 

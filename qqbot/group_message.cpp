@@ -1,46 +1,46 @@
-// group_message.cpp£ºÊµÏÖÈºÏûÏ¢´¦ÀíÂß¼­
+// group_message.cppï¼šå®ç°ç¾¤æ¶ˆæ¯å¤„ç†é€»è¾‘
 #include "group_message.h"
-#include "utils.h"   // µ÷ÓÃ¹¤¾ßº¯Êı£¨trim_space¡¢is_at_bot¡¢write_log£©
-#include "config.h"  // ÓÃµ½»úÆ÷ÈËQQ
+#include "utils.h"
+#include "config.h"
 #include <iostream>
-#include <boost/asio/buffer.hpp> // Ìæ»»Îª Asio µÄ buffer
+#include <boost/asio/buffer.hpp>
 
-// ÊµÏÖÈºÏûÏ¢´¦Àí¹¦ÄÜ
+// å®ç°ç¾¤æ¶ˆæ¯å¤„ç†å‡½æ•°
 void handle_group_message(const json& msg_data, websocket::stream<boost::asio::ip::tcp::socket>& ws) {
     try {
-        // ÌáÈ¡ÈººÅ¡¢Ô­Ê¼ÏûÏ¢
-        std::string group_id = std::to_string( msg_data["group_id"].get<long long>());
-        // ÌáÈ¡ÏûÏ¢Ç°ÏÈÅĞ¶Ï×Ö¶ÎÊÇ·ñ´æÔÚ
+        // è·å–ç¾¤å·ã€åŸå§‹æ¶ˆæ¯
+        std::string group_id = std::to_string(msg_data["group_id"].get<long long>());
+        
+        // è·å–æ¶ˆæ¯å‰å…ˆåˆ¤æ–­å­—æ®µæ˜¯å¦å­˜åœ¨
         if (!msg_data.contains("raw_message") || !msg_data["raw_message"].is_string()) {
-            write_log("ÏûÏ¢ÖĞÃ»ÓĞraw_message×Ö¶Î£¬»ò×Ö¶ÎÀàĞÍ²»ÊÇ×Ö·û´®");
+            write_log("æ¶ˆæ¯ä¸­æ²¡æœ‰raw_messageå­—æ®µï¼Œæˆ–å­—æ®µç±»å‹ä¸æ˜¯å­—ç¬¦ä¸²");
             return;
         }
+        
         std::string raw_msg = msg_data["raw_message"].get<std::string>();
-        std::string converted_msg = gbk_to_utf8(raw_msg);
-        if (converted_msg.empty()) {
-            write_log("±àÂë×ª»»Ê§°Ü£¬Ô­Ê¼ÏûÏ¢£º" + raw_msg);
-            return; // ×ª»»Ê§°ÜÔòÌø¹ı´¦Àí
-        }
-        raw_msg = converted_msg;
-        std::string trimmed_msg = trim_space(raw_msg); // µ÷ÓÃ¹¤¾ßº¯ÊıÈ¥¿Õ¸ñ
+        
+        // ç¡®ä¿æ¶ˆæ¯æ˜¯æœ‰æ•ˆçš„UTF-8ç¼–ç ï¼ˆå¦‚æœ‰å¿…è¦è¿›è¡Œæ¸…ç†ï¼‰
+        raw_msg = ensure_utf8(raw_msg);
+        
+        std::string trimmed_msg = trim_space(raw_msg);
 
-        // Ğ´ÈÕÖ¾£¨µ÷ÓÃ¹¤¾ßº¯Êı£©
-        std::string log_content = "ÊÕµ½Èº" + group_id + "µÄÏûÏ¢£º" + raw_msg;
+        // å†™æ—¥å¿—
+        std::string log_content = "æ”¶åˆ°ç¾¤" + group_id + "çš„æ¶ˆæ¯ï¼š" + raw_msg;
         write_log(log_content);
         std::cout << log_content << std::endl;
 
-        // ÏÈÅĞ¶ÏÊÇ·ñ @ »úÆ÷ÈË£¨²¢ÔÚĞèÒªÊ±´ÓÏûÏ¢ÀïÈ¥³ı at ²¿·ÖÔÙ×ö "1" ¼ì²â£©
+        // å…ˆåˆ¤æ–­æ˜¯å¦@æœºå™¨äºº
         bool at_bot = is_at_bot(msg_data);
 
-        // ¹¹ÔìÓÃÓÚ±È½ÏµÄÏûÏ¢ÎÄ±¾£¨È¥µô at ¶Î£©
+        // ç”¨äºæ¯”è¾ƒçš„æ¶ˆæ¯æ–‡æœ¬ï¼ˆå»æ‰atæ®µï¼‰
         std::string compare_msg = trimmed_msg;
         if (at_bot && msg_data.contains("message") && msg_data["message"].is_array()) {
             std::string without_at;
             for (const auto& elem : msg_data["message"]) {
-                // ±£Áô´¿ÎÄ±¾Æ¬¶Î£¬Ìø¹ı type == "at"
+                // åªå¤„ç†æ–‡æœ¬ç‰‡æ®µï¼Œè·³è¿‡type == "at"
                 const std::string type = elem.value("type", std::string());
                 if (type == "text") {
-                    // ³£¼û¸ñÊ½£ºelem["data"]["text"]
+                    // æ ‡å‡†æ ¼å¼ï¼šelem["data"]["text"]
                     if (elem.contains("data")) {
                         if (elem["data"].is_object()) {
                             without_at += elem["data"].value("text", std::string());
@@ -51,9 +51,8 @@ void handle_group_message(const json& msg_data, websocket::stream<boost::asio::i
                     }
                 }
                 else if (type != "at") {
-                    // ¶ÔÓÚÆäËüÀàĞÍ£¨Èç¿ÉÄÜµÄ plain ×Ö¶Î£©£¬³¢ÊÔÆ´½Ó¿ÉÓÃÎÄ±¾×Ö¶Î
+                    // å…¶ä»–ç±»å‹ï¼ˆå¯èƒ½çš„plainå­—æ®µï¼‰ï¼Œå°è¯•æ‹¼æ¥å¯èƒ½çš„æ–‡æœ¬å­—æ®µ
                     if (elem.contains("data") && elem["data"].is_object()) {
-                        // ³£¼û key Îª "text"
                         without_at += elem["data"].value("text", std::string());
                     }
                 }
@@ -61,34 +60,35 @@ void handle_group_message(const json& msg_data, websocket::stream<boost::asio::i
             compare_msg = trim_space(without_at);
         }
 
-        // ¹¦ÄÜ1£º@»úÆ÷ÈË + È¥µô@ºóÏûÏ¢ÊÇ¡°1¡± ¡ú »Ø¸´¡°true¡±
+        // æƒ…å†µ1ï¼š@æœºå™¨äºº + å»æ‰@åæ¶ˆæ¯æ˜¯"1" -> å›å¤"true"
         if (at_bot && compare_msg == "1") {
             json reply = {
                 {"action", "send_group_msg"},
                 {"params", {{"group_id", group_id}, {"message", "true"}}}
             };
-            ws.write(boost::asio::buffer(reply.dump())); // Ê¹ÓÃ Asio µÄ buffer
-            write_log("»Ø¸´Èº" + group_id + "£ºtrue");
-            std::cout << "»Ø¸´³É¹¦£ºtrue" << std::endl;
+            ws.write(boost::asio::buffer(reply.dump()));
+            write_log("å›å¤ç¾¤" + group_id + "ï¼štrue");
+            std::cout << "å›å¤æˆåŠŸï¼štrue" << std::endl;
         }
 
-        // ¹¦ÄÜ2£º¹Ø¼ü´Ê»Ø¸´£¨¡°ÄãºÃ¡±¡ú¡°¹şà¶¡« ÎÒÊÇ»úÆ÷ÈË£¡¡±£©
-        else if (raw_msg.find("hello") != std::string::npos) { // ¼ì²âÏûÏ¢ÊÇ·ñ°üº¬¡°ÄãºÃ¡±
+        // æƒ…å†µ2ï¼šå…³é”®è¯å›å¤ï¼ˆåŒ…å«"hello"ï¼‰
+        else if (raw_msg.find("hello") != std::string::npos) {
             json reply = {
                 {"action", "send_group_msg"},
-                {"params", {{"group_id", group_id}, {"message", "¹şà¶¡« ÎÒÊÇ»úÆ÷ÈË£¡"}}} };
-            ws.write(boost::asio::buffer(reply.dump())); // Ê¹ÓÃ Asio µÄ buffer
-            write_log("»Ø¸´Èº" + group_id + "£º¹şà¶¡« ÎÒÊÇ»úÆ÷ÈË£¡");
-            std::cout << "¹Ø¼ü´Ê»Ø¸´³É¹¦" << std::endl;
+                {"params", {{"group_id", group_id}, {"message", "ä½ å¥½ï¼æˆ‘æ˜¯æœºå™¨äººï¼"}}}
+            };
+            ws.write(boost::asio::buffer(reply.dump()));
+            write_log("å›å¤ç¾¤" + group_id + "ï¼šä½ å¥½ï¼æˆ‘æ˜¯æœºå™¨äººï¼");
+            std::cout << "å…³é”®è¯å›å¤æˆåŠŸ" << std::endl;
         }
 
-        // ÆäËûÇé¿ö£º²»»Ø¸´
+        // å…¶ä»–æƒ…å†µï¼šä¸å›å¤
         else {
-            std::cout << "²»Âú×ã»Ø¸´Ìõ¼ş£¬ºöÂÔ" << std::endl;
+            std::cout << "ä¸æ»¡è¶³å›å¤æ¡ä»¶ï¼Œå¿½ç•¥..." << std::endl;
         }
     }
     catch (const std::exception& e) {
-        std::string err_log = "´¦ÀíÈºÏûÏ¢Ê§°Ü£º" + std::string(e.what());
+        std::string err_log = "å¤„ç†ç¾¤æ¶ˆæ¯å¤±è´¥ï¼š" + std::string(e.what());
         write_log(err_log);
         std::cerr << err_log << std::endl;
     }

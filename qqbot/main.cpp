@@ -1,11 +1,11 @@
-// main.cpp£º³ÌĞòÈë¿Ú£¬¸ºÔğÁ¬½ÓNapCat¡¢Ñ­»·¼àÌıÏûÏ¢
+// main.cppï¼šæœºå™¨äººä¸»å…¥å£ï¼Œè´Ÿè´£è¿æ¥NapCatå¹¶å¾ªç¯å¤„ç†æ¶ˆæ¯
 #include <iostream>
 #include "boost/asio.hpp"
 #include "boost/beast.hpp"
 #include "nlohmann/json.hpp"
-#include "config.h"   // ÓÃµ½ÅäÖÃ£¨WSµØÖ·¡¢¶Ë¿Ú£©
-#include "utils.h"    // ÓÃµ½Ğ´ÈÕÖ¾¹¤¾ß
-#include "group_message.h" // ÓÃµ½ÈºÏûÏ¢´¦Àí¹¦ÄÜ
+#include "config.h"
+#include "utils.h"
+#include "group_message.h"
 
 using namespace boost::asio;
 using namespace boost::beast;
@@ -14,63 +14,63 @@ using tcp = boost::asio::ip::tcp;
 
 int main() {
     try {
-        // Ğ´Æô¶¯ÈÕÖ¾
-        write_log("»úÆ÷ÈËÆô¶¯£¬¿ªÊ¼Á¬½ÓNapCat...");
+        // å†™å¯åŠ¨æ—¥å¿—
+        write_log("æœºå™¨äººå¯åŠ¨ï¼Œå¼€å§‹è¿æ¥NapCat...");
         std::cout << "========================================" << std::endl;
-        std::cout << "»úÆ÷ÈËÆô¶¯ÖĞ... »úÆ÷ÈËQQ£º" << BOT_QQ << std::endl;
-        std::cout << "Á¬½ÓNapCat WS£º" << WS_HOST << ":" << WS_PORT << std::endl;
+        std::cout << "æœºå™¨äººæ­£åœ¨å¯åŠ¨... æœºå™¨äººQQï¼š" << BOT_QQ << std::endl;
+        std::cout << "è¿æ¥NapCat WSï¼š" << WS_HOST << ":" << WS_PORT << std::endl;
         std::cout << "========================================" << std::endl;
 
-        // 1. ³õÊ¼»¯WebSocketÁ¬½Ó£¨ºÍÖ®Ç°µ¥ÎÄ¼şÂß¼­Ò»Ñù£©
+        // 1. åˆå§‹åŒ–WebSocketè¿æ¥
         io_context ioc;
         tcp::resolver resolver(ioc);
         websocket::stream<tcp::socket> ws(ioc);
 
-        // 2. ½âÎöµØÖ·²¢Á¬½Ó
+        // 2. è§£æåœ°å€å¹¶è¿æ¥
         auto results = resolver.resolve(WS_HOST, WS_PORT);
         net::connect(ws.next_layer(), results.begin(), results.end());
 
-        // 3. WebSocketÎÕÊÖ
+        // 3. WebSocketæ¡æ‰‹
         ws.set_option(websocket::stream_base::decorator(
             [](websocket::request_type& req) {
-                req.set(http::field::user_agent, "C++¶àÎÄ¼ş»úÆ÷ÈË£¨´óÒ»°æ£©");
+                req.set(http::field::user_agent, "C++ QQ Bot (v1)");
             }
         ));
         ws.handshake(WS_HOST, "/");
 
-        // Á¬½Ó³É¹¦ÈÕÖ¾
-        std::string success_log = "WebSocketÁ¬½Ó³É¹¦£¡¿ªÊ¼¼àÌıÈºÏûÏ¢...";
+        // è¿æ¥æˆåŠŸæ—¥å¿—
+        std::string success_log = "WebSocketè¿æ¥æˆåŠŸï¼Œå¼€å§‹ç›‘å¬ç¾¤æ¶ˆæ¯...";
         write_log(success_log);
         std::cout << success_log << std::endl;
 
-        // 4. Ñ­»·¼àÌıÏûÏ¢£¨ºËĞÄ£ºÊÕµ½ÏûÏ¢¾Íµ÷ÓÃgroup_messageµÄ´¦Àíº¯Êı£©
+        // 4. ä¸»æ¶ˆæ¯å¾ªç¯ï¼šæ¥æ”¶æ¶ˆæ¯å¹¶è°ƒç”¨group_messageå¤„ç†å‡½æ•°
         flat_buffer buffer;
         while (true) {
             ws.read(buffer);
             std::string msg = buffers_to_string(buffer.data());
-            buffer.consume(buffer.size()); // Çå¿Õ»º³åÇø
+            buffer.consume(buffer.size()); // æ¸…ç©ºç¼“å†²åŒº
 
-            // ½âÎöÏûÏ¢
+            // è§£ææ¶ˆæ¯
             json msg_data = json::parse(msg);
 
-            // Ö»´¦ÀíÈºÏûÏ¢£¬µ÷ÓÃgroup_message.hµÄ´¦Àíº¯Êı
+            // åªå¤„ç†ç¾¤æ¶ˆæ¯ï¼Œè°ƒç”¨group_message.hçš„å¤„ç†å‡½æ•°
             if (msg_data["post_type"] == "message" && msg_data["message_type"] == "group") {
-                handle_group_message(msg_data, ws); // µ÷ÓÃÒµÎñÂß¼­
+                handle_group_message(msg_data, ws);
             }
             else {
-                write_log("ÊÕµ½·ÇÈºÏûÏ¢£¬ºöÂÔ£º" + msg_data.dump(2));
+                write_log("æ”¶åˆ°éç¾¤æ¶ˆæ¯ï¼Œå¿½ç•¥ï¼š" + msg_data.dump(2));
             }
         }
 
-        // ¹Ø±ÕÁ¬½Ó£¨Êµ¼Ê²»»áÖ´ĞĞ£¬ÒòÎªÊÇÎŞÏŞÑ­»·£©
+        // å…³é—­è¿æ¥ï¼ˆå®é™…ä¸ä¼šæ‰§è¡Œï¼Œå› ä¸ºæ˜¯æ— é™å¾ªç¯ï¼‰
         ws.close(websocket::close_code::normal);
     }
     catch (const std::exception& e) {
-        std::string err_log = "³ÌĞòÒì³££º" + std::string(e.what());
+        std::string err_log = "å‘ç”Ÿå¼‚å¸¸ï¼š" + std::string(e.what());
         write_log(err_log);
         std::cerr << "========================================" << std::endl;
         std::cerr << err_log << std::endl;
-        std::cerr << "¿ÉÄÜÔ­Òò£ºNapCatÎ´Æô¶¯¡¢¶Ë¿Ú´íÎó¡¢ÍøÂç¶Ï¿ª" << std::endl;
+        std::cerr << "å¯èƒ½åŸå› ï¼šNapCatæœªå¯åŠ¨æˆ–ç«¯å£é”™è¯¯" << std::endl;
         std::cerr << "========================================" << std::endl;
         return 1;
     }
