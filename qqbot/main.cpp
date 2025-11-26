@@ -1,11 +1,11 @@
-// main.cpp：程序入口，负责连接NapCat、循环监听消息
+// main.cpp: Main entry point for the QQ bot, handles NapCat message loop
 #include <iostream>
 #include "boost/asio.hpp"
 #include "boost/beast.hpp"
 #include "nlohmann/json.hpp"
-#include "config.h"   // 用到配置（WS地址、端口）
-#include "utils.h"    // 用到写日志工具
-#include "group_message.h" // 用到群消息处理功能
+#include "config.h"
+#include "utils.h"
+#include "group_message.h"
 
 using namespace boost::asio;
 using namespace boost::beast;
@@ -14,63 +14,63 @@ using tcp = boost::asio::ip::tcp;
 
 int main() {
     try {
-        // 写启动日志
-        write_log("机器人启动，开始连接NapCat...");
+        // Write startup log
+        write_log("Bot starting, connecting to NapCat...");
         std::cout << "========================================" << std::endl;
-        std::cout << "机器人启动中... 机器人QQ：" << BOT_QQ << std::endl;
-        std::cout << "连接NapCat WS：" << WS_HOST << ":" << WS_PORT << std::endl;
+        std::cout << "Starting bot... Bot QQ: " << BOT_QQ << std::endl;
+        std::cout << "Connecting to NapCat WS: " << WS_HOST << ":" << WS_PORT << std::endl;
         std::cout << "========================================" << std::endl;
 
-        // 1. 初始化WebSocket连接（和之前单文件逻辑一样）
+        // 1. Initialize WebSocket connection
         io_context ioc;
         tcp::resolver resolver(ioc);
         websocket::stream<tcp::socket> ws(ioc);
 
-        // 2. 解析地址并连接
+        // 2. Resolve address and connect
         auto results = resolver.resolve(WS_HOST, WS_PORT);
         net::connect(ws.next_layer(), results.begin(), results.end());
 
-        // 3. WebSocket握手
+        // 3. WebSocket handshake
         ws.set_option(websocket::stream_base::decorator(
             [](websocket::request_type& req) {
-                req.set(http::field::user_agent, "C++多文件机器人（大一版）");
+                req.set(http::field::user_agent, "C++ QQ Bot (v1)");
             }
         ));
         ws.handshake(WS_HOST, "/");
 
-        // 连接成功日志
-        std::string success_log = "WebSocket连接成功！开始监听群消息...";
+        // Connection success log
+        std::string success_log = "WebSocket connected successfully, starting to listen for group messages...";
         write_log(success_log);
         std::cout << success_log << std::endl;
 
-        // 4. 循环监听消息（核心：收到消息就调用group_message的处理函数）
+        // 4. Main message loop: receive messages and call group_message handler
         flat_buffer buffer;
         while (true) {
             ws.read(buffer);
             std::string msg = buffers_to_string(buffer.data());
-            buffer.consume(buffer.size()); // 清空缓冲区
+            buffer.consume(buffer.size()); // Clear buffer
 
-            // 解析消息
+            // Parse message
             json msg_data = json::parse(msg);
 
-            // 只处理群消息，调用group_message.h的处理函数
+            // Only handle group messages using group_message.h handler
             if (msg_data["post_type"] == "message" && msg_data["message_type"] == "group") {
-                handle_group_message(msg_data, ws); // 调用业务逻辑
+                handle_group_message(msg_data, ws);
             }
             else {
-                write_log("收到非群消息，忽略：" + msg_data.dump(2));
+                write_log("Received non-group message, ignoring: " + msg_data.dump(2));
             }
         }
 
-        // 关闭连接（实际不会执行，因为是无限循环）
+        // Close connection (not actually reached due to infinite loop)
         ws.close(websocket::close_code::normal);
     }
     catch (const std::exception& e) {
-        std::string err_log = "程序异常：" + std::string(e.what());
+        std::string err_log = "Exception occurred: " + std::string(e.what());
         write_log(err_log);
         std::cerr << "========================================" << std::endl;
         std::cerr << err_log << std::endl;
-        std::cerr << "可能原因：NapCat未启动、端口错误、网络断开" << std::endl;
+        std::cerr << "Possible cause: NapCat not running or port incorrect" << std::endl;
         std::cerr << "========================================" << std::endl;
         return 1;
     }

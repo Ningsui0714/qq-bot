@@ -26,14 +26,14 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="utiles.cpp">
-      <Filter>资源文件</Filter>
+    <ClCompile Include="utils.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="group_message.cpp">
-      <Filter>资源文件</Filter>
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

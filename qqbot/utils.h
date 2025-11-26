@@ -1,22 +1,21 @@
-// utils.h：声明通用工具函数，供其他文件调用
+// utils.h: Common utility functions for the bot
 #ifndef UTILS_H
 #define UTILS_H
 
 #include <string>
-#include <nlohmann/json.hpp>  // 用到JSON，要包含头文件
+#include <nlohmann/json.hpp>
 using json = nlohmann::json;
 
-// 工具1：去除字符串所有空格（比如“ 1 ”→“1”）
+// Function 1: Remove all spaces from a string (e.g., " 1 " -> "1")
 std::string trim_space(const std::string& s);
 
-// 工具2：检测消息是否@机器人（参数是NapCat发来的JSON消息）
+// Function 2: Check if the message contains @bot mention
 bool is_at_bot(const json& msg_data);
 
-// 工具3：写日志到文件（参数是日志内容，自动加时间戳）
+// Function 3: Write log to file with timestamp
 void write_log(const std::string& content);
 
-//gbk编码转换为utf8编码
-std::string gbk_to_utf8(const std::string& gbk_str);
+// Function 4: Ensure string is valid UTF-8 (sanitize invalid bytes)
+std::string ensure_utf8(const std::string& input);
 
-
-#endif // UTILS_H#pragma once
+#endif // UTILS_H
