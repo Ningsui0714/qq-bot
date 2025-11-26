@@ -1,46 +1,46 @@
-// group_message.cpp: Implementation of group message handling logic
+// group_message.cpp：实现群消息处理逻辑
 #include "group_message.h"
 #include "utils.h"
 #include "config.h"
 #include <iostream>
 #include <boost/asio/buffer.hpp>
 
-// Implementation of group message handler
+// 实现群消息处理函数
 void handle_group_message(const json& msg_data, websocket::stream<boost::asio::ip::tcp::socket>& ws) {
     try {
-        // Get group ID and original message
+        // 获取群号、原始消息
         std::string group_id = std::to_string(msg_data["group_id"].get<long long>());
         
-        // Check if raw_message field exists before getting message
+        // 获取消息前先判断字段是否存在
         if (!msg_data.contains("raw_message") || !msg_data["raw_message"].is_string()) {
-            write_log("Message does not contain raw_message field or field type is not string");
+            write_log("消息中没有raw_message字段，或字段类型不是字符串");
             return;
         }
         
         std::string raw_msg = msg_data["raw_message"].get<std::string>();
         
-        // Ensure message is valid UTF-8 (sanitize if needed)
+        // 确保消息是有效的UTF-8编码（如有必要进行清理）
         raw_msg = ensure_utf8(raw_msg);
         
         std::string trimmed_msg = trim_space(raw_msg);
 
-        // Write log
-        std::string log_content = "Received message from group " + group_id + ": " + raw_msg;
+        // 写日志
+        std::string log_content = "收到群" + group_id + "的消息：" + raw_msg;
         write_log(log_content);
         std::cout << log_content << std::endl;
 
-        // Check if message mentions @bot
+        // 先判断是否@机器人
         bool at_bot = is_at_bot(msg_data);
 
-        // Get message text without @mention for comparison
+        // 用于比较的消息文本（去掉at段）
         std::string compare_msg = trimmed_msg;
         if (at_bot && msg_data.contains("message") && msg_data["message"].is_array()) {
             std::string without_at;
             for (const auto& elem : msg_data["message"]) {
-                // Only process text segments, skip type == "at"
+                // 只处理文本片段，跳过type == "at"
                 const std::string type = elem.value("type", std::string());
                 if (type == "text") {
-                    // Standard format: elem["data"]["text"]
+                    // 标准格式：elem["data"]["text"]
                     if (elem.contains("data")) {
                         if (elem["data"].is_object()) {
                             without_at += elem["data"].value("text", std::string());
@@ -51,7 +51,7 @@ void handle_group_message(const json& msg_data, websocket::stream<boost::asio::i
                     }
                 }
                 else if (type != "at") {
-                    // Other types (like plain text), try to extract text field
+                    // 其他类型（可能的plain字段），尝试拼接可能的文本字段
                     if (elem.contains("data") && elem["data"].is_object()) {
                         without_at += elem["data"].value("text", std::string());
                     }
@@ -60,35 +60,35 @@ void handle_group_message(const json& msg_data, websocket::stream<boost::asio::i
             compare_msg = trim_space(without_at);
         }
 
-        // Case 1: @bot + message is "1" -> reply "true"
+        // 情况1：@机器人 + 去掉@后消息是"1" -> 回复"true"
         if (at_bot && compare_msg == "1") {
             json reply = {
                 {"action", "send_group_msg"},
                 {"params", {{"group_id", group_id}, {"message", "true"}}}
             };
             ws.write(boost::asio::buffer(reply.dump()));
-            write_log("Replied to group " + group_id + ": true");
-            std::cout << "Reply successful: true" << std::endl;
+            write_log("回复群" + group_id + "：true");
+            std::cout << "回复成功：true" << std::endl;
         }
 
-        // Case 2: Keyword reply - when message contains "hello"
+        // 情况2：关键词回复（包含"hello"）
         else if (raw_msg.find("hello") != std::string::npos) {
             json reply = {
                 {"action", "send_group_msg"},
-                {"params", {{"group_id", group_id}, {"message", "Hello! I am a bot!"}}}
+                {"params", {{"group_id", group_id}, {"message", "你好！我是机器人！"}}}
             };
             ws.write(boost::asio::buffer(reply.dump()));
-            write_log("Replied to group " + group_id + ": Hello! I am a bot!");
-            std::cout << "Keyword reply successful" << std::endl;
+            write_log("回复群" + group_id + "：你好！我是机器人！");
+            std::cout << "关键词回复成功" << std::endl;
         }
 
-        // Other cases: No reply
+        // 其他情况：不回复
         else {
-            std::cout << "No matching response, ignoring..." << std::endl;
+            std::cout << "不满足回复条件，忽略..." << std::endl;
         }
     }
     catch (const std::exception& e) {
-        std::string err_log = "Failed to handle group message: " + std::string(e.what());
+        std::string err_log = "处理群消息失败：" + std::string(e.what());
         write_log(err_log);
         std::cerr << err_log << std::endl;
     }
