@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{29f2e7e2-93e8-49d0-8cd3-9b6893df3d7d}</ProjectGuid>
+    <ProjectGuid>{8554d204-fed0-49f8-bf0b-325af584905e}</ProjectGuid>
     <RootNamespace>qqbot</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -124,12 +124,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="config.h" />
-    <ClInclude Include="group_message.h" />
+    <ClInclude Include="msg_handler.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="group_message.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="msg_handler.cpp" />
     <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

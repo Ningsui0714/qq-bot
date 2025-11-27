@@ -1,0 +1,223 @@
+[2025-11-27 08:03:55] WebSocket????????connect: ???????????????????????????? [system:10061 at C:\Users\majia\vcpkg\installed\x64-windows\include\boost\asio\detail\win_iocp_socket_service.hpp:629:5 in function 'class boost::system::error_code __cdecl boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::connect(struct boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::implementation_type &,const class boost::asio::ip::basic_endpoint<class boost::asio::ip::tcp> &,class boost::system::error_code &)']????????10061
+[2025-11-27 08:13:24] WebSocket?????????????????????QQ??3373368470
+[2025-11-27 08:13:24] ???????...
+[2025-11-27 08:13:24] ???????????{"time":1764202404,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"lifecycle","sub_
+[2025-11-27 08:13:46] ???????????{"time":1764202426,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:14:16] ???????????{"time":1764202456,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:14:57] WebSocket?????????????????????QQ??3373368470
+[2025-11-27 08:14:57] ???????...
+[2025-11-27 08:14:57] ???????????{"time":1764202497,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"lifecycle","sub_
+[2025-11-27 08:15:49] WebSocket?????????????????????QQ??3373368470
+[2025-11-27 08:15:49] ???????...
+[2025-11-27 08:15:49] ???????????{"time":1764202549,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"lifecycle","sub_
+[2025-11-27 08:19:12] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-11-27 08:19:12] Waiting for group messages...
+[2025-11-27 08:19:12] Ignore non-group message: {"time":1764202752,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"lifecycle","sub_
+[2025-11-27 08:20:32] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-11-27 08:20:32] Waiting for group messages...
+[2025-11-27 08:20:32] Ignore non-group message: {"time":1764202832,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"lifecycle","sub_
+[2025-11-27 08:20:41] JSON parse failed: [json.exception.parse_error.101] parse error at line 1, column 556: syntax error while parsing value - invalid string: missing closing quote; last read: '"椋庛�侀銆佸畞闅?}', Raw message: {"self_id":3373368470,"user_id":2285373500,"time":1764202841,"message_id":540879904,"message_seq":54
+[2025-11-27 08:20:47] Ignore non-group message: {"time":1764202847,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:21:17] Ignore non-group message: {"time":1764202877,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:21:41] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-11-27 08:21:41] Waiting for group messages...
+[2025-11-27 08:21:41] Ignore non-group message: {"time":1764202901,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"lifecycle","sub_
+[2025-11-27 08:21:47] Ignore non-group message: {"time":1764202907,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:21:58] JSON parse failed: [json.exception.parse_error.101] parse error at line 1, column 556: syntax error while parsing value - invalid string: missing closing quote; last read: '"椋庛�侀銆佸畞闅?}', Raw message: {"self_id":3373368470,"user_id":2285373500,"time":1764202919,"message_id":884692709,"message_seq":88
+[2025-11-27 08:22:17] Ignore non-group message: {"time":1764202937,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:22:47] Ignore non-group message: {"time":1764202967,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:23:17] Ignore non-group message: {"time":1764202997,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:23:47] Ignore non-group message: {"time":1764203027,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:24:17] Ignore non-group message: {"time":1764203057,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:24:47] Ignore non-group message: {"time":1764203087,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:24:49] JSON parse failed: [json.exception.parse_error.101] parse error at line 1, column 569: syntax error while parsing value - invalid string: missing closing quote; last read: '"椋庛�侀銆佸畞闅?}', Raw message: {"self_id":3373368470,"user_id":2132245412,"time":1764203089,"message_id":1642343320,"message_seq":1
+[2025-11-27 08:25:17] Ignore non-group message: {"time":1764203117,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:25:27] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-11-27 08:25:27] Waiting for group messages...
+[2025-11-27 08:25:27] Ignore non-group message: {"time":1764203127,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"lifecycle","sub_
+[2025-11-27 08:25:43] JSON parse failed: [json.exception.parse_error.101] parse error at line 1, column 556: syntax error while parsing value - invalid string: missing closing quote; last read: '"椋庛�侀銆佸畞闅?}', Filtered message: {"self_id":3373368470,"user_id":2285373500,"time":1764203144,"message_id":572950660,"message_seq":572950660,"real_id":572950660,"real_seq":"1557","message_type":"group","sender":{"user_id":2285373500,
+[2025-11-27 08:25:47] Ignore non-group message: {"time":1764203147,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:27:56] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-11-27 08:27:56] Waiting for group messages...
+[2025-11-27 08:27:56] Ignore non-group message: {"time":1764203276,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"lifecycle","sub_
+[2025-11-27 08:27:57] Received message from group 943715179: 1 (trimmed: 1)
+[2025-11-27 08:27:57] Group 943715179: Message does not meet reply conditions, ignored
+[2025-11-27 08:28:04] Received message from group 943715179: 1 (trimmed: 1)
+[2025-11-27 08:28:04] Group 943715179: Message does not meet reply conditions, ignored
+[2025-11-27 08:28:05] Received message from group 943715179:  1 (trimmed: 1)
+[2025-11-27 08:28:05] Replied to group 943715179: true
+[2025-11-27 08:28:06] Ignore non-group message: {"status":"ok","retcode":0,"data":{"message_id":1169372565},"message":"","wording":"","echo":"","str
+[2025-11-27 08:28:14] Received message from group 943715179:  hello (trimmed: hello)
+[2025-11-27 08:28:14] Replied to group 943715179: Hello! I received your 'hello'~
+[2025-11-27 08:28:15] Ignore non-group message: {"status":"ok","retcode":0,"data":{"message_id":1825532099},"message":"","wording":"","echo":"","str
+[2025-11-27 08:28:17] Ignore non-group message: {"time":1764203297,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:28:21] Received message from group 943715179:  你好 (trimmed: 你好)
+[2025-11-27 08:28:21] Group 943715179: Message does not meet reply conditions, ignored
+[2025-11-27 08:28:47] Ignore non-group message: {"time":1764203327,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:28:47] Received message from group 943715179: [CQ:at,qq=2285373500] 1 (trimmed: [CQ:at,qq=2285373500] 1)
+[2025-11-27 08:28:47] Group 943715179: Message does not meet reply conditions, ignored
+[2025-11-27 08:28:55] Received message from group 943715179: 你好 (trimmed: 你好)
+[2025-11-27 08:28:55] Group 943715179: Message does not meet reply conditions, ignored
+[2025-11-27 08:28:55] Received message from group 943715179: 6 (trimmed: 6)
+[2025-11-27 08:28:55] Group 943715179: Message does not meet reply conditions, ignored
+[2025-11-27 08:29:04] Received message from group 943715179:  hello (trimmed: hello)
+[2025-11-27 08:29:04] Replied to group 943715179: Hello! I received your 'hello'~
+[2025-11-27 08:29:05] Ignore non-group message: {"status":"ok","retcode":0,"data":{"message_id":1089548160},"message":"","wording":"","echo":"","str
+[2025-11-27 08:29:14] Received message from group 943715179:  hello (trimmed: hello)
+[2025-11-27 08:29:14] Replied to group 943715179: Hello! I received your 'hello'~
+[2025-11-27 08:29:14] Ignore non-group message: {"status":"ok","retcode":0,"data":{"message_id":2002342029},"message":"","wording":"","echo":"","str
+[2025-11-27 08:29:17] Ignore non-group message: {"time":1764203357,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:29:23] Received message from group 943715179:  He llo (trimmed: He llo)
+[2025-11-27 08:29:23] Group 943715179: Message does not meet reply conditions, ignored
+[2025-11-27 08:29:38] Received message from group 943715179:  h e l l o (trimmed: h e l l o)
+[2025-11-27 08:29:38] Group 943715179: Message does not meet reply conditions, ignored
+[2025-11-27 08:29:47] Ignore non-group message: {"time":1764203387,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:29:50] Received message from group 943715179:  你好 (trimmed: 你好)
+[2025-11-27 08:29:50] Group 943715179: Message does not meet reply conditions, ignored
+[2025-11-27 08:30:17] Ignore non-group message: {"time":1764203417,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:30:47] Ignore non-group message: {"time":1764203447,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:30:59] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-11-27 08:30:59] Waiting for group messages...
+[2025-11-27 08:30:59] Ignore non-group message: {"time":1764203459,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"lifecycle","sub_
+[2025-11-27 08:31:05] Received message from group 943715179:  你好 (trimmed: 你好)
+[2025-11-27 08:31:05] Group 943715179: Message does not meet reply conditions, ignored
+[2025-11-27 08:31:12] Received message from group 943715179: 你好 (trimmed: 你好)
+[2025-11-27 08:31:12] Group 943715179: Message does not meet reply conditions, ignored
+[2025-11-27 08:31:17] Ignore non-group message: {"time":1764203477,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:31:20] Received message from group 943715179: ？ (trimmed: ？)
+[2025-11-27 08:31:20] Group 943715179: Message does not meet reply conditions, ignored
+[2025-11-27 08:31:29] Received message from group 943715179: 你不好 (trimmed: 你不好)
+[2025-11-27 08:31:29] Group 943715179: Message does not meet reply conditions, ignored
+[2025-11-27 08:31:47] Ignore non-group message: {"time":1764203507,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:32:17] Ignore non-group message: {"time":1764203537,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:32:36] Received message from group 943715179:  1 (trimmed: 1)
+[2025-11-27 08:32:36] Replied to group 943715179: true
+[2025-11-27 08:32:36] Ignore non-group message: {"status":"ok","retcode":0,"data":{"message_id":1127499005},"message":"","wording":"","echo":"","str
+[2025-11-27 08:32:47] Ignore non-group message: {"time":1764203567,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:33:17] Ignore non-group message: {"time":1764203597,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:33:47] Ignore non-group message: {"time":1764203627,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:34:17] Ignore non-group message: {"time":1764203657,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:34:47] Ignore non-group message: {"time":1764203687,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:35:17] Ignore non-group message: {"time":1764203717,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:35:18] Received message from group 943715179:  1 (trimmed: 1)
+[2025-11-27 08:35:18] Replied to group 943715179: true
+[2025-11-27 08:35:19] Ignore non-group message: {"status":"ok","retcode":0,"data":{"message_id":1651948684},"message":"","wording":"","echo":"","str
+[2025-11-27 08:35:30] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-11-27 08:35:30] Waiting for group messages...
+[2025-11-27 08:35:30] Ignore non-group message: {"time":1764203730,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"lifecycle","sub_
+[2025-11-27 08:35:30] Received message from group 943715179:    1 (trimmed: 1)
+[2025-11-27 08:35:30] Replied to group 943715179: true
+[2025-11-27 08:35:31] Ignore non-group message: {"status":"ok","retcode":0,"data":{"message_id":8558589},"message":"","wording":"","echo":"","stream
+[2025-11-27 08:35:42] Received message from group 943715179:  @ 1 (trimmed: @ 1)
+[2025-11-27 08:35:42] Group 943715179: Message does not meet reply conditions, ignored
+[2025-11-27 08:35:43] Received message from group 943715179:  你好 (trimmed: 你好)
+[2025-11-27 08:35:43] Group 943715179: Message does not meet reply conditions, ignored
+[2025-11-27 08:35:47] Ignore non-group message: {"time":1764203747,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:35:52] Received message from group 943715179:  你好 (trimmed: 你好)
+[2025-11-27 08:35:52] Group 943715179: Message does not meet reply conditions, ignored
+[2025-11-27 08:36:17] Ignore non-group message: {"time":1764203777,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:36:47] Ignore non-group message: {"time":1764203807,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:37:04] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-11-27 08:37:04] Waiting for group messages...
+[2025-11-27 08:37:04] Ignore non-group message: {"time":1764203824,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"lifecycle","sub_
+[2025-11-27 08:37:06] Received message from group 943715179:  你好 (trimmed: 你好)
+[2025-11-27 08:37:06] Group 943715179: Message does not meet reply conditions, ignored
+[2025-11-27 08:37:17] Ignore non-group message: {"time":1764203837,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:37:47] Ignore non-group message: {"time":1764203867,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:38:17] Ignore non-group message: {"time":1764203897,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:38:47] Ignore non-group message: {"time":1764203927,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:39:03] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-11-27 08:39:03] Waiting for group messages...
+[2025-11-27 08:39:03] Ignore non-group message: {"time":1764203943,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"lifecycle","sub_
+[2025-11-27 08:39:06] Received message from group 943715179:  你好 (trimmed: 你好)
+[2025-11-27 08:39:06] Group 943715179: Message does not meet reply conditions, ignored
+[2025-11-27 08:39:17] Ignore non-group message: {"time":1764203957,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:39:47] Ignore non-group message: {"time":1764203987,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:40:20] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-11-27 08:40:20] Waiting for group messages...
+[2025-11-27 08:40:20] Ignore non-group message: {"time":1764204020,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"lifecycle","sub_
+[2025-11-27 08:40:24] Received message from group 943715179:  你好 (trimmed: 你好)
+[2025-11-27 08:40:24] Replied to group 943715179: Hello! I'm the robot, glad to serve you!
+[2025-11-27 08:40:24] Ignore non-group message: {"status":"ok","retcode":0,"data":{"message_id":1577137129},"message":"","wording":"","echo":"","str
+[2025-11-27 08:40:29] Received message from group 943715179: 终于 (trimmed: 终于)
+[2025-11-27 08:40:29] Group 943715179: Message does not meet reply conditions, ignored
+[2025-11-27 08:40:52] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-11-27 08:40:52] Waiting for group messages...
+[2025-11-27 08:40:52] Ignore non-group message: {"time":1764204052,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"lifecycle","sub_
+[2025-11-27 08:41:17] Ignore non-group message: {"time":1764204077,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:41:47] Ignore non-group message: {"time":1764204107,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:42:17] Ignore non-group message: {"time":1764204137,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:42:47] Ignore non-group message: {"time":1764204167,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:43:17] Ignore non-group message: {"time":1764204197,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:43:47] Ignore non-group message: {"time":1764204227,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:44:17] Ignore non-group message: {"time":1764204257,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:44:47] Ignore non-group message: {"time":1764204287,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:45:17] Ignore non-group message: {"time":1764204317,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:45:47] Ignore non-group message: {"time":1764204347,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:46:17] Ignore non-group message: {"time":1764204377,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:46:19] Received message from group 943715179:  你好 (trimmed: 你好)
+[2025-11-27 08:46:19] Replied to group 943715179: Hello! I'm the robot, glad to serve you!
+[2025-11-27 08:46:19] Ignore non-group message: {"status":"ok","retcode":0,"data":{"message_id":1549269235},"message":"","wording":"","echo":"","str
+[2025-11-27 08:46:25] Received message from group 943715179:  hello (trimmed: hello)
+[2025-11-27 08:46:25] Replied to group 943715179: Hello! I received your 'hello'~
+[2025-11-27 08:46:25] Ignore non-group message: {"status":"ok","retcode":0,"data":{"message_id":825598820},"message":"","wording":"","echo":"","stre
+[2025-11-27 08:46:47] Ignore non-group message: {"time":1764204407,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:47:17] Ignore non-group message: {"time":1764204437,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:47:47] Ignore non-group message: {"time":1764204467,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:48:17] Ignore non-group message: {"time":1764204497,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:48:47] Ignore non-group message: {"time":1764204527,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:49:17] Ignore non-group message: {"time":1764204557,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:49:47] Ignore non-group message: {"time":1764204587,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:50:17] Ignore non-group message: {"time":1764204617,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:50:47] Ignore non-group message: {"time":1764204647,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:51:17] Ignore non-group message: {"time":1764204677,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:51:25] Received message from group 943715179: 你好 (trimmed: 你好)
+[2025-11-27 08:51:25] Replied to group 943715179: Hello! I'm the robot, glad to serve you!
+[2025-11-27 08:51:26] Ignore non-group message: {"status":"ok","retcode":0,"data":{"message_id":7614442},"message":"","wording":"","echo":"","stream
+[2025-11-27 08:52:18] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-11-27 08:52:18] Waiting for group messages...
+[2025-11-27 08:52:18] Ignore non-group message: {"time":1764204738,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"lifecycle","sub_
+[2025-11-27 08:52:26] Received message from group 943715179: 你好 (trimmed: 你好)
+[2025-11-27 08:52:26] Group 943715179: Message does not meet reply conditions, ignored
+[2025-11-27 08:52:30] Received message from group 943715179:  你好 (trimmed: 你好)
+[2025-11-27 08:52:30] JSON error: [json.exception.type_error.316] invalid UTF-8 byte at index 1: 0xE3, Error id: 316
+[2025-11-27 08:52:47] Ignore non-group message: {"time":1764204767,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:54:34] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-11-27 08:54:34] Waiting for group messages...
+[2025-11-27 08:54:34] JSON parsed via UTF-8, post_type="meta_event"
+[2025-11-27 08:54:34] Ignore non-group message: {"time":1764204874,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"lifecycle","sub_
+[2025-11-27 08:54:37] JSON parsed via UTF-8, post_type="message"
+[2025-11-27 08:54:37] Received message from group 943715179:  你好 (trimmed: 你好)
+[2025-11-27 08:54:37] JSON error: [json.exception.type_error.316] invalid UTF-8 byte at index 1: 0xE3, Error id: 316
+[2025-11-27 08:54:47] JSON parsed via UTF-8, post_type="meta_event"
+[2025-11-27 08:54:47] Ignore non-group message: {"time":1764204887,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:55:17] JSON parsed via UTF-8, post_type="meta_event"
+[2025-11-27 08:55:17] Ignore non-group message: {"time":1764204917,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:55:47] JSON parsed via UTF-8, post_type="meta_event"
+[2025-11-27 08:55:47] Ignore non-group message: {"time":1764204947,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:56:17] JSON parsed via UTF-8, post_type="meta_event"
+[2025-11-27 08:56:17] Ignore non-group message: {"time":1764204977,"self_id":3373368470,"post_type":"meta_event","meta_event_type":"heartbeat","stat
+[2025-11-27 08:56:27] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-11-27 08:56:27] Waiting for group messages...
+[2025-11-27 08:56:27] Ignore non-group frame
+[2025-11-27 08:56:36] JSON parsed via raw-utf8
+[2025-11-27 08:56:36] Received message from group 943715179:  你好 (trimmed: 你好)
+[2025-11-27 08:56:36] JSON error: [json.exception.type_error.316] invalid UTF-8 byte at index 1: 0xE3, Error id: 316
+[2025-11-27 08:58:57] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-11-27 08:58:57] Waiting for group messages...
+[2025-11-27 08:58:57] Ignore non-group frame
+[2025-11-27 08:59:04] JSON parsed via raw-utf8
+[2025-11-27 08:59:04] Received message from group 943715179:  你好 (trimmed: 你好)
+[2025-11-27 08:59:04] Replied to group 943715179: 你好你好~
+[2025-11-27 08:59:04] Ignore non-group frame
+[2025-11-27 08:59:09] JSON parsed via raw-utf8
+[2025-11-27 08:59:09] Received message from group 943715179: 你好 (trimmed: 你好)
+[2025-11-27 08:59:09] Group 943715179: Message does not meet reply conditions, ignored
+[2025-11-27 08:59:14] JSON parsed via raw-utf8
+[2025-11-27 08:59:14] Received message from group 943715179: hello (trimmed: hello)
+[2025-11-27 08:59:14] Group 943715179: Message does not meet reply conditions, ignored
+[2025-11-27 08:59:17] JSON parsed via raw-utf8
+[2025-11-27 08:59:17] Received message from group 943715179:  hello (trimmed: hello)
+[2025-11-27 08:59:17] Replied to group 943715179: Hello! I received your 'hello'~
+[2025-11-27 08:59:17] Ignore non-group frame
+[2025-11-27 08:59:17] Ignore non-group frame
