@@ -22,13 +22,17 @@ static bool is_valid_utf8(const std::string& s) {
         if (c <= 0x7F) {
             i += 1;
             continue;
-        } else if ((c >> 5) == 0x6) {
+        }
+        else if ((c >> 5) == 0x6) {
             len = 2;
-        } else if ((c >> 4) == 0xE) {
+        }
+        else if ((c >> 4) == 0xE) {
             len = 3;
-        } else if ((c >> 3) == 0x1E) {
+        }
+        else if ((c >> 3) == 0x1E) {
             len = 4;
-        } else {
+        }
+        else {
             return false;
         }
         if (i + len > n) return false;
@@ -96,7 +100,7 @@ void run_robot() {
                 }
                 if (s.size() > lim) oss << " ...";
                 return oss.str();
-            };
+                };
 
             json msg_data;
             bool ok = false;
@@ -107,7 +111,8 @@ void run_robot() {
                 msg_data = json::parse(frame, nullptr, true, true);
                 ok = true;
                 parse_path = "raw-utf8";
-            } catch (const json::exception& e) {
+            }
+            catch (const json::exception& e) {
                 if (e.id == 316 || e.id == 101) {
                     write_log("Parse raw failed(id=" + std::to_string(e.id) + "), hex: " + hex_dump(frame));
                     // 回退：尝试按 GBK 解释再转 UTF-8
@@ -117,10 +122,12 @@ void run_robot() {
                         ok = true;
                         parse_path = "gbk->utf8";
                         write_log("Fallback GBK->UTF8 succeeded, first bytes(hex): " + hex_dump(converted));
-                    } catch (const json::exception& e2) {
+                    }
+                    catch (const json::exception& e2) {
                         write_log("Fallback parse failed(id=" + std::to_string(e2.id) + "), converted hex: " + hex_dump(converted));
                     }
-                } else {
+                }
+                else {
                     write_log("Parse raw failed(id=" + std::to_string(e.id) + "): " + std::string(e.what()));
                 }
             }
@@ -137,7 +144,8 @@ void run_robot() {
                 && msg_data.contains("message_type") && msg_data["message_type"] == "group") {
                 write_log("JSON parsed via " + parse_path);
                 handle_group_message(msg_data, ws);
-            } else {
+            }
+            else {
                 write_log("Ignore non-group frame");
             }
         }

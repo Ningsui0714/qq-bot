@@ -83,3 +83,11 @@ void write_log(const std::string& content) {
         log_file.close();
     }
 }
+
+
+// 提供 get_current_msg_data 的简单实现（示例/占位，需根据实际上下文完善）
+nlohmann::json get_current_msg_data()
+{
+    // TODO: 替换为实际获取当前消息数据的逻辑
+    return nlohmann::json{};
+}

@@ -102,6 +102,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -124,12 +125,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="config.h" />
+    <ClInclude Include="guess_number.h" />
     <ClInclude Include="msg_handler.h" />
+    <ClInclude Include="reply_generator.h" />
+    <ClInclude Include="schedule_data.h" />
+    <ClInclude Include="schedule_loader.h" />
+    <ClInclude Include="schedule.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="guess_number.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="msg_handler.cpp" />
+    <ClCompile Include="reply_generator.cpp" />
+    <ClCompile Include="schedule_loader.cpp" />
+    <ClCompile Include="schedule_set.cpp" />
     <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

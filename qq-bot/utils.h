@@ -20,5 +20,6 @@ bool is_at_bot(const json& msg_data);
 
 // 5. 写日志（支持中文，自动处理编码）
 void write_log(const std::string& content);
+nlohmann::json get_current_msg_data();
 
 #endif // UTILS_H

@@ -24,6 +24,21 @@
     <ClInclude Include="msg_handler.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="reply_generator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="guess_number.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="schedule.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="schedule_loader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="schedule_data.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="utils.cpp">
@@ -34,6 +49,18 @@
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="reply_generator.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="guess_number.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="schedule_set.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="schedule_loader.cpp">
+      <Filter>资源文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
