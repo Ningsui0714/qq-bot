@@ -39,12 +39,13 @@ qq-bot/
 │   ├── schedule_data.h       # 课表示例数据
 │   ├── utils.cpp/h           # 工具函数（编码转换、日志等）
 │   ├── qq-bot.sln            # Visual Studio 解决方案
-│   ├── qq-bot.vcxproj        # Visual Studio 项目文件
-│   └── persistent_schedules.json  # 课表持久化文件
+│   └── qq-bot.vcxproj        # Visual Studio 项目文件
 ├── LICENSE                    # MIT 许可证
 ├── .gitignore                 # Git忽略配置
 └── README.md                  # 项目说明文档
 ```
+
+> **注意**：运行时会自动生成 `robot_log.txt`（日志文件）和 `persistent_schedules.json`（课表持久化文件），这些文件已被 .gitignore 排除。
 
 ## 配置说明
 
