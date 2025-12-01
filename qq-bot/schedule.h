@@ -12,20 +12,33 @@ private:
     int end_week;
     int start_class;
     int end_class;
+    int weekday;
     std::string name;
+    std::string qq_number;
 
 public:
     Schedule() = default;
-    Schedule(int sw, int ew, int sc, int ec, std::string n)
-        : start_week(sw), end_week(ew), start_class(sc), end_class(ec), name(std::move(n)) {
+
+    // 旧构造（兼容），默认 weekday=1
+    Schedule(int sw, int ew, int sc, int ec, std::string n, std::string qn)
+        : start_week(sw), end_week(ew), start_class(sc), end_class(ec), weekday(1),
+          name(std::move(n)), qq_number(std::move(qn)) {
     }
 
-    // 访问器（供外部逻辑校验/去重使用）
+    // 新构造（包含星期几）
+    Schedule(int sw, int ew, int sc, int ec, int wd, std::string n, std::string qn)
+        : start_week(sw), end_week(ew), start_class(sc), end_class(ec), weekday(wd),
+          name(std::move(n)), qq_number(std::move(qn)) {
+    }
+
+    // 访问器
     int get_start_week() const { return start_week; }
     int get_end_week() const { return end_week; }
     int get_start_class() const { return start_class; }
     int get_end_class() const { return end_class; }
+    int get_weekday() const { return weekday; }
     const std::string& get_name() const { return name; }
+    const std::string& get_qq_number() const { return qq_number; }
 
     friend void to_json(json& j, const Schedule& s) {
         j = json{
@@ -33,7 +46,9 @@ public:
             {"end_week", s.end_week},
             {"start_class", s.start_class},
             {"end_class", s.end_class},
-            {"name", s.name}
+            {"weekday", s.weekday},
+            {"name", s.name},
+            {"qq_number", s.qq_number}
         };
     }
 
@@ -42,15 +57,18 @@ public:
         j.at("end_week").get_to(s.end_week);
         j.at("start_class").get_to(s.start_class);
         j.at("end_class").get_to(s.end_class);
+        j.at("weekday").get_to(s.weekday);
         j.at("name").get_to(s.name);
+        j.at("qq_number").get_to(s.qq_number);
     }
 
     std::vector<ReplyRule> get_schedule_rules();
 
-    // 使用 UTF-8 字面量，避免本地代码页导致的非 UTF-8 字节
+    // 使用 UTF-8 字面量
     std::string to_string() const {
         return std::string(u8"课程：") + name +
             std::string(u8"，周次：") + std::to_string(start_week) + "-" + std::to_string(end_week) +
-            std::string(u8"，节次：") + std::to_string(start_class) + "-" + std::to_string(end_class);
+            std::string(u8"，节次：") + std::to_string(start_class) + "-" + std::to_string(end_class) +
+            std::string(u8"，星期：") + std::to_string(weekday);
     }
 };

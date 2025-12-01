@@ -536,3 +536,667 @@
 [2025-11-27 18:57:23] Waiting for group messages...
 [2025-11-27 18:57:23] Ignore non-group frame
 [2025-11-27 18:57:38] Ignore non-group frame
+[2025-11-27 18:58:08] Ignore non-group frame
+[2025-11-27 18:58:38] Ignore non-group frame
+[2025-11-27 18:59:08] Ignore non-group frame
+[2025-11-27 18:59:38] Ignore non-group frame
+[2025-11-27 19:00:08] Ignore non-group frame
+[2025-11-27 19:00:38] Ignore non-group frame
+[2025-11-27 19:01:08] Ignore non-group frame
+[2025-11-27 19:01:38] Ignore non-group frame
+[2025-11-27 19:02:08] Ignore non-group frame
+[2025-11-27 19:02:38] Ignore non-group frame
+[2025-11-27 19:03:08] Ignore non-group frame
+[2025-11-27 19:03:38] Ignore non-group frame
+[2025-11-27 19:04:08] Ignore non-group frame
+[2025-11-27 19:04:38] Ignore non-group frame
+[2025-11-27 19:05:08] Ignore non-group frame
+[2025-11-27 19:05:38] Ignore non-group frame
+[2025-11-27 19:06:08] Ignore non-group frame
+[2025-11-27 19:06:38] Ignore non-group frame
+[2025-11-27 19:07:08] Ignore non-group frame
+[2025-11-27 19:07:38] Ignore non-group frame
+[2025-11-27 19:08:08] Ignore non-group frame
+[2025-11-27 19:08:38] Ignore non-group frame
+[2025-11-27 19:09:08] Ignore non-group frame
+[2025-11-27 19:09:38] Ignore non-group frame
+[2025-11-27 19:10:08] Ignore non-group frame
+[2025-11-27 19:10:38] Ignore non-group frame
+[2025-11-27 19:11:08] Ignore non-group frame
+[2025-11-27 19:11:38] Ignore non-group frame
+[2025-11-27 19:12:08] Ignore non-group frame
+[2025-11-27 19:12:38] Ignore non-group frame
+[2025-11-27 19:13:08] Ignore non-group frame
+[2025-11-27 19:13:38] Ignore non-group frame
+[2025-11-27 19:14:08] Ignore non-group frame
+[2025-11-27 19:14:38] Ignore non-group frame
+[2025-11-27 19:14:52] Ignore non-group frame
+[2025-11-27 19:14:52] Ignore non-group frame
+[2025-11-27 19:14:53] Ignore non-group frame
+[2025-11-27 19:14:57] Ignore non-group frame
+[2025-11-27 19:15:08] Ignore non-group frame
+[2025-11-27 19:15:38] Ignore non-group frame
+[2025-11-27 19:16:08] Ignore non-group frame
+[2025-11-27 19:16:38] Ignore non-group frame
+[2025-11-27 19:17:08] Ignore non-group frame
+[2025-11-27 19:17:38] Ignore non-group frame
+[2025-11-27 19:18:08] Ignore non-group frame
+[2025-11-27 19:18:38] Ignore non-group frame
+[2025-11-27 19:19:08] Ignore non-group frame
+[2025-11-27 19:19:38] Ignore non-group frame
+[2025-11-27 19:20:08] Ignore non-group frame
+[2025-11-27 19:20:38] Ignore non-group frame
+[2025-11-27 19:21:08] Ignore non-group frame
+[2025-11-27 19:21:38] Ignore non-group frame
+[2025-11-27 19:22:08] Ignore non-group frame
+[2025-11-27 19:22:38] Ignore non-group frame
+[2025-11-27 19:23:08] Ignore non-group frame
+[2025-11-27 19:23:38] Ignore non-group frame
+[2025-11-27 19:24:08] Ignore non-group frame
+[2025-11-27 19:24:38] Ignore non-group frame
+[2025-11-27 19:25:08] Ignore non-group frame
+[2025-11-27 19:25:38] Ignore non-group frame
+[2025-11-27 19:26:08] Ignore non-group frame
+[2025-11-27 19:26:38] Ignore non-group frame
+[2025-11-27 19:27:08] Ignore non-group frame
+[2025-11-27 19:27:38] Ignore non-group frame
+[2025-11-27 19:28:08] Ignore non-group frame
+[2025-11-27 19:28:38] Ignore non-group frame
+[2025-11-27 19:29:08] Ignore non-group frame
+[2025-11-27 19:29:38] Ignore non-group frame
+[2025-11-27 19:30:08] Ignore non-group frame
+[2025-11-27 19:30:38] Ignore non-group frame
+[2025-11-27 19:31:08] Ignore non-group frame
+[2025-11-27 19:31:38] Ignore non-group frame
+[2025-11-27 19:32:08] Ignore non-group frame
+[2025-11-27 19:32:38] Ignore non-group frame
+[2025-11-27 19:33:08] Ignore non-group frame
+[2025-11-27 19:33:38] Ignore non-group frame
+[2025-11-27 19:34:08] Ignore non-group frame
+[2025-11-27 19:34:38] Ignore non-group frame
+[2025-11-27 19:35:08] Ignore non-group frame
+[2025-11-27 19:35:38] Ignore non-group frame
+[2025-11-27 19:36:08] Ignore non-group frame
+[2025-11-27 19:36:38] Ignore non-group frame
+[2025-11-27 19:37:08] Ignore non-group frame
+[2025-11-27 19:37:38] Ignore non-group frame
+[2025-11-27 19:38:08] Ignore non-group frame
+[2025-11-27 19:38:38] Ignore non-group frame
+[2025-11-27 19:39:08] Ignore non-group frame
+[2025-11-27 19:39:38] Ignore non-group frame
+[2025-11-27 19:40:08] Ignore non-group frame
+[2025-11-27 19:40:38] Ignore non-group frame
+[2025-11-27 19:41:08] Ignore non-group frame
+[2025-11-27 19:41:38] Ignore non-group frame
+[2025-11-27 19:42:08] Ignore non-group frame
+[2025-11-27 19:42:38] Ignore non-group frame
+[2025-11-27 19:43:09] Ignore non-group frame
+[2025-11-27 19:43:39] Ignore non-group frame
+[2025-11-27 19:44:09] Ignore non-group frame
+[2025-11-27 19:44:39] Ignore non-group frame
+[2025-11-27 19:45:09] Ignore non-group frame
+[2025-11-27 19:45:39] Ignore non-group frame
+[2025-11-27 19:46:09] Ignore non-group frame
+[2025-11-27 19:46:39] Ignore non-group frame
+[2025-11-27 19:47:09] Ignore non-group frame
+[2025-11-27 19:47:39] Ignore non-group frame
+[2025-11-27 19:48:09] Ignore non-group frame
+[2025-11-27 19:48:39] Ignore non-group frame
+[2025-11-27 19:49:09] Ignore non-group frame
+[2025-11-27 19:49:39] Ignore non-group frame
+[2025-11-27 19:50:09] Ignore non-group frame
+[2025-11-27 19:50:39] Ignore non-group frame
+[2025-11-27 19:51:09] Ignore non-group frame
+[2025-11-27 19:51:39] Ignore non-group frame
+[2025-11-27 19:52:09] Ignore non-group frame
+[2025-11-27 19:52:39] Ignore non-group frame
+[2025-11-27 19:53:09] Ignore non-group frame
+[2025-11-27 19:53:39] Ignore non-group frame
+[2025-11-27 19:54:09] Ignore non-group frame
+[2025-11-27 19:54:39] Ignore non-group frame
+[2025-11-27 19:55:09] Ignore non-group frame
+[2025-11-27 19:55:39] Ignore non-group frame
+[2025-11-27 19:56:09] Ignore non-group frame
+[2025-11-27 19:56:39] Ignore non-group frame
+[2025-11-27 19:57:09] Ignore non-group frame
+[2025-11-27 19:57:39] Ignore non-group frame
+[2025-11-27 19:58:09] Ignore non-group frame
+[2025-11-27 19:58:39] Ignore non-group frame
+[2025-11-27 19:59:09] Ignore non-group frame
+[2025-11-27 19:59:39] Ignore non-group frame
+[2025-11-27 20:00:09] Ignore non-group frame
+[2025-11-27 20:00:39] Ignore non-group frame
+[2025-11-27 20:01:09] Ignore non-group frame
+[2025-11-27 20:01:39] Ignore non-group frame
+[2025-11-27 20:02:09] Ignore non-group frame
+[2025-11-27 20:02:39] Ignore non-group frame
+[2025-11-27 20:03:09] Ignore non-group frame
+[2025-11-27 20:03:39] Ignore non-group frame
+[2025-11-27 20:04:09] Ignore non-group frame
+[2025-11-27 20:04:39] Ignore non-group frame
+[2025-11-27 20:05:09] Ignore non-group frame
+[2025-11-27 20:05:39] Ignore non-group frame
+[2025-11-27 20:06:09] Ignore non-group frame
+[2025-11-27 20:06:39] Ignore non-group frame
+[2025-11-27 20:07:09] Ignore non-group frame
+[2025-11-27 20:07:39] Ignore non-group frame
+[2025-11-27 20:08:09] Ignore non-group frame
+[2025-11-27 20:08:39] Ignore non-group frame
+[2025-11-27 20:09:09] Ignore non-group frame
+[2025-11-27 20:09:39] Ignore non-group frame
+[2025-11-27 20:10:09] Ignore non-group frame
+[2025-11-27 20:10:39] Ignore non-group frame
+[2025-11-27 20:11:09] Ignore non-group frame
+[2025-11-27 20:11:39] Ignore non-group frame
+[2025-11-27 20:12:09] Ignore non-group frame
+[2025-11-27 20:12:39] Ignore non-group frame
+[2025-11-27 20:13:09] Ignore non-group frame
+[2025-11-27 20:13:39] Ignore non-group frame
+[2025-11-27 20:14:09] Ignore non-group frame
+[2025-11-27 20:14:39] Ignore non-group frame
+[2025-11-27 20:15:09] Ignore non-group frame
+[2025-11-27 20:15:39] Ignore non-group frame
+[2025-11-27 20:16:09] Ignore non-group frame
+[2025-11-27 20:16:39] Ignore non-group frame
+[2025-11-27 20:17:09] Ignore non-group frame
+[2025-11-27 20:17:39] Ignore non-group frame
+[2025-11-27 20:18:09] Ignore non-group frame
+[2025-11-27 20:18:39] Ignore non-group frame
+[2025-11-27 20:19:09] Ignore non-group frame
+[2025-11-27 20:19:39] Ignore non-group frame
+[2025-11-27 20:20:09] Ignore non-group frame
+[2025-11-27 20:20:39] Ignore non-group frame
+[2025-11-27 20:21:09] Ignore non-group frame
+[2025-11-27 20:21:39] Ignore non-group frame
+[2025-11-27 20:22:09] Ignore non-group frame
+[2025-11-27 20:22:39] Ignore non-group frame
+[2025-11-27 20:23:09] Ignore non-group frame
+[2025-11-27 20:23:39] Ignore non-group frame
+[2025-11-27 20:24:09] Ignore non-group frame
+[2025-11-27 20:24:39] Ignore non-group frame
+[2025-11-27 20:25:09] Ignore non-group frame
+[2025-11-27 20:25:39] Ignore non-group frame
+[2025-11-27 20:26:09] Ignore non-group frame
+[2025-11-27 20:26:39] Ignore non-group frame
+[2025-11-27 20:27:09] Ignore non-group frame
+[2025-11-27 20:27:39] Ignore non-group frame
+[2025-11-27 20:28:09] Ignore non-group frame
+[2025-11-27 20:28:39] Ignore non-group frame
+[2025-11-27 20:29:09] Ignore non-group frame
+[2025-11-27 20:29:39] Ignore non-group frame
+[2025-11-27 20:30:09] Ignore non-group frame
+[2025-11-27 20:30:39] Ignore non-group frame
+[2025-11-27 20:31:09] Ignore non-group frame
+[2025-11-27 20:31:39] Ignore non-group frame
+[2025-11-27 20:32:09] Ignore non-group frame
+[2025-11-27 20:32:39] Ignore non-group frame
+[2025-11-27 20:33:09] Ignore non-group frame
+[2025-11-27 20:33:39] Ignore non-group frame
+[2025-11-27 20:34:09] Ignore non-group frame
+[2025-11-27 20:34:39] Ignore non-group frame
+[2025-11-27 20:35:09] Ignore non-group frame
+[2025-11-27 20:35:39] Ignore non-group frame
+[2025-11-27 20:36:09] Ignore non-group frame
+[2025-11-27 20:36:39] Ignore non-group frame
+[2025-11-27 20:37:10] Ignore non-group frame
+[2025-11-27 20:37:40] Ignore non-group frame
+[2025-11-27 20:38:10] Ignore non-group frame
+[2025-11-27 20:38:40] Ignore non-group frame
+[2025-11-27 20:39:10] Ignore non-group frame
+[2025-11-27 20:39:40] Ignore non-group frame
+[2025-11-27 20:40:10] Ignore non-group frame
+[2025-11-27 20:40:40] Ignore non-group frame
+[2025-11-27 20:41:10] Ignore non-group frame
+[2025-11-27 20:41:40] Ignore non-group frame
+[2025-11-27 20:42:10] Ignore non-group frame
+[2025-11-27 20:42:40] Ignore non-group frame
+[2025-11-27 20:43:10] Ignore non-group frame
+[2025-11-27 20:43:40] Ignore non-group frame
+[2025-11-27 20:44:10] Ignore non-group frame
+[2025-11-27 20:44:40] Ignore non-group frame
+[2025-11-27 20:45:10] Ignore non-group frame
+[2025-11-27 20:45:40] Ignore non-group frame
+[2025-11-27 20:46:10] Ignore non-group frame
+[2025-11-27 20:46:40] Ignore non-group frame
+[2025-11-27 20:47:10] Ignore non-group frame
+[2025-11-27 20:47:40] Ignore non-group frame
+[2025-11-27 20:48:10] Ignore non-group frame
+[2025-11-27 20:48:40] Ignore non-group frame
+[2025-11-27 20:49:10] Ignore non-group frame
+[2025-11-27 20:49:40] Ignore non-group frame
+[2025-11-27 20:50:10] Ignore non-group frame
+[2025-11-27 20:50:40] Ignore non-group frame
+[2025-11-27 20:51:10] Ignore non-group frame
+[2025-11-27 20:51:40] Ignore non-group frame
+[2025-11-27 20:52:10] Ignore non-group frame
+[2025-11-27 20:52:40] Ignore non-group frame
+[2025-11-27 20:53:10] Ignore non-group frame
+[2025-11-27 20:53:40] Ignore non-group frame
+[2025-11-27 20:54:10] Ignore non-group frame
+[2025-11-27 20:54:40] Ignore non-group frame
+[2025-11-27 20:55:10] Ignore non-group frame
+[2025-11-27 20:55:40] Ignore non-group frame
+[2025-11-27 20:56:10] Ignore non-group frame
+[2025-11-27 20:56:40] Ignore non-group frame
+[2025-11-27 20:57:10] Ignore non-group frame
+[2025-11-27 20:57:40] Ignore non-group frame
+[2025-11-27 20:58:10] Ignore non-group frame
+[2025-11-27 20:58:40] Ignore non-group frame
+[2025-11-27 20:59:10] Ignore non-group frame
+[2025-11-27 20:59:40] Ignore non-group frame
+[2025-11-27 21:00:10] Ignore non-group frame
+[2025-11-27 21:00:40] Ignore non-group frame
+[2025-11-27 21:01:10] Ignore non-group frame
+[2025-11-27 21:01:40] Ignore non-group frame
+[2025-11-27 21:02:10] Ignore non-group frame
+[2025-11-27 21:02:40] Ignore non-group frame
+[2025-11-27 21:03:10] Ignore non-group frame
+[2025-11-27 21:03:40] Ignore non-group frame
+[2025-11-27 21:04:10] Ignore non-group frame
+[2025-11-27 21:04:40] Ignore non-group frame
+[2025-11-27 21:05:10] Ignore non-group frame
+[2025-11-27 21:05:40] Ignore non-group frame
+[2025-11-27 21:06:10] Ignore non-group frame
+[2025-11-27 21:06:40] Ignore non-group frame
+[2025-11-27 21:07:10] Ignore non-group frame
+[2025-11-27 21:07:40] Ignore non-group frame
+[2025-11-27 21:08:10] Ignore non-group frame
+[2025-11-27 21:08:40] Ignore non-group frame
+[2025-11-27 21:09:10] Ignore non-group frame
+[2025-11-27 21:09:40] Ignore non-group frame
+[2025-11-27 21:10:10] Ignore non-group frame
+[2025-11-27 21:10:40] Ignore non-group frame
+[2025-11-27 21:11:10] Ignore non-group frame
+[2025-11-27 21:11:40] Ignore non-group frame
+[2025-11-27 21:12:10] Ignore non-group frame
+[2025-11-27 21:12:40] Ignore non-group frame
+[2025-11-27 21:13:10] Ignore non-group frame
+[2025-11-27 21:13:40] Ignore non-group frame
+[2025-11-27 21:14:10] Ignore non-group frame
+[2025-11-27 21:14:40] Ignore non-group frame
+[2025-11-27 21:15:10] Ignore non-group frame
+[2025-11-27 21:15:40] Ignore non-group frame
+[2025-11-27 21:16:10] Ignore non-group frame
+[2025-11-27 21:16:40] Ignore non-group frame
+[2025-11-27 21:17:10] Ignore non-group frame
+[2025-11-27 21:17:40] Ignore non-group frame
+[2025-11-27 21:18:10] Ignore non-group frame
+[2025-11-27 21:18:40] Ignore non-group frame
+[2025-11-27 21:19:10] Ignore non-group frame
+[2025-11-27 21:19:40] Ignore non-group frame
+[2025-11-27 21:20:10] Ignore non-group frame
+[2025-11-27 21:20:40] Ignore non-group frame
+[2025-11-27 21:21:10] Ignore non-group frame
+[2025-11-27 21:21:40] Ignore non-group frame
+[2025-11-27 21:22:10] Ignore non-group frame
+[2025-11-27 21:22:40] Ignore non-group frame
+[2025-11-27 21:23:10] Ignore non-group frame
+[2025-11-27 21:23:40] Ignore non-group frame
+[2025-11-27 21:24:10] Ignore non-group frame
+[2025-11-27 21:24:40] Ignore non-group frame
+[2025-11-27 21:25:10] Ignore non-group frame
+[2025-11-27 21:25:40] Ignore non-group frame
+[2025-11-27 21:26:10] Ignore non-group frame
+[2025-11-27 21:26:40] Ignore non-group frame
+[2025-11-27 21:27:10] Ignore non-group frame
+[2025-11-27 21:27:40] Ignore non-group frame
+[2025-11-27 21:28:10] Ignore non-group frame
+[2025-11-27 21:28:40] Ignore non-group frame
+[2025-11-27 21:29:10] Ignore non-group frame
+[2025-11-27 21:29:40] Ignore non-group frame
+[2025-11-27 21:30:10] Ignore non-group frame
+[2025-11-27 21:30:40] Ignore non-group frame
+[2025-11-27 21:31:10] Ignore non-group frame
+[2025-11-27 21:31:40] Ignore non-group frame
+[2025-11-27 21:32:10] Ignore non-group frame
+[2025-11-27 21:32:40] Ignore non-group frame
+[2025-11-27 21:33:10] Ignore non-group frame
+[2025-11-27 21:33:40] Ignore non-group frame
+[2025-11-27 21:34:10] Ignore non-group frame
+[2025-11-27 21:34:40] Ignore non-group frame
+[2025-11-27 21:35:10] Ignore non-group frame
+[2025-11-27 21:35:40] Ignore non-group frame
+[2025-11-27 21:36:11] Ignore non-group frame
+[2025-11-27 21:36:41] Ignore non-group frame
+[2025-11-27 21:37:11] Ignore non-group frame
+[2025-11-27 21:37:41] Ignore non-group frame
+[2025-11-27 21:38:11] Ignore non-group frame
+[2025-11-27 21:38:41] Ignore non-group frame
+[2025-11-27 21:39:11] Ignore non-group frame
+[2025-11-27 21:39:41] Ignore non-group frame
+[2025-11-27 21:40:11] Ignore non-group frame
+[2025-11-27 21:40:41] Ignore non-group frame
+[2025-11-27 21:41:11] Ignore non-group frame
+[2025-11-27 21:41:41] Ignore non-group frame
+[2025-11-27 21:42:11] Ignore non-group frame
+[2025-11-27 21:42:41] Ignore non-group frame
+[2025-11-27 21:43:11] Ignore non-group frame
+[2025-11-27 21:43:41] Ignore non-group frame
+[2025-11-27 21:44:11] Ignore non-group frame
+[2025-11-27 21:44:41] Ignore non-group frame
+[2025-11-27 21:45:11] Ignore non-group frame
+[2025-11-27 21:45:41] Ignore non-group frame
+[2025-11-27 21:46:11] Ignore non-group frame
+[2025-11-27 21:46:41] Ignore non-group frame
+[2025-11-27 21:47:11] Ignore non-group frame
+[2025-11-27 21:47:41] Ignore non-group frame
+[2025-11-27 21:48:11] Ignore non-group frame
+[2025-11-27 21:48:41] Ignore non-group frame
+[2025-11-27 21:49:11] Ignore non-group frame
+[2025-11-27 21:49:41] Ignore non-group frame
+[2025-11-27 21:50:11] Ignore non-group frame
+[2025-11-27 21:50:41] Ignore non-group frame
+[2025-11-27 21:51:34] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-11-27 21:51:34] Waiting for group messages...
+[2025-11-27 21:51:34] Ignore non-group frame
+[2025-12-01 20:14:32] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-01 20:14:32] Waiting for group messages...
+[2025-12-01 20:14:32] Ignore non-group frame
+[2025-12-01 20:14:51] Ignore non-group frame
+[2025-12-01 20:14:53] JSON parsed via raw-utf8
+[2025-12-01 20:14:53] Received message from group 1061042473qq号：2285373500: 1 (trimmed: 1)
+[2025-12-01 20:14:53] Loaded 0 schedules from file
+[2025-12-01 20:14:53] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-01 20:15:09] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-01 20:15:09] Waiting for group messages...
+[2025-12-01 20:15:09] Ignore non-group frame
+[2025-12-01 20:15:12] JSON parsed via raw-utf8
+[2025-12-01 20:15:12] Received message from group 1061042473qq号：2285373500:  1 (trimmed: 1)
+[2025-12-01 20:15:12] Replied to group 1061042473: true
+[2025-12-01 20:15:13] Ignore non-group frame
+[2025-12-01 20:26:57] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-01 20:26:57] Waiting for group messages...
+[2025-12-01 20:26:57] Ignore non-group frame
+[2025-12-01 20:32:45] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-01 20:32:45] Waiting for group messages...
+[2025-12-01 20:32:45] Ignore non-group frame
+[2025-12-01 20:32:51] Ignore non-group frame
+[2025-12-01 20:33:02] JSON parsed via raw-utf8
+[2025-12-01 20:33:02] Received message from group 1061042473 qq号：2285373500:  1 (trimmed: 1)
+[2025-12-01 20:33:02] Replied to group 1061042473: true
+[2025-12-01 20:33:02] Ignore non-group frame
+[2025-12-01 20:33:07] JSON parsed via raw-utf8
+[2025-12-01 20:33:07] Received message from group 1061042473 qq号：2285373500:  添加课表 (trimmed: 添加课表)
+[2025-12-01 20:33:07] Loaded 0 schedules from file for 0 groups
+[2025-12-01 20:33:07] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-01 20:33:14] JSON parsed via raw-utf8
+[2025-12-01 20:33:14] Received message from group 1061042473 qq号：2285373500:  导入课表 (trimmed: 导入课表)
+[2025-12-01 20:33:14] Replied to group 1061042473: 请发送逗号分隔的课程信息，格式：
+课程名,开始周,结束周,开始节,结束节
+示例：高等数学,1,16,1,2（必须使用英文逗号）
+[2025-12-01 20:33:15] Ignore non-group frame
+[2025-12-01 20:33:21] Ignore non-group frame
+[2025-12-01 20:33:47] JSON parsed via raw-utf8
+[2025-12-01 20:33:47] Received message from group 1061042473 qq号：2285373500:  高等数学,1,16,1,2 (trimmed: 高等数学,1,16,1,2)
+[2025-12-01 20:33:47] Schedules saved to file, total: 1 for 1 groups
+[2025-12-01 20:33:47] Replied to group 1061042473: 课表导入成功！
+课程：高等数学，周次：1-16，节次：1-2
+发送“查询课表”查看全部
+[2025-12-01 20:33:47] Ignore non-group frame
+[2025-12-01 20:33:51] Ignore non-group frame
+[2025-12-01 20:33:53] JSON parsed via raw-utf8
+[2025-12-01 20:33:53] Received message from group 1061042473 qq号：2285373500:  查询课表 (trimmed: 查询课表)
+[2025-12-01 20:33:53] Replied to group 1061042473: 已导入课表（共1门）：
+1. 课程：高等数学，周次：1-16，节次：1-2
+
+[2025-12-01 20:33:54] Ignore non-group frame
+[2025-12-01 20:34:21] Ignore non-group frame
+[2025-12-01 20:34:51] Ignore non-group frame
+[2025-12-01 20:44:47] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-01 20:44:47] Waiting for group messages...
+[2025-12-01 20:44:47] Ignore non-group frame
+[2025-12-01 20:44:51] Ignore non-group frame
+[2025-12-01 20:45:00] JSON parsed via raw-utf8
+[2025-12-01 20:45:00] Received message from group 1061042473 qq号：2285373500:  查询课表 (trimmed: 查询课表)
+[2025-12-01 20:45:00] Loaded 0 schedules from file for 0 senders
+[2025-12-01 20:45:00] Replied to group 1061042473: 暂无已导入的课表，请按格式导入！
+[2025-12-01 20:45:01] Ignore non-group frame
+[2025-12-01 20:45:15] JSON parsed via raw-utf8
+[2025-12-01 20:45:15] Received message from group 1061042473 qq号：2285373500:  高等数学,1,16,1,2 (trimmed: 高等数学,1,16,1,2)
+[2025-12-01 20:45:15] Schedules saved to file, total: 1 for 1 senders
+[2025-12-01 20:45:15] Replied to group 1061042473: 课表导入成功！
+课程：高等数学，周次：1-16，节次：1-2
+发送“查询课表”查看全部
+[2025-12-01 20:45:16] Ignore non-group frame
+[2025-12-01 20:45:21] Ignore non-group frame
+[2025-12-01 20:45:41] JSON parsed via raw-utf8
+[2025-12-01 20:45:41] Received message from group 1061042473 qq号：1060400340:  月吗 (trimmed: 月吗)
+[2025-12-01 20:45:41] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-01 20:45:41] JSON parsed via raw-utf8
+[2025-12-01 20:45:41] Received message from group 1061042473 qq号：2285373500: C语言,1,16,3,4 (trimmed: C语言,1,16,3,4)
+[2025-12-01 20:45:41] Schedules saved to file, total: 2 for 1 senders
+[2025-12-01 20:45:41] Replied to group 1061042473: 课表导入成功！
+课程：C语言，周次：1-16，节次：3-4
+发送“查询课表”查看全部
+[2025-12-01 20:45:42] Ignore non-group frame
+[2025-12-01 20:45:47] JSON parsed via raw-utf8
+[2025-12-01 20:45:47] Received message from group 1061042473 qq号：2285373500:  查询课表 (trimmed: 查询课表)
+[2025-12-01 20:45:47] Replied to group 1061042473: 你的已导入课表（共2门）：
+1. 课程：高等数学，周次：1-16，节次：1-2
+2. 课程：C语言，周次：1-16，节次：3-4
+
+[2025-12-01 20:45:48] Ignore non-group frame
+[2025-12-01 20:45:51] Ignore non-group frame
+[2025-12-01 20:46:01] JSON parsed via raw-utf8
+[2025-12-01 20:46:01] Received message from group 1061042473 qq号：2285373500: [CQ:at,qq=1060400340] 你试试你查询 (trimmed: [CQ:at,qq=1060400340] 你试试你查询)
+[2025-12-01 20:46:01] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-01 20:46:16] Ignore non-group frame
+[2025-12-01 20:46:18] JSON parsed via raw-utf8
+[2025-12-01 20:46:18] Received message from group 1061042473 qq号：1060400340:  查询课表 (trimmed: 查询课表)
+[2025-12-01 20:46:18] Replied to group 1061042473: 暂无已导入的课表，请按格式导入！
+[2025-12-01 20:46:18] Ignore non-group frame
+[2025-12-01 20:46:21] Ignore non-group frame
+[2025-12-01 20:46:28] JSON parsed via raw-utf8
+[2025-12-01 20:46:28] Received message from group 1061042473 qq号：2285373500: [CQ:at,qq=1060400340] 你导入再查询试试 (trimmed: [CQ:at,qq=1060400340] 你导入再查询试试)
+[2025-12-01 20:46:28] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-01 20:46:34] JSON parsed via raw-utf8
+[2025-12-01 20:46:34] Received message from group 1061042473 qq号：2285373500: 看看有没有按人分开 (trimmed: 看看有没有按人分开)
+[2025-12-01 20:46:34] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-01 20:46:51] Ignore non-group frame
+[2025-12-01 20:46:55] JSON parsed via raw-utf8
+[2025-12-01 20:46:55] Received message from group 1061042473 qq号：1060400340: 撸管，6，66，6，6 (trimmed: 撸管，6，66，6，6)
+[2025-12-01 20:46:55] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-01 20:47:04] JSON parsed via raw-utf8
+[2025-12-01 20:47:04] Received message from group 1061042473 qq号：2285373500: 英文逗号 (trimmed: 英文逗号)
+[2025-12-01 20:47:04] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-01 20:47:10] JSON parsed via raw-utf8
+[2025-12-01 20:47:10] Received message from group 1061042473 qq号：1060400340: 哦 (trimmed: 哦)
+[2025-12-01 20:47:10] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-01 20:47:10] JSON parsed via raw-utf8
+[2025-12-01 20:47:10] Received message from group 1061042473 qq号：2285373500: 汉语不行 (trimmed: 汉语不行)
+[2025-12-01 20:47:10] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-01 20:47:21] Ignore non-group frame
+[2025-12-01 20:47:37] JSON parsed via raw-utf8
+[2025-12-01 20:47:37] Received message from group 1061042473 qq号：1060400340: 撸管,6,66,6,6 (trimmed: 撸管,6,66,6,6)
+[2025-12-01 20:47:37] Schedules saved to file, total: 3 for 2 senders
+[2025-12-01 20:47:37] Replied to group 1061042473: 课表导入成功！
+课程：撸管，周次：6-66，节次：6-6
+发送“查询课表”查看全部
+[2025-12-01 20:47:38] Ignore non-group frame
+[2025-12-01 20:47:48] JSON parsed via raw-utf8
+[2025-12-01 20:47:48] Received message from group 1061042473 qq号：1060400340:  查询课表 (trimmed: 查询课表)
+[2025-12-01 20:47:48] Replied to group 1061042473: 你的已导入课表（共1门）：
+1. 课程：撸管，周次：6-66，节次：6-6
+
+[2025-12-01 20:47:48] Ignore non-group frame
+[2025-12-01 20:47:51] Ignore non-group frame
+[2025-12-01 20:47:55] JSON parsed via raw-utf8
+[2025-12-01 20:47:55] Received message from group 1061042473 qq号：2285373500:  查询课表 (trimmed: 查询课表)
+[2025-12-01 20:47:55] Replied to group 1061042473: 你的已导入课表（共2门）：
+1. 课程：高等数学，周次：1-16，节次：1-2
+2. 课程：C语言，周次：1-16，节次：3-4
+
+[2025-12-01 20:47:56] Ignore non-group frame
+[2025-12-01 20:47:58] JSON parsed via raw-utf8
+[2025-12-01 20:47:58] Received message from group 1061042473 qq号：2285373500: OK (trimmed: OK)
+[2025-12-01 20:47:58] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-01 20:48:00] JSON parsed via raw-utf8
+[2025-12-01 20:48:00] Received message from group 1061042473 qq号：1060400340: 太有实力了马迪 (trimmed: 太有实力了马迪)
+[2025-12-01 20:48:00] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-01 20:48:04] JSON parsed via raw-utf8
+[2025-12-01 20:48:04] Received message from group 1061042473 qq号：1060400340: [CQ:image,summary=&#91;动画表情&#93;,file=51037446C31A80CCEB81B102177A9F86.png,sub_type=1,url=https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhQ_ex2OtQRttXqxOEN1BMpeIeTVkxjFjRAg_woo78Obn7ackQMyBHByb2RQgL2jAVoQL97yNSeYffFMGF-B9ZhKu3oCDtyCAQJneg&amp;rkey=CAMSMBrX8zh63sov4RtZIfJSzoAeB9E0zOoCxbSfnpgUv3dV4Q9u5NTtuVdV-g-iUH3N2A,file_size=263877] (trimmed: [CQ:image,summary=[]动画表情],file=51037446C31A80CCEB81B102177A9F86.png,sub_type=1,url=https://multimedia.nt.qq.com.cn/download?appid=1407&fileid=EhQ_ex2OtQRttXqxOEN1BMpeIeTVkxjFjRAg_woo78Obn7ackQMyBHByb2RQgL2jAVoQL97yNSeYffFMGF-B9ZhKu3oCDtyCAQJneg&rkey=CAMSMBrX8zh63sov4RtZIfJSzoAeB9E0zOoCxbSfnpgUv3dV4Q9u5NTtuVdV-g-iUH3N2A,file_size=263877])
+[2025-12-01 20:48:04] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-01 20:48:21] Ignore non-group frame
+[2025-12-01 20:48:51] Ignore non-group frame
+[2025-12-01 20:49:21] Ignore non-group frame
+[2025-12-01 20:49:51] Ignore non-group frame
+[2025-12-01 20:50:21] Ignore non-group frame
+[2025-12-01 20:50:51] Ignore non-group frame
+[2025-12-01 20:51:21] Ignore non-group frame
+[2025-12-01 20:51:51] Ignore non-group frame
+[2025-12-01 20:52:21] Ignore non-group frame
+[2025-12-01 20:52:51] Ignore non-group frame
+[2025-12-01 20:53:21] Ignore non-group frame
+[2025-12-01 20:53:51] Ignore non-group frame
+[2025-12-01 20:54:21] Ignore non-group frame
+[2025-12-01 20:54:51] Ignore non-group frame
+[2025-12-01 20:55:21] Ignore non-group frame
+[2025-12-01 20:55:51] Ignore non-group frame
+[2025-12-01 20:56:21] Ignore non-group frame
+[2025-12-01 20:57:10] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-01 20:57:10] Waiting for group messages...
+[2025-12-01 20:57:10] Ignore non-group frame
+[2025-12-01 20:57:21] Ignore non-group frame
+[2025-12-01 20:57:22] JSON parsed via raw-utf8
+[2025-12-01 20:57:22] Received message from group 1061042473 qq号：2285373500:  查询课表 (trimmed: 查询课表)
+[2025-12-01 20:57:22] Loaded 0 schedules from file for 0 groups
+[2025-12-01 20:57:22] Replied to group 1061042473: 暂无已导入的课表，请按格式导入！
+[2025-12-01 20:57:22] Ignore non-group frame
+[2025-12-01 20:57:51] Ignore non-group frame
+[2025-12-01 20:57:54] JSON parsed via raw-utf8
+[2025-12-01 20:57:54] Received message from group 1061042473 qq号：2285373500: C语言,1,16,1,3,4 (trimmed: C语言,1,16,1,3,4)
+[2025-12-01 20:57:54] Replied to group 1061042473: 导入失败！请按正确格式输入：
+课程名,星期,开始周,结束周,开始节,结束节
+示例：高等数学,1,1,16,1,2（必须使用英文逗号）
+[2025-12-01 20:57:54] Ignore non-group frame
+[2025-12-01 20:58:21] JSON parsed via raw-utf8
+[2025-12-01 20:58:21] Received message from group 1061042473 qq号：2285373500: C语言,1,1,16,3,4 (trimmed: C语言,1,1,16,3,4)
+[2025-12-01 20:58:21] Schedules saved to file, total: 1 for 1 groups
+[2025-12-01 20:58:21] Replied to group 1061042473: 课表导入成功！
+课程：C语言，周次：1-16，节次：3-4，星期：1
+发送“查询课表”查看全部
+[2025-12-01 20:58:21] Ignore non-group frame
+[2025-12-01 20:58:22] Ignore non-group frame
+[2025-12-01 20:58:31] JSON parsed via raw-utf8
+[2025-12-01 20:58:31] Received message from group 1061042473 qq号：2285373500:  查询课表 (trimmed: 查询课表)
+[2025-12-01 20:58:31] Replied to group 1061042473: 已导入课表（共1门）：
+1. 课程：C语言，周次：1-16，节次：3-4，星期：1
+
+[2025-12-01 20:58:32] Ignore non-group frame
+[2025-12-01 20:58:51] Ignore non-group frame
+[2025-12-01 20:59:21] Ignore non-group frame
+[2025-12-01 20:59:52] Ignore non-group frame
+[2025-12-01 21:00:22] Ignore non-group frame
+[2025-12-01 21:00:52] Ignore non-group frame
+[2025-12-01 21:01:22] Ignore non-group frame
+[2025-12-01 21:01:52] Ignore non-group frame
+[2025-12-01 21:02:22] Ignore non-group frame
+[2025-12-01 21:02:28] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-01 21:02:28] Waiting for group messages...
+[2025-12-01 21:02:28] Ignore non-group frame
+[2025-12-01 21:02:44] JSON parsed via raw-utf8
+[2025-12-01 21:02:44] Received message from group 1061042473 qq号：2285373500:  查询课表 (trimmed: 查询课表)
+[2025-12-01 21:02:44] Loaded 1 schedules from file for 1 groups
+[2025-12-01 21:02:44] Replied to group 1061042473: 已导入课表（按星期、节次升序，共1门）：
+1. 课程：C语言，周次：1-16，节次：3-4，星期：1
+
+[2025-12-01 21:02:45] Ignore non-group frame
+[2025-12-01 21:02:52] Ignore non-group frame
+[2025-12-01 21:03:09] JSON parsed via raw-utf8
+[2025-12-01 21:03:09] Received message from group 1061042473 qq号：2285373500: A语言,2,16,1,3,4 (trimmed: A语言,2,16,1,3,4)
+[2025-12-01 21:03:09] Replied to group 1061042473: 导入失败！请按正确格式输入：
+课程名,星期,开始周,结束周,开始节,结束节
+示例：高等数学,1,1,16,1,2（必须使用英文逗号）
+[2025-12-01 21:03:09] Ignore non-group frame
+[2025-12-01 21:03:22] Ignore non-group frame
+[2025-12-01 21:03:33] JSON parsed via raw-utf8
+[2025-12-01 21:03:33] Received message from group 1061042473 qq号：2285373500: C语言,1,1,16,3,4 (trimmed: C语言,1,1,16,3,4)
+[2025-12-01 21:03:33] Schedules saved to file, total: 2 for 1 groups
+[2025-12-01 21:03:33] Replied to group 1061042473: 课表导入成功！
+课程：C语言，周次：1-16，节次：3-4，星期：1
+发送“查询课表”查看全部
+[2025-12-01 21:03:33] Ignore non-group frame
+[2025-12-01 21:03:43] JSON parsed via raw-utf8
+[2025-12-01 21:03:43] Received message from group 1061042473 qq号：2285373500: C语言,2,1,16,3,4 (trimmed: C语言,2,1,16,3,4)
+[2025-12-01 21:03:43] Schedules saved to file, total: 3 for 1 groups
+[2025-12-01 21:03:43] Replied to group 1061042473: 课表导入成功！
+课程：C语言，周次：1-16，节次：3-4，星期：2
+发送“查询课表”查看全部
+[2025-12-01 21:03:43] Ignore non-group frame
+[2025-12-01 21:03:52] Ignore non-group frame
+[2025-12-01 21:04:04] JSON parsed via raw-utf8
+[2025-12-01 21:04:04] Received message from group 1061042473 qq号：2285373500: B语言,3,1,16,3,4 (trimmed: B语言,3,1,16,3,4)
+[2025-12-01 21:04:04] Schedules saved to file, total: 4 for 1 groups
+[2025-12-01 21:04:04] Replied to group 1061042473: 课表导入成功！
+课程：B语言，周次：1-16，节次：3-4，星期：3
+发送“查询课表”查看全部
+[2025-12-01 21:04:05] Ignore non-group frame
+[2025-12-01 21:04:20] JSON parsed via raw-utf8
+[2025-12-01 21:04:20] Received message from group 1061042473 qq号：2285373500: A语言,3,1,16,1,2 (trimmed: A语言,3,1,16,1,2)
+[2025-12-01 21:04:20] Schedules saved to file, total: 5 for 1 groups
+[2025-12-01 21:04:20] Replied to group 1061042473: 课表导入成功！
+课程：A语言，周次：1-16，节次：1-2，星期：3
+发送“查询课表”查看全部
+[2025-12-01 21:04:20] Ignore non-group frame
+[2025-12-01 21:04:22] Ignore non-group frame
+[2025-12-01 21:04:29] JSON parsed via raw-utf8
+[2025-12-01 21:04:29] Received message from group 1061042473 qq号：2285373500:  查询课表 (trimmed: 查询课表)
+[2025-12-01 21:04:29] Replied to group 1061042473: 已导入课表（按星期、节次升序，共5门）：
+1. 课程：C语言，周次：1-16，节次：3-4，星期：1
+2. 课程：C语言，周次：1-16，节次：3-4，星期：1
+3. 课程：C语言，周次：1-16，节次：3-4，星期：2
+4. 课程：A语言，周次：1-16，节次：1-2，星期：3
+5. 课程：B语言，周次：1-16，节次：3-4，星期：3
+
+[2025-12-01 21:04:29] Ignore non-group frame
+[2025-12-01 21:04:50] JSON parsed via raw-utf8
+[2025-12-01 21:04:50] Received message from group 1061042473 qq号：2285373500: E语言,3,4,16,3,4 (trimmed: E语言,3,4,16,3,4)
+[2025-12-01 21:04:50] Schedules saved to file, total: 6 for 1 groups
+[2025-12-01 21:04:50] Replied to group 1061042473: 课表导入成功！
+课程：E语言，周次：4-16，节次：3-4，星期：3
+发送“查询课表”查看全部
+[2025-12-01 21:04:51] Ignore non-group frame
+[2025-12-01 21:04:52] Ignore non-group frame
+[2025-12-01 21:04:57] JSON parsed via raw-utf8
+[2025-12-01 21:04:57] Received message from group 1061042473 qq号：2285373500: 查询课表 (trimmed: 查询课表)
+[2025-12-01 21:04:57] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-01 21:05:05] JSON parsed via raw-utf8
+[2025-12-01 21:05:05] Received message from group 1061042473 qq号：2285373500:  查询课表 (trimmed: 查询课表)
+[2025-12-01 21:05:05] Replied to group 1061042473: 已导入课表（按星期、节次升序，共6门）：
+1. 课程：C语言，周次：1-16，节次：3-4，星期：1
+2. 课程：C语言，周次：1-16，节次：3-4，星期：1
+3. 课程：C语言，周次：1-16，节次：3-4，星期：2
+4. 课程：A语言，周次：1-16，节次：1-2，星期：3
+5. 课程：B语言，周次：1-16，节次：3-4，星期：3
+6. 课程：E语言，周次：4-16，节次：3-4，星期：3
+
+[2025-12-01 21:05:05] Ignore non-group frame
+[2025-12-01 21:05:22] Ignore non-group frame
+[2025-12-01 21:05:43] JSON parsed via raw-utf8
+[2025-12-01 21:05:43] Received message from group 1061042473 qq号：2285373500: F语言,1,16,20,3,4 (trimmed: F语言,1,16,20,3,4)
+[2025-12-01 21:05:43] Schedules saved to file, total: 7 for 1 groups
+[2025-12-01 21:05:43] Replied to group 1061042473: 课表导入成功！
+课程：F语言，周次：16-20，节次：3-4，星期：1
+发送“查询课表”查看全部
+[2025-12-01 21:05:43] Ignore non-group frame
+[2025-12-01 21:05:47] JSON parsed via raw-utf8
+[2025-12-01 21:05:47] Received message from group 1061042473 qq号：2285373500:  查询课表 (trimmed: 查询课表)
+[2025-12-01 21:05:47] Replied to group 1061042473: 已导入课表（按星期、节次升序，共7门）：
+1. 课程：C语言，周次：1-16，节次：3-4，星期：1
+2. 课程：C语言，周次：1-16，节次：3-4，星期：1
+3. 课程：F语言，周次：16-20，节次：3-4，星期：1
+4. 课程：C语言，周次：1-16，节次：3-4，星期：2
+5. 课程：A语言，周次：1-16，节次：1-2，星期：3
+6. 课程：B语言，周次：1-16，节次：3-4，星期：3
+7. 课程：E语言，周次：4-16，节次：3-4，星期：3
+
+[2025-12-01 21:05:47] Ignore non-group frame
+[2025-12-01 21:05:52] Ignore non-group frame
+[2025-12-01 21:05:54] JSON parsed via raw-utf8
+[2025-12-01 21:05:54] Received message from group 1061042473 qq号：2285373500:  清空课表 (trimmed: 清空课表)
+[2025-12-01 21:05:54] Schedules saved to file, total: 0 for 1 groups
+[2025-12-01 21:05:54] Replied to group 1061042473: 当前群的课表已清空！
+[2025-12-01 21:05:55] Ignore non-group frame
+[2025-12-01 21:08:44] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-01 21:08:44] Waiting for group messages...
+[2025-12-01 21:08:44] Ignore non-group frame

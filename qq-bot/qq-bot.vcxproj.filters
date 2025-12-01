@@ -36,9 +36,6 @@
     <ClInclude Include="schedule_loader.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="schedule_data.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="utils.cpp">

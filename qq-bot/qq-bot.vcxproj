@@ -128,7 +128,6 @@
     <ClInclude Include="guess_number.h" />
     <ClInclude Include="msg_handler.h" />
     <ClInclude Include="reply_generator.h" />
-    <ClInclude Include="schedule_data.h" />
     <ClInclude Include="schedule_loader.h" />
     <ClInclude Include="schedule.h" />
     <ClInclude Include="utils.h" />

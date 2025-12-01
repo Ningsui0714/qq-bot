@@ -10,6 +10,10 @@
 #include "schedule.h"
 #include "schedule_loader.h"
 
+// 线程局部保存当前 sender_qq，供规则内部调用
+static thread_local std::string g_current_sender_qq;
+const std::string& get_current_sender_qq() { return g_current_sender_qq; }
+
 struct KeywordRule {
     std::function<bool(const json&, const std::string&)> matcher;
     std::function<std::string(const std::string&)> reply_generator;
@@ -30,7 +34,7 @@ static std::string decode_html_entities(const std::string& s)
             }
         };
     // 最常用的实体
-    replace_all("&#91;", "[");
+    replace_all("&#91;", "[]");
     replace_all("&#93;", "]");
     replace_all("&quot;", "\"");
     replace_all("&amp;", "&");
@@ -73,6 +77,24 @@ void handle_group_message(const json& msg_data, websocket::stream<tcp_socket>& w
             return;
         }
         std::string group_id = std::to_string(msg_data["group_id"].get<long long>());
+        // 2. 验证并获取发送者QQ号（新增核心逻辑）
+        std::string sender_qq;
+        if (msg_data.contains("user_id") && msg_data["user_id"].is_number()) {
+            // 直接获取user_id（大部分CQHTTP协议的字段）
+            sender_qq = std::to_string(msg_data["user_id"].get<long long>());
+        }
+        else if (msg_data.contains("sender") && msg_data["sender"].is_object() &&
+            msg_data["sender"].contains("user_id") && msg_data["sender"]["user_id"].is_number()) {
+            // 兼容嵌套在sender对象中的情况
+            sender_qq = std::to_string(msg_data["sender"]["user_id"].get<long long>());
+        }
+        else {
+            write_log("Ignore invalid message: No sender QQ (user_id) or wrong type");
+            return;
+        }
+
+        // 将当前 sender_qq 暴露给规则层
+        g_current_sender_qq = sender_qq;
 
         if (!msg_data.contains("raw_message") || !msg_data["raw_message"].is_string()) {
             write_log("Ignore invalid message: No raw_message or wrong type");
@@ -88,7 +110,7 @@ void handle_group_message(const json& msg_data, websocket::stream<tcp_socket>& w
 
         std::string trimmed_msg = normalize_text(raw_msg);
 
-        write_log("Received message from group " + group_id + ": " + raw_msg + " (trimmed: " + trimmed_msg + ")");
+        write_log("Received message from group " + group_id + " qq号：" + sender_qq + ": " + raw_msg + " (trimmed: " + trimmed_msg + ")");
 
         json reply;
         bool need_reply = false;
