@@ -7,9 +7,7 @@
 #include <ctime>
 #include <fstream>
 
-// 与 schedule_set.cpp 保持一致的持久化课表文件路径（仅用于读取课程，不含学期开始日期）
 static const char* SCHEDULE_FILE = "persistent_schedules.json";
-// 学期开始日期单独持久化文件（简单文本：YYYY-MM-DD）
 static const char* TERM_START_FILE = "term_start_date.txt";
 
 std::tm ScheduleReminder::term_start_date = []() {
@@ -179,7 +177,7 @@ std::string ScheduleReminder::get_today_courses_reminder(const std::string& qq_n
 
     auto courses = get_courses_on_date(qq_number, today);
     if (courses.empty()) {
-        return u8"今天没有课程哦～";
+        return with_at(qq_number, u8"今天没有课程哦～");
     }
 
     std::stringstream ss;
@@ -233,7 +231,7 @@ std::string ScheduleReminder::get_tomorrow_courses_reminder(const std::string& q
 
     auto courses = get_courses_on_date(qq_number, tomorrow);
     if (courses.empty()) {
-        return u8"明天没有课程哦～";
+        return with_at(qq_number, u8"明天没有课程哦～");
     }
 
     std::stringstream ss;
@@ -266,5 +264,5 @@ std::string ScheduleReminder::get_tomorrow_courses_reminder(const std::string& q
         }
         ss << "\n";
     }
-    return ss.str();
+    return with_at(qq_number, ss.str());
 }

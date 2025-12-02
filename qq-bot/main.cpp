@@ -3,6 +3,9 @@
 #include "msg_handler.h"
 #include "schedule_reminder.h"
 #include "schedule_loader.h"
+#include "group_mapping.h"
+#include "member_cache.h"
+#include "onebot_ws_api.h" // + 新增
 #include <boost/asio.hpp>
 #include <boost/beast.hpp>
 #include <iostream>
@@ -21,13 +24,6 @@ using nlohmann::json;
 
 // 与其他模块保持一致的课表持久化文件路径
 static const char* SCHEDULE_FILE = "persistent_schedules.json";
-
-// 占位：根据 qq 映射群号。请替换为真实实现（从配置或数据库加载）。
-static std::string get_group_id_by_qq(const std::string& qq) {
-    // TODO: 替换为真实映射逻辑
-    write_log("get_group_id_by_qq not implemented. QQ=" + qq);
-    return std::string(); // 返回空表示未知群
-}
 
 // UTF-8 校验：仅检查结构合法性
 static bool is_valid_utf8(const std::string& s) {
@@ -87,7 +83,7 @@ static std::string hex_preview(const std::string& s, size_t max_len = 32) {
     return oss.str();
 }
 
-// 每晚 22:00 推送明日课程提醒
+// 每晚 22:00 推送明日课程 reminder
 static void reminder_task(websocket::stream<tcp::socket>& ws) {
     while (true) {
         // 当前本地时间
@@ -112,27 +108,39 @@ static void reminder_task(websocket::stream<tcp::socket>& ws) {
         // 等待到目标时间
         std::this_thread::sleep_until(target_time);
 
-        // 发送明日课程提醒给所有有课的用户
+        // 若设置了“提醒群”，统一发送至该群；否则按旧逻辑发送到各自绑定群
+        std::string unified_group = get_reminder_group();
+
         auto all_schedules = ScheduleLoader::load_from_file(SCHEDULE_FILE);
         for (const auto& kv : all_schedules) {
             const std::string& qq = kv.first;
             std::string reminder = ScheduleReminder::get_tomorrow_courses_reminder(qq);
-            if (reminder.find(u8"明天没有课程") == std::string::npos) {
-                std::string group_id = get_group_id_by_qq(qq); // 请实现真实映射
-                if (!group_id.empty()) {
-                    json reply = {
-                        {"action", "send_group_msg"},
-                        {"params", {
-                            {"group_id", group_id},
-                            {"message", "[CQ:at,qq=" + qq + "] " + reminder}
-                        }}
-                    };
-                    try {
-                        ws.write(asio::buffer(reply.dump()));
-                    } catch (const beast::system_error& e) {
-                        write_log("Reminder send failed: " + std::string(e.what()));
-                    }
-                }
+            if (reminder.find(u8"明天没有课程") != std::string::npos) {
+                continue;
+            }
+
+            std::string target_group;
+            if (!unified_group.empty()) {
+                target_group = unified_group; // 新逻辑：统一提醒群
+            } else {
+                target_group = get_group_id_by_qq(qq); // 旧逻辑：个人绑定的群
+            }
+            if (target_group.empty()) {
+                continue;
+            }
+
+            // 由于 reminder 已含 @（with_at），避免重复再加第二个 @
+            json reply = {
+                {"action", "send_group_msg"},
+                {"params", {
+                    {"group_id", target_group},
+                    {"message", reminder}
+                }}
+            };
+            try {
+                ws.write(asio::buffer(reply.dump()));
+            } catch (const beast::system_error& e) {
+                write_log("Reminder send failed: " + std::string(e.what()));
             }
         }
     }
@@ -147,12 +155,17 @@ static void run_robot() {
         auto results = resolver.resolve(WS_HOST, WS_PORT);
         asio::connect(ws.next_layer(), results.begin(), results.end());
         ws.handshake(WS_HOST, WS_PATH);
-        ws.text(true); // 明确文本帧（UTF-8）
+        ws.text(true);
 
         write_log("WebSocket connected successfully! Robot started, QQ: " + std::string(BOT_QQ));
         write_log("Waiting for group messages...");
 
-        // 握手成功后启动提醒线程
+        // 初始化各模块
+        init_group_mapping();
+        init_member_cache();
+        onebot_api_init(&ws); // + 初始化 API 发送端
+
+        // 启动 reminder 线程
         std::thread(reminder_task, std::ref(ws)).detach();
 
         beast::flat_buffer buffer;
@@ -161,42 +174,27 @@ static void run_robot() {
             ws.read(buffer);
             std::string frame = beast::buffers_to_string(buffer.data());
 
-            auto hex_dump = [](const std::string& s, size_t max_len = 48) {
-                std::ostringstream oss;
-                oss << std::hex << std::uppercase;
-                size_t lim = std::min(s.size(), max_len);
-                for (size_t i = 0; i < lim; ++i) {
-                    oss << std::setw(2) << std::setfill('0')
-                        << (unsigned int)(unsigned char)s[i];
-                    if (i + 1 != lim) oss << ' ';
-                }
-                if (s.size() > lim) oss << " ...";
-                return oss.str();
-            };
-
             json msg_data;
             bool ok = false;
             std::string parse_path;
 
-            // 尝试直接解析原始帧
             try {
                 msg_data = json::parse(frame, nullptr, true, true);
                 ok = true;
                 parse_path = "raw-utf8";
-            }
-            catch (const json::exception& e) {
+            } catch (const json::exception& e) {
                 if (e.id == 316 || e.id == 101) {
-                    write_log("Parse raw failed(id=" + std::to_string(e.id) + "), hex: " + hex_dump(frame));
+                    write_log("Parse raw failed(id=" + std::to_string(e.id) + "), hex: " + hex_preview(frame));
                     // 回退：尝试按 GBK 解释再转 UTF-8
                     std::string converted = gbk_to_utf8(frame);
                     try {
                         msg_data = json::parse(converted, nullptr, true, true);
                         ok = true;
                         parse_path = "gbk->utf8";
-                        write_log("Fallback GBK->UTF8 succeeded, first bytes(hex): " + hex_dump(converted));
+                        write_log("Fallback GBK->UTF8 succeeded, first bytes(hex): " + hex_preview(converted));
                     }
                     catch (const json::exception& e2) {
-                        write_log("Fallback parse failed(id=" + std::to_string(e2.id) + "), converted hex: " + hex_dump(converted));
+                        write_log("Fallback parse failed(id=" + std::to_string(e2.id) + "), converted hex: " + hex_preview(converted));
                     }
                 }
                 else {
@@ -210,13 +208,18 @@ static void run_robot() {
                 continue;
             }
 
-            // 正常消息路由
+            // 优先处理带 echo 的 API 回执
+            if (msg_data.contains("echo")) {
+                onebot_api_on_frame(msg_data); // + 分发给 API 层
+                continue;
+            }
+
+            // 正常消息路由（群消息）
             if (msg_data.contains("post_type") && msg_data["post_type"] == "message"
                 && msg_data.contains("message_type") && msg_data["message_type"] == "group") {
                 write_log("JSON parsed via " + parse_path);
                 handle_group_message(msg_data, ws);
-            }
-            else {
+            } else {
                 write_log("Ignore non-group frame");
             }
         }

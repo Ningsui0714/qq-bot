@@ -124,9 +124,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="class_inquiry.h" />
     <ClInclude Include="config.h" />
+    <ClInclude Include="group_mapping.h" />
     <ClInclude Include="guess_number.h" />
+    <ClInclude Include="member_cache.h" />
     <ClInclude Include="msg_handler.h" />
+    <ClInclude Include="onebot_ws_api.h" />
     <ClInclude Include="reply_generator.h" />
     <ClInclude Include="schedule_loader.h" />
     <ClInclude Include="schedule.h" />
@@ -134,9 +138,13 @@
     <ClInclude Include="utils.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="class_inquiry.cpp" />
+    <ClCompile Include="group_mapping.cpp" />
     <ClCompile Include="guess_number.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="member_cache.cpp" />
     <ClCompile Include="msg_handler.cpp" />
+    <ClCompile Include="onebot_ws_api.cpp" />
     <ClCompile Include="reply_generator.cpp" />
     <ClCompile Include="schedule_loader.cpp" />
     <ClCompile Include="schedule_reminder.cpp" />

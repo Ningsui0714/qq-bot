@@ -53,17 +53,29 @@ bool ReplyGenerator::generate_with_rules(const json& msg_data, const std::string
 
         if (matched) {
             try {
+                // 尝试取发送者QQ，用于统一@封装
+                std::string sender_qq;
+                try {
+                    if (msg_data.contains("sender") && msg_data["sender"].contains("user_id")) {
+                        sender_qq = std::to_string(msg_data["sender"]["user_id"].get<long long>());
+                    }
+                } catch (...) {
+                    sender_qq.clear();
+                }
+
+                const std::string plain = rule.reply_generator(group_id, content);
+                const std::string message = sender_qq.empty() ? plain : with_at(sender_qq, plain);
+
                 reply = {
                     {"action", "send_group_msg"},
                     {"params", {
                         {"group_id", group_id},
-                        {"message", rule.reply_generator(group_id, content)}
+                        {"message", message}
                     }}
                 };
                 return true;
             } catch (const std::exception& e) {
                 write_log(std::string("Rule reply_generator threw: ") + e.what());
-                // 若生成回复失败，继续尝试下一条规则
             } catch (...) {
                 write_log("Rule reply_generator threw: unknown exception");
             }

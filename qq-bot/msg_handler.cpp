@@ -9,6 +9,9 @@
 #include "guess_number.h"
 #include "schedule.h"
 #include "schedule_loader.h"
+#include "group_mapping.h"
+#include "class_inquiry.h"
+#include "member_cache.h" // + 引入
 
 // 线程局部保存当前 sender_qq，供规则内部调用
 static thread_local std::string g_current_sender_qq;
@@ -23,18 +26,18 @@ static std::string decode_html_entities(const std::string& s)
 {
     std::string out = s;
     auto replace_all = [&](const char* from, const char* to)
+    {
+        std::string f(from);
+        std::string t(to);
+        std::size_t pos = 0;
+        while ((pos = out.find(f, pos)) != std::string::npos)
         {
-            std::string f(from);
-            std::string t(to);
-            std::size_t pos = 0;
-            while ((pos = out.find(f, pos)) != std::string::npos)
-            {
-                out.replace(pos, f.length(), t);
-                pos += t.length();
-            }
-        };
+            out.replace(pos, f.length(), t);
+            pos += t.length();
+        }
+    };
     // 最常用的实体
-    replace_all("&#91;", "[]");
+    replace_all("&#91;", "[");   // 修正：原来是 "[]"
     replace_all("&#93;", "]");
     replace_all("&quot;", "\"");
     replace_all("&amp;", "&");
@@ -118,18 +121,88 @@ void handle_group_message(const json& msg_data, websocket::stream<tcp_socket>& w
         // 步骤1：先尝试默认规则（1/hello/你好）
         need_reply = ReplyGenerator::generate(msg_data, trimmed_msg, group_id, reply);
 
-        // 步骤2：默认规则未匹配 → 尝试猜数游戏规则
+        // 步骤2：课表相关规则（导入/查询/清空/今日课程/设置学期 等）
+        if (!need_reply) {
+            std::vector<ReplyRule> schedule_rules = Schedule().get_schedule_rules();
+            need_reply = ReplyGenerator::generate_with_rules(msg_data, trimmed_msg, group_id, schedule_rules, reply);
+        }
+
+        // 步骤3：尝试猜数游戏规则
         if (!need_reply) {
             std::vector<ReplyRule> guess_rules = get_guess_number_rules();
             need_reply = ReplyGenerator::generate_with_rules(msg_data, trimmed_msg, group_id, guess_rules, reply);
         }
+        // 步骤4：尝试"有谁在上课"查询规则
         if (!need_reply) {
-            Schedule schedule;
-            std::vector<ReplyRule> guess_rules = schedule.get_schedule_rules();
-            need_reply = ReplyGenerator::generate_with_rules(msg_data, trimmed_msg, group_id, guess_rules, reply);
+            std::vector<ReplyRule> class_inquiry_rules = get_class_inquiry_rules();
+            need_reply = ReplyGenerator::generate_with_rules(msg_data, trimmed_msg, group_id, class_inquiry_rules, reply);
         }
 
-        // 步骤3：有回复则发送
+        // 新增指令处理
+        if (!need_reply) {
+            if (trimmed_msg == "设置提醒群") {
+                set_group_id_for_qq(sender_qq, group_id);
+                json reply_msg = {
+                    {"action", "send_group_msg"},
+                    {"params", {
+                        {"group_id", group_id},
+                        {"message", "[CQ:at,qq=" + sender_qq + "] 已绑定此群为你的每日课程提醒群（22:00 推送明日课程）。"}
+                    }}
+                };
+                reply = reply_msg;
+                need_reply = true;
+            } else if (trimmed_msg == "绑定群聊") {
+                add_query_group(group_id);
+                json reply_msg = {
+                    {"action", "send_group_msg"},
+                    {"params", {
+                        {"group_id", group_id},
+                        {"message", "✅ 已将本群绑定为查询群，可直接发送「有谁在上课」查看。"},
+                        {"auto_escape", false}
+                    }}
+                };
+                reply = reply_msg;
+                need_reply = true;
+            } else if (trimmed_msg == "取消绑定群聊" || trimmed_msg == "解绑群聊") {
+                remove_query_group(group_id);
+                json reply_msg = {
+                    {"action", "send_group_msg"},
+                    {"params", {
+                        {"group_id", group_id},
+                        {"message", "✅ 已取消本群的查询群绑定。"},
+                        {"auto_escape", false}
+                    }}
+                };
+                reply = reply_msg;
+                need_reply = true;
+            } else if (trimmed_msg == "绑定群提醒") {
+                set_reminder_group(group_id);
+                json reply_msg = {
+                    {"action", "send_group_msg"},
+                    {"params", {
+                        {"group_id", group_id},
+                        {"message", "✅ 已将本群设置为提醒群，将在每日22:00推送「明日课程」。"},
+                        {"auto_escape", false}
+                    }}
+                };
+                reply = reply_msg;
+                need_reply = true;
+            } else if (trimmed_msg == "取消绑定群提醒" || trimmed_msg == "解绑群提醒") {
+                clear_reminder_group();
+                json reply_msg = {
+                    {"action", "send_group_msg"},
+                    {"params", {
+                        {"group_id", group_id},
+                        {"message", "✅ 已取消提醒群设置。"},
+                        {"auto_escape", false}
+                    }}
+                };
+                reply = reply_msg;
+                need_reply = true;
+            }
+        }
+
+        // 发送
         if (need_reply) {
             std::string reply_str = reply.dump();
             ws.write(boost::asio::buffer(reply_str));
@@ -148,4 +221,5 @@ void handle_group_message(const json& msg_data, websocket::stream<tcp_socket>& w
     catch (const std::exception& e) {
         write_log("General error: " + std::string(e.what()));
     }
+    update_member_display_name(msg_data);
 }

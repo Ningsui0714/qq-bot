@@ -1617,3 +1617,664 @@ C语言，3，4，15，5，6 (trimmed: C语言，1，4，15，3，4；C语言，3，4，15，5，6)
 [2025-12-02 14:53:08] Ignore non-group frame
 [2025-12-02 14:56:06] 已从持久化文件加载学期开始日期: 2025-09-01
 [2025-12-02 14:56:08] WebSocket connection failed: connect: ???????????????????????????? [system:10061 at C:\Users\majia\vcpkg\installed\x64-windows\include\boost\asio\detail\win_iocp_socket_service.hpp:629:5 in function 'class boost::system::error_code __cdecl boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::connect(struct boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::implementation_type &,const class boost::asio::ip::basic_endpoint<class boost::asio::ip::tcp> &,class boost::system::error_code &)'], Error code: 10061
+[2025-12-02 15:07:52] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 15:07:55] WebSocket connection failed: connect: ???????????????????????????? [system:10061 at C:\Users\majia\vcpkg\installed\x64-windows\include\boost\asio\detail\win_iocp_socket_service.hpp:629:5 in function 'class boost::system::error_code __cdecl boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::connect(struct boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::implementation_type &,const class boost::asio::ip::basic_endpoint<class boost::asio::ip::tcp> &,class boost::system::error_code &)'], Error code: 10061
+[2025-12-02 15:08:05] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 15:08:05] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 15:08:05] Waiting for group messages...
+[2025-12-02 15:08:05] Ignore non-group frame
+[2025-12-02 15:08:16] JSON parsed via raw-utf8
+[2025-12-02 15:08:16] Received message from group 943715179 qq号：2285373500:  1 (trimmed: 1)
+[2025-12-02 15:08:16] Replied to group 943715179: [CQ:at,qq=2285373500] true
+[2025-12-02 15:08:16] Ignore non-group frame
+[2025-12-02 15:08:25] JSON parsed via raw-utf8
+[2025-12-02 15:08:25] Received message from group 943715179 qq号：2285373500:  今日课程 (trimmed: 今日课程)
+[2025-12-02 15:08:25] Loaded 15 schedules for 2 senders
+[2025-12-02 15:08:25] Replied to group 943715179: [CQ:at,qq=2285373500] [CQ:at,qq=2285373500] 今日课程安排：
+篮球（周2） 第3-4节 10:10-11:50
+线代（周2） 第5-6节 14:00-15:35
+思政（周2） 第7-8节 15:55-17:30
+
+[2025-12-02 15:08:26] Ignore non-group frame
+[2025-12-02 15:08:32] Ignore non-group frame
+[2025-12-02 15:08:40] JSON parsed via raw-utf8
+[2025-12-02 15:08:40] Received message from group 943715179 qq号：2285373500:  今日课程 (trimmed: 今日课程)
+[2025-12-02 15:08:40] Replied to group 943715179: [CQ:at,qq=2285373500] [CQ:at,qq=2285373500] 今日课程安排：
+篮球（周2） 第3-4节 10:10-11:50
+线代（周2） 第5-6节 14:00-15:35
+思政（周2） 第7-8节 15:55-17:30
+
+[2025-12-02 15:08:41] Ignore non-group frame
+[2025-12-02 15:09:02] Ignore non-group frame
+[2025-12-02 15:09:32] Ignore non-group frame
+[2025-12-02 15:09:48] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 15:09:49] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 15:09:49] Waiting for group messages...
+[2025-12-02 15:09:49] Ignore non-group frame
+[2025-12-02 15:09:54] JSON parsed via raw-utf8
+[2025-12-02 15:09:54] Received message from group 943715179 qq号：2285373500:  今日课程 (trimmed: 今日课程)
+[2025-12-02 15:09:54] Loaded 15 schedules for 2 senders
+[2025-12-02 15:09:54] Replied to group 943715179: [CQ:at,qq=2285373500] 今日课程安排：
+篮球（周2） 第3-4节 10:10-11:50
+线代（周2） 第5-6节 14:00-15:35
+思政（周2） 第7-8节 15:55-17:30
+
+[2025-12-02 15:09:54] Ignore non-group frame
+[2025-12-02 15:18:20] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 15:18:22] WebSocket connection failed: connect: ???????????????????????????? [system:10061 at C:\Users\majia\vcpkg\installed\x64-windows\include\boost\asio\detail\win_iocp_socket_service.hpp:629:5 in function 'class boost::system::error_code __cdecl boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::connect(struct boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::implementation_type &,const class boost::asio::ip::basic_endpoint<class boost::asio::ip::tcp> &,class boost::system::error_code &)'], Error code: 10061
+[2025-12-02 15:25:38] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 15:25:41] WebSocket connection failed: connect: ???????????????????????????? [system:10061 at C:\Users\majia\vcpkg\installed\x64-windows\include\boost\asio\detail\win_iocp_socket_service.hpp:629:5 in function 'class boost::system::error_code __cdecl boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::connect(struct boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::implementation_type &,const class boost::asio::ip::basic_endpoint<class boost::asio::ip::tcp> &,class boost::system::error_code &)'], Error code: 10061
+[2025-12-02 15:27:41] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 15:28:54] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 15:28:55] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 15:28:55] Waiting for group messages...
+[2025-12-02 15:28:55] Group mapping file not found, will create on first write: group_mapping.json
+[2025-12-02 15:28:55] Ignore non-group frame
+[2025-12-02 15:29:00] JSON parsed via raw-utf8
+[2025-12-02 15:29:00] Received message from group 943715179 qq号：2285373500: 设置提醒群 (trimmed: 设置提醒群)
+[2025-12-02 15:29:00] Group mapping updated: 2285373500 -> 943715179
+[2025-12-02 15:29:00] Replied to group 943715179: [CQ:at,qq=2285373500] 已绑定此群为你的每日课程提醒群（22:00 推送明日课程）。
+[2025-12-02 15:29:01] Ignore non-group frame
+[2025-12-02 15:31:47] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 15:31:47] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 15:31:47] Waiting for group messages...
+[2025-12-02 15:31:47] Loaded group mapping entries: 1
+[2025-12-02 15:31:47] Ignore non-group frame
+[2025-12-02 15:32:12] Ignore non-group frame
+[2025-12-02 15:32:42] Ignore non-group frame
+[2025-12-02 15:33:00] Ignore non-group frame
+[2025-12-02 15:33:12] Ignore non-group frame
+[2025-12-02 15:33:59] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 15:33:59] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 15:33:59] Waiting for group messages...
+[2025-12-02 15:33:59] Loaded group mapping entries: 1
+[2025-12-02 15:33:59] Ignore non-group frame
+[2025-12-02 15:34:00] Ignore non-group frame
+[2025-12-02 15:34:36] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 15:34:36] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 15:34:36] Waiting for group messages...
+[2025-12-02 15:34:36] Loaded group mapping entries: 1
+[2025-12-02 15:34:36] Ignore non-group frame
+[2025-12-02 15:56:43] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 15:56:45] WebSocket connection failed: connect: ???????????????????????????? [system:10061 at C:\Users\majia\vcpkg\installed\x64-windows\include\boost\asio\detail\win_iocp_socket_service.hpp:629:5 in function 'class boost::system::error_code __cdecl boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::connect(struct boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::implementation_type &,const class boost::asio::ip::basic_endpoint<class boost::asio::ip::tcp> &,class boost::system::error_code &)'], Error code: 10061
+[2025-12-02 15:56:56] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 15:56:58] WebSocket connection failed: connect: ???????????????????????????? [system:10061 at C:\Users\majia\vcpkg\installed\x64-windows\include\boost\asio\detail\win_iocp_socket_service.hpp:629:5 in function 'class boost::system::error_code __cdecl boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::connect(struct boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::implementation_type &,const class boost::asio::ip::basic_endpoint<class boost::asio::ip::tcp> &,class boost::system::error_code &)'], Error code: 10061
+[2025-12-02 15:57:48] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 15:57:50] WebSocket connection failed: connect: ???????????????????????????? [system:10061 at C:\Users\majia\vcpkg\installed\x64-windows\include\boost\asio\detail\win_iocp_socket_service.hpp:629:5 in function 'class boost::system::error_code __cdecl boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::connect(struct boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::implementation_type &,const class boost::asio::ip::basic_endpoint<class boost::asio::ip::tcp> &,class boost::system::error_code &)'], Error code: 10061
+[2025-12-02 15:58:58] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 15:59:00] WebSocket connection failed: connect: ???????????????????????????? [system:10061 at C:\Users\majia\vcpkg\installed\x64-windows\include\boost\asio\detail\win_iocp_socket_service.hpp:629:5 in function 'class boost::system::error_code __cdecl boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::connect(struct boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::implementation_type &,const class boost::asio::ip::basic_endpoint<class boost::asio::ip::tcp> &,class boost::system::error_code &)'], Error code: 10061
+[2025-12-02 16:02:21] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 16:02:23] WebSocket connection failed: connect: ???????????????????????????? [system:10061 at C:\Users\majia\vcpkg\installed\x64-windows\include\boost\asio\detail\win_iocp_socket_service.hpp:629:5 in function 'class boost::system::error_code __cdecl boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::connect(struct boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::implementation_type &,const class boost::asio::ip::basic_endpoint<class boost::asio::ip::tcp> &,class boost::system::error_code &)'], Error code: 10061
+[2025-12-02 16:03:18] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 16:03:20] WebSocket connection failed: connect: ???????????????????????????? [system:10061 at C:\Users\majia\vcpkg\installed\x64-windows\include\boost\asio\detail\win_iocp_socket_service.hpp:629:5 in function 'class boost::system::error_code __cdecl boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::connect(struct boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::implementation_type &,const class boost::asio::ip::basic_endpoint<class boost::asio::ip::tcp> &,class boost::system::error_code &)'], Error code: 10061
+[2025-12-02 16:04:37] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 16:04:39] WebSocket connection failed: connect: ???????????????????????????? [system:10061 at C:\Users\majia\vcpkg\installed\x64-windows\include\boost\asio\detail\win_iocp_socket_service.hpp:629:5 in function 'class boost::system::error_code __cdecl boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::connect(struct boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::implementation_type &,const class boost::asio::ip::basic_endpoint<class boost::asio::ip::tcp> &,class boost::system::error_code &)'], Error code: 10061
+[2025-12-02 16:04:55] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 16:04:55] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 16:04:55] Waiting for group messages...
+[2025-12-02 16:04:55] Loaded group mapping entries: 1
+[2025-12-02 16:04:55] Ignore non-group frame
+[2025-12-02 16:05:07] JSON parsed via raw-utf8
+[2025-12-02 16:05:07] Received message from group 943715179 qq号：2285373500:  查询课表 (trimmed: 查询课表)
+[2025-12-02 16:05:07] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:05:21] JSON parsed via raw-utf8
+[2025-12-02 16:05:21] Received message from group 943715179 qq号：2285373500:  查询课表 (trimmed: 查询课表)
+[2025-12-02 16:05:21] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:05:22] Ignore non-group frame
+[2025-12-02 16:05:29] JSON parsed via raw-utf8
+[2025-12-02 16:05:29] Received message from group 943715179 qq号：2285373500:  今日课程 (trimmed: 今日课程)
+[2025-12-02 16:05:29] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:05:37] JSON parsed via raw-utf8
+[2025-12-02 16:05:37] Received message from group 943715179 qq号：2285373500: ？ (trimmed: ？)
+[2025-12-02 16:05:37] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:05:52] Ignore non-group frame
+[2025-12-02 16:06:07] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 16:06:07] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 16:06:07] Waiting for group messages...
+[2025-12-02 16:06:07] Loaded group mapping entries: 1
+[2025-12-02 16:06:07] Ignore non-group frame
+[2025-12-02 16:06:13] JSON parsed via raw-utf8
+[2025-12-02 16:06:13] Received message from group 943715179 qq号：2285373500:  查询课表 (trimmed: 查询课表)
+[2025-12-02 16:06:13] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:06:15] JSON parsed via raw-utf8
+[2025-12-02 16:06:15] Received message from group 943715179 qq号：2132245412: 哈哈哈哈 (trimmed: 哈哈哈哈)
+[2025-12-02 16:06:15] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:06:21] JSON parsed via raw-utf8
+[2025-12-02 16:06:21] Received message from group 943715179 qq号：2285373500:  今日课程 (trimmed: 今日课程)
+[2025-12-02 16:06:21] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:06:22] Ignore non-group frame
+[2025-12-02 16:06:52] Ignore non-group frame
+[2025-12-02 16:09:38] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 16:09:38] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 16:09:38] Waiting for group messages...
+[2025-12-02 16:09:38] Loaded group mapping entries: 1
+[2025-12-02 16:09:38] Ignore non-group frame
+[2025-12-02 16:09:46] JSON parsed via raw-utf8
+[2025-12-02 16:09:46] Received message from group 943715179 qq号：2285373500:  1 (trimmed: 1)
+[2025-12-02 16:09:46] Replied to group 943715179: [CQ:at,qq=2285373500] true
+[2025-12-02 16:09:47] Ignore non-group frame
+[2025-12-02 16:09:50] JSON parsed via raw-utf8
+[2025-12-02 16:09:50] Received message from group 943715179 qq号：2285373500:  猜数 (trimmed: 猜数)
+[2025-12-02 16:09:50] Replied to group 943715179: [CQ:at,qq=2285373500] 猜数游戏开始！我已生成 1-100 之间的数字，当前范围：[1,100]，请输入你的猜测～
+游戏过程中不需要@bot，退出游戏需要@bot
+[2025-12-02 16:09:51] Ignore non-group frame
+[2025-12-02 16:09:52] Ignore non-group frame
+[2025-12-02 16:09:55] JSON parsed via raw-utf8
+[2025-12-02 16:09:55] Received message from group 943715179 qq号：2285373500:  退出游戏 (trimmed: 退出游戏)
+[2025-12-02 16:09:55] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:10:06] JSON parsed via raw-utf8
+[2025-12-02 16:10:06] Received message from group 943715179 qq号：2285373500:  退出 (trimmed: 退出)
+[2025-12-02 16:10:06] Replied to group 943715179: [CQ:at,qq=2285373500] 猜数游戏已退出～ 输入'猜数'可重新开始
+[2025-12-02 16:10:07] Ignore non-group frame
+[2025-12-02 16:10:43] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 16:10:43] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 16:10:43] Waiting for group messages...
+[2025-12-02 16:10:43] Loaded group mapping entries: 1
+[2025-12-02 16:10:43] Ignore non-group frame
+[2025-12-02 16:10:48] JSON parsed via raw-utf8
+[2025-12-02 16:10:48] Received message from group 943715179 qq号：2285373500:  今日课程 (trimmed: 今日课程)
+[2025-12-02 16:10:48] Loaded 15 schedules for 2 senders
+[2025-12-02 16:10:48] Replied to group 943715179: [CQ:at,qq=2285373500] 今日课程安排：
+篮球（周2） 第3-4节 10:10-11:50
+线代（周2） 第5-6节 14:00-15:35
+思政（周2） 第7-8节 15:55-17:30
+
+[2025-12-02 16:10:48] Ignore non-group frame
+[2025-12-02 16:10:52] Ignore non-group frame
+[2025-12-02 16:10:54] JSON parsed via raw-utf8
+[2025-12-02 16:10:54] Received message from group 943715179 qq号：2285373500:  查询课表 (trimmed: 查询课表)
+[2025-12-02 16:10:54] Replied to group 943715179: [CQ:at,qq=2285373500] 你的课表（按星期、节次升序，共15门）：
+1. 课程：C语言，周次：4-15，节次：3-4，星期：1
+2. 课程：vjf，周次：4-18，节次：7-8，星期：1
+3. 课程：思政，周次：17-17，节次：11-12，星期：1
+4. 课程：篮球，周次：4-17，节次：3-4，星期：2
+5. 课程：线代，周次：8-19，节次：5-6，星期：2
+6. 课程：思政，周次：4-19，节次：7-8，星期：2
+7. 课程：vjf，周次：4-18，节次：1-2，星期：3
+8. 课程：C语言，周次：4-15，节次：5-6，星期：3
+9. 课程：计算思维，周次：13-18，节次：7-8，星期：3
+10. 课程：中国语文，周次：7-17，节次：9-10，星期：3
+11. 课程：线代，周次：8-19，节次：3-4，星期：4
+12. 课程：C语言实验，周次：9-16，节次：9-12，星期：4
+13. 课程：计算思维，周次：17-18，节次：9-12，星期：4
+14. 课程：vjf，周次：4-17，节次：3-4，星期：5
+15. 课程：计算思维，周次：13-18，节次：5-6，星期：5
+
+[2025-12-02 16:10:54] Ignore non-group frame
+[2025-12-02 16:11:07] JSON parsed via raw-utf8
+[2025-12-02 16:11:07] Received message from group 943715179 qq号：2285373500:  有谁在上课 (trimmed: 有谁在上课)
+[2025-12-02 16:11:07] Replied to group 943715179: [CQ:at,qq=2285373500] ?? 当前群内上课状态（16:11）：
+
+?? 正在上课的用户：
+  1. [CQ:at,qq=2285373500]
+
+? 暂无课程的用户：无
+
+[2025-12-02 16:11:07] Ignore non-group frame
+[2025-12-02 16:11:20] JSON parsed via raw-utf8
+[2025-12-02 16:11:20] Received message from group 1061042473 qq号：2285373500:  有谁在上课 (trimmed: 有谁在上课)
+[2025-12-02 16:11:20] Replied to group 1061042473: [CQ:at,qq=2285373500] 当前群内暂无用户绑定提醒群，请先发送「设置提醒群」完成绑定～
+[2025-12-02 16:11:21] Ignore non-group frame
+[2025-12-02 16:11:22] Ignore non-group frame
+[2025-12-02 16:16:34] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 16:16:34] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 16:16:34] Waiting for group messages...
+[2025-12-02 16:16:34] Loaded group mapping entries: 1
+[2025-12-02 16:16:34] Ignore non-group frame
+[2025-12-02 16:16:47] JSON parsed via raw-utf8
+[2025-12-02 16:16:47] Received message from group 943715179 qq号：2285373500:  有谁在上课 (trimmed: 有谁在上课)
+[2025-12-02 16:16:47] Loaded 15 schedules for 2 senders
+[2025-12-02 16:16:47] Replied to group 943715179: [CQ:at,qq=2285373500] ?? 当前群内上课状态（16:16）：
+
+?? 正在上课的用户：
+  1. QQ：2285373500 | 课程：思政（第7-8节） | 下课：17:30 | 剩余：1小时13分钟
+
+? 暂无课程的用户：无
+
+[2025-12-02 16:16:47] Ignore non-group frame
+[2025-12-02 16:16:52] Ignore non-group frame
+[2025-12-02 16:18:52] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 16:18:52] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 16:18:52] Waiting for group messages...
+[2025-12-02 16:18:52] Loaded group mapping entries: 1
+[2025-12-02 16:18:52] Ignore non-group frame
+[2025-12-02 16:18:52] Ignore non-group frame
+[2025-12-02 16:18:55] JSON parsed via raw-utf8
+[2025-12-02 16:18:55] Received message from group 943715179 qq号：2132245412:  导入课表 (trimmed: 导入课表)
+[2025-12-02 16:18:55] Loaded 15 schedules for 2 senders
+[2025-12-02 16:18:55] Replied to group 943715179: [CQ:at,qq=2132245412] 请发送用中文逗号分隔的课程信息，格式：
+课程名，星期，开始周，结束周，开始节，结束节
+支持一次发送多条，使用换行或中文分号“；”分隔
+示例：高等数学，1，1，16，1，2
+[2025-12-02 16:18:55] Ignore non-group frame
+[2025-12-02 16:18:57] JSON parsed via raw-utf8
+[2025-12-02 16:18:57] Received message from group 943715179 qq号：2285373500:  导入课表 (trimmed: 导入课表)
+[2025-12-02 16:18:57] Replied to group 943715179: [CQ:at,qq=2285373500] 请发送用中文逗号分隔的课程信息，格式：
+课程名，星期，开始周，结束周，开始节，结束节
+支持一次发送多条，使用换行或中文分号“；”分隔
+示例：高等数学，1，1，16，1，2
+[2025-12-02 16:18:57] Ignore non-group frame
+[2025-12-02 16:19:22] Ignore non-group frame
+[2025-12-02 16:19:44] JSON parsed via raw-utf8
+[2025-12-02 16:19:44] Received message from group 943715179 qq号：2132245412: 不行啊 (trimmed: 不行啊)
+[2025-12-02 16:19:44] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:19:51] JSON parsed via raw-utf8
+[2025-12-02 16:19:51] Received message from group 943715179 qq号：2132245412: 星期1和星期4都有 (trimmed: 星期1和星期4都有)
+[2025-12-02 16:19:51] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:19:52] Ignore non-group frame
+[2025-12-02 16:20:02] JSON parsed via raw-utf8
+[2025-12-02 16:20:02] Received message from group 943715179 qq号：2285373500: ？ (trimmed: ？)
+[2025-12-02 16:20:02] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:20:22] Ignore non-group frame
+[2025-12-02 16:20:34] JSON parsed via raw-utf8
+[2025-12-02 16:20:34] Received message from group 943715179 qq号：2132245412: 线性代数，1，1，17，3，4 (trimmed: 线性代数，1，1，17，3，4)
+[2025-12-02 16:20:34] Schedules saved, total: 16 for 3 senders
+[2025-12-02 16:20:34] Replied to group 943715179: [CQ:at,qq=2132245412] 课表导入成功 1 条！
+课程：线性代数，周次：1-17，节次：3-4，星期：1
+发送“查询课表”查看全部
+[2025-12-02 16:20:34] Ignore non-group frame
+[2025-12-02 16:20:51] JSON parsed via raw-utf8
+[2025-12-02 16:20:51] Received message from group 943715179 qq号：2132245412:  查询课表 (trimmed: 查询课表)
+[2025-12-02 16:20:51] Replied to group 943715179: [CQ:at,qq=2132245412] 你的课表（按星期、节次升序，共1门）：
+1. 课程：线性代数，周次：1-17，节次：3-4，星期：1
+
+[2025-12-02 16:20:51] Ignore non-group frame
+[2025-12-02 16:20:52] Ignore non-group frame
+[2025-12-02 16:21:22] Ignore non-group frame
+[2025-12-02 16:21:27] JSON parsed via raw-utf8
+[2025-12-02 16:21:27] Received message from group 943715179 qq号：2285373500:  有谁在上课 (trimmed: 有谁在上课)
+[2025-12-02 16:21:27] Replied to group 943715179: [CQ:at,qq=2285373500] ?? 当前群内上课状态（16:21）：
+
+?? 正在上课的用户：
+  1. QQ：2285373500 | 课程：思政（第7-8节） | 下课：17:30 | 剩余：1小时9分钟
+
+? 暂无课程的用户：无
+
+[2025-12-02 16:21:27] Ignore non-group frame
+[2025-12-02 16:21:42] JSON parsed via raw-utf8
+[2025-12-02 16:21:42] Received message from group 943715179 qq号：2285373500: [CQ:reply,id=1989783907][CQ:at,qq=2132245412] (trimmed: [CQ:reply,id=1989783907][CQ:at,qq=2132245412])
+[2025-12-02 16:21:42] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:21:45] JSON parsed via raw-utf8
+[2025-12-02 16:21:45] Received message from group 943715179 qq号：2285373500: 发一下这个 (trimmed: 发一下这个)
+[2025-12-02 16:21:45] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:21:51] JSON parsed via raw-utf8
+[2025-12-02 16:21:51] Received message from group 943715179 qq号：2132245412: 好 (trimmed: 好)
+[2025-12-02 16:21:51] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:21:52] Ignore non-group frame
+[2025-12-02 16:22:22] Ignore non-group frame
+[2025-12-02 16:22:52] Ignore non-group frame
+[2025-12-02 16:23:22] Ignore non-group frame
+[2025-12-02 16:23:24] JSON parsed via raw-utf8
+[2025-12-02 16:23:24] Received message from group 943715179 qq号：2285373500: ？ (trimmed: ？)
+[2025-12-02 16:23:24] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:23:39] JSON parsed via raw-utf8
+[2025-12-02 16:23:39] Received message from group 943715179 qq号：2132245412: 设置群体性 (trimmed: 设置群体性)
+[2025-12-02 16:23:39] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:23:45] JSON parsed via raw-utf8
+[2025-12-02 16:23:45] Received message from group 943715179 qq号：2132245412: 设置提醒群 (trimmed: 设置提醒群)
+[2025-12-02 16:23:45] Group mapping updated: 2132245412 -> 943715179
+[2025-12-02 16:23:45] Replied to group 943715179: [CQ:at,qq=2132245412] 已绑定此群为你的每日课程提醒群（22:00 推送明日课程）。
+[2025-12-02 16:23:45] Ignore non-group frame
+[2025-12-02 16:23:52] Ignore non-group frame
+[2025-12-02 16:24:22] Ignore non-group frame
+[2025-12-02 16:24:26] JSON parsed via raw-utf8
+[2025-12-02 16:24:26] Received message from group 943715179 qq号：2285373500:  有谁在上课 (trimmed: 有谁在上课)
+[2025-12-02 16:24:26] Replied to group 943715179: [CQ:at,qq=2285373500] ?? 当前群内上课状态（16:24）：
+
+?? 正在上课的用户：
+  1. QQ：2285373500 | 课程：思政（第7-8节） | 下课：17:30 | 剩余：1小时6分钟
+
+? 暂无课程的用户及下节课：
+  1. [CQ:at,qq=2132245412] 下一节：线性代数（12-08周1） 第3-4节 10:10-11:50
+
+[2025-12-02 16:24:26] Ignore non-group frame
+[2025-12-02 16:24:37] JSON parsed via raw-utf8
+[2025-12-02 16:24:37] Received message from group 943715179 qq号：2285373500: [CQ:image,summary=&#91;动画表情&#93;,file=C25163DCC59656613ACDE9FF8E122CF2.png,sub_type=1,url=https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhTWzA43Kv4WTZ3X3FTvdylGkJeWaBiwXSD_CijN9eicvZ6RAzIEcHJvZFCAvaMBWhDu49FlHd3XR8zRO5byIk_-egJl7YIBAmd6&amp;rkey=CAQSMKbXVrKXvxL3uXWmk-KMYsPmbvPzYTJ2OUhe_C47Z4f4Hrene62KS4CNHGJwbUZYKQ,file_size=11952] (trimmed: [CQ:image,summary=[动画表情],file=C25163DCC59656613ACDE9FF8E122CF2.png,sub_type=1,url=https://multimedia.nt.qq.com.cn/download?appid=1407&fileid=EhTWzA43Kv4WTZ3X3FTvdylGkJeWaBiwXSD_CijN9eicvZ6RAzIEcHJvZFCAvaMBWhDu49FlHd3XR8zRO5byIk_-egJl7YIBAmd6&rkey=CAQSMKbXVrKXvxL3uXWmk-KMYsPmbvPzYTJ2OUhe_C47Z4f4Hrene62KS4CNHGJwbUZYKQ,file_size=11952])
+[2025-12-02 16:24:37] Replied to group 943715179: [CQ:at,qq=2285373500] 导入失败！请使用中文逗号分隔：课程名，星期，开始周，结束周，开始节，结束节
+支持多条：用换行或中文分号“；”分隔
+示例：高等数学，1，1，16，1，2
+[2025-12-02 16:24:38] Ignore non-group frame
+[2025-12-02 16:24:52] Ignore non-group frame
+[2025-12-02 16:25:00] JSON parsed via raw-utf8
+[2025-12-02 16:25:00] Received message from group 943715179 qq号：2132245412:  导入课程 (trimmed: 导入课程)
+[2025-12-02 16:25:00] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:25:14] JSON parsed via raw-utf8
+[2025-12-02 16:25:14] Received message from group 943715179 qq号：2285373500:  导入课程 (trimmed: 导入课程)
+[2025-12-02 16:25:14] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:25:20] JSON parsed via raw-utf8
+[2025-12-02 16:25:20] Received message from group 943715179 qq号：2285373500: 导入课程有点问题 (trimmed: 导入课程有点问题)
+[2025-12-02 16:25:20] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:25:23] Ignore non-group frame
+[2025-12-02 16:25:24] JSON parsed via raw-utf8
+[2025-12-02 16:25:24] Received message from group 943715179 qq号：2285373500: 直接发信息 (trimmed: 直接发信息)
+[2025-12-02 16:25:24] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:25:53] Ignore non-group frame
+[2025-12-02 16:26:08] JSON parsed via raw-utf8
+[2025-12-02 16:26:08] Received message from group 943715179 qq号：2132245412: 体育，4，1，17，7，9 (trimmed: 体育，4，1，17，7，9)
+[2025-12-02 16:26:08] Schedules saved, total: 17 for 3 senders
+[2025-12-02 16:26:08] Replied to group 943715179: [CQ:at,qq=2132245412] 课表导入成功 1 条！
+课程：体育，周次：1-17，节次：7-9，星期：4
+发送“查询课表”查看全部
+[2025-12-02 16:26:09] Ignore non-group frame
+[2025-12-02 16:26:23] Ignore non-group frame
+[2025-12-02 16:26:27] JSON parsed via raw-utf8
+[2025-12-02 16:26:27] Received message from group 943715179 qq号：2285373500:  有谁在上课 (trimmed: 有谁在上课)
+[2025-12-02 16:26:27] Replied to group 943715179: [CQ:at,qq=2285373500] ?? 当前群内上课状态（16:26）：
+
+?? 正在上课的用户：
+  1. QQ：2285373500 | 课程：思政（第7-8节） | 下课：17:30 | 剩余：1小时4分钟
+
+? 暂无课程的用户及下节课：
+  1. [CQ:at,qq=2132245412] 下一节：体育（12-04周4） 第7-9节 15:55-17:30
+
+[2025-12-02 16:26:27] Ignore non-group frame
+[2025-12-02 16:26:53] Ignore non-group frame
+[2025-12-02 16:27:01] JSON parsed via raw-utf8
+[2025-12-02 16:27:01] Received message from group 943715179 qq号：2132245412: 数学分析，1，1，17，6，7 (trimmed: 数学分析，1，1，17，6，7)
+[2025-12-02 16:27:01] Schedules saved, total: 18 for 3 senders
+[2025-12-02 16:27:01] Replied to group 943715179: [CQ:at,qq=2132245412] 课表导入成功 1 条！
+课程：数学分析，周次：1-17，节次：6-7，星期：1
+发送“查询课表”查看全部
+[2025-12-02 16:27:02] Ignore non-group frame
+[2025-12-02 16:27:09] JSON parsed via raw-utf8
+[2025-12-02 16:27:09] Received message from group 943715179 qq号：2132245412:  查询课表 (trimmed: 查询课表)
+[2025-12-02 16:27:09] Replied to group 943715179: [CQ:at,qq=2132245412] 你的课表（按星期、节次升序，共3门）：
+1. 课程：线性代数，周次：1-17，节次：3-4，星期：1
+2. 课程：数学分析，周次：1-17，节次：6-7，星期：1
+3. 课程：体育，周次：1-17，节次：7-9，星期：4
+
+[2025-12-02 16:27:09] Ignore non-group frame
+[2025-12-02 16:27:16] JSON parsed via raw-utf8
+[2025-12-02 16:27:16] Received message from group 943715179 qq号：2285373500: 等一下 (trimmed: 等一下)
+[2025-12-02 16:27:16] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:27:19] JSON parsed via raw-utf8
+[2025-12-02 16:27:19] Received message from group 943715179 qq号：2285373500: 我重启一下 (trimmed: 我重启一下)
+[2025-12-02 16:27:19] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:27:36] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 16:27:37] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 16:27:37] Waiting for group messages...
+[2025-12-02 16:27:37] Loaded group mapping entries: 2
+[2025-12-02 16:27:37] Member cache initialized, groups: 0
+[2025-12-02 16:27:37] Ignore non-group frame
+[2025-12-02 16:27:44] JSON parsed via raw-utf8
+[2025-12-02 16:27:44] Received message from group 943715179 qq号：2285373500:  有谁在上课 (trimmed: 有谁在上课)
+[2025-12-02 16:27:44] Loaded 18 schedules for 3 senders
+[2025-12-02 16:27:44] Replied to group 943715179: [CQ:at,qq=2285373500] ?? 当前群内上课状态（16:27）：
+
+?? 正在上课的用户：
+  1. 成员：2285373500 | 课程：思政（第7-8节） | 下课：17:30 | 剩余：1小时2分钟
+
+? 暂无课程的用户及下一节：
+  1. 2132245412：下一节：体育（12-04周4） 第7-9节 15:55-17:30 | 开始：15:55 | 距上课：47小时27分钟
+
+[2025-12-02 16:27:45] Ignore non-group frame
+[2025-12-02 16:27:53] Ignore non-group frame
+[2025-12-02 16:28:23] Ignore non-group frame
+[2025-12-02 16:28:53] Ignore non-group frame
+[2025-12-02 16:29:23] Ignore non-group frame
+[2025-12-02 16:29:53] Ignore non-group frame
+[2025-12-02 16:30:23] Ignore non-group frame
+[2025-12-02 16:30:53] Ignore non-group frame
+[2025-12-02 16:31:23] Ignore non-group frame
+[2025-12-02 16:31:45] JSON parsed via raw-utf8
+[2025-12-02 16:31:45] Received message from group 943715179 qq号：2285373500:  查询课表 (trimmed: 查询课表)
+[2025-12-02 16:31:45] Replied to group 943715179: [CQ:at,qq=2285373500] 你的课表（按星期、节次升序，共15门）：
+1. 课程：C语言，周次：4-15，节次：3-4，星期：1
+2. 课程：vjf，周次：4-18，节次：7-8，星期：1
+3. 课程：思政，周次：17-17，节次：11-12，星期：1
+4. 课程：篮球，周次：4-17，节次：3-4，星期：2
+5. 课程：线代，周次：8-19，节次：5-6，星期：2
+6. 课程：思政，周次：4-19，节次：7-8，星期：2
+7. 课程：vjf，周次：4-18，节次：1-2，星期：3
+8. 课程：C语言，周次：4-15，节次：5-6，星期：3
+9. 课程：计算思维，周次：13-18，节次：7-8，星期：3
+10. 课程：中国语文，周次：7-17，节次：9-10，星期：3
+11. 课程：线代，周次：8-19，节次：3-4，星期：4
+12. 课程：C语言实验，周次：9-16，节次：9-12，星期：4
+13. 课程：计算思维，周次：17-18，节次：9-12，星期：4
+14. 课程：vjf，周次：4-17，节次：3-4，星期：5
+15. 课程：计算思维，周次：13-18，节次：5-6，星期：5
+
+[2025-12-02 16:31:45] Ignore non-group frame
+[2025-12-02 16:31:51] JSON parsed via raw-utf8
+[2025-12-02 16:31:51] Received message from group 943715179 qq号：2285373500:  猜数 (trimmed: 猜数)
+[2025-12-02 16:31:51] Replied to group 943715179: [CQ:at,qq=2285373500] 猜数游戏开始！我已生成 1-100 之间的数字，当前范围：[1,100]，请输入你的猜测～
+游戏过程中不需要@bot，退出游戏需要@bot
+[2025-12-02 16:31:51] Ignore non-group frame
+[2025-12-02 16:31:53] Ignore non-group frame
+[2025-12-02 16:31:55] JSON parsed via raw-utf8
+[2025-12-02 16:31:55] Received message from group 943715179 qq号：2285373500: 50 (trimmed: 50)
+[2025-12-02 16:31:55] Replied to group 943715179: [CQ:at,qq=2285373500] 太大啦！新的范围：[1,49]
+[2025-12-02 16:31:56] Ignore non-group frame
+[2025-12-02 16:31:58] JSON parsed via raw-utf8
+[2025-12-02 16:31:58] Received message from group 943715179 qq号：2285373500: 75 (trimmed: 75)
+[2025-12-02 16:31:58] Replied to group 943715179: [CQ:at,qq=2285373500] 当前有效范围是 [1,49]，请输入范围内的数字～
+[2025-12-02 16:31:58] Ignore non-group frame
+[2025-12-02 16:32:00] JSON parsed via raw-utf8
+[2025-12-02 16:32:00] Received message from group 943715179 qq号：2285373500: 25 (trimmed: 25)
+[2025-12-02 16:32:00] Replied to group 943715179: [CQ:at,qq=2285373500] 太大啦！新的范围：[1,24]
+[2025-12-02 16:32:00] Ignore non-group frame
+[2025-12-02 16:32:03] JSON parsed via raw-utf8
+[2025-12-02 16:32:03] Received message from group 943715179 qq号：2285373500: 11 (trimmed: 11)
+[2025-12-02 16:32:03] Replied to group 943715179: [CQ:at,qq=2285373500] 太小啦！新的范围：[12,24]
+[2025-12-02 16:32:03] Ignore non-group frame
+[2025-12-02 16:32:08] JSON parsed via raw-utf8
+[2025-12-02 16:32:08] Received message from group 943715179 qq号：2285373500: 16 (trimmed: 16)
+[2025-12-02 16:32:08] Replied to group 943715179: [CQ:at,qq=2285373500] 太小啦！新的范围：[17,24]
+[2025-12-02 16:32:09] Ignore non-group frame
+[2025-12-02 16:32:12] JSON parsed via raw-utf8
+[2025-12-02 16:32:12] Received message from group 943715179 qq号：2285373500: 19 (trimmed: 19)
+[2025-12-02 16:32:12] Replied to group 943715179: [CQ:at,qq=2285373500] 太小啦！新的范围：[20,24]
+[2025-12-02 16:32:12] Ignore non-group frame
+[2025-12-02 16:32:14] JSON parsed via raw-utf8
+[2025-12-02 16:32:14] Received message from group 943715179 qq号：2285373500: 24 (trimmed: 24)
+[2025-12-02 16:32:14] Replied to group 943715179: [CQ:at,qq=2285373500] 太大啦！新的范围：[20,23]
+[2025-12-02 16:32:14] Ignore non-group frame
+[2025-12-02 16:32:18] JSON parsed via raw-utf8
+[2025-12-02 16:32:18] Received message from group 943715179 qq号：2285373500: 20 (trimmed: 20)
+[2025-12-02 16:32:18] Replied to group 943715179: [CQ:at,qq=2285373500] 太小啦！新的范围：[21,23]
+[2025-12-02 16:32:18] Ignore non-group frame
+[2025-12-02 16:32:21] JSON parsed via raw-utf8
+[2025-12-02 16:32:21] Received message from group 943715179 qq号：2285373500: 21 (trimmed: 21)
+[2025-12-02 16:32:21] Replied to group 943715179: [CQ:at,qq=2285373500] 太小啦！新的范围：[22,23]
+[2025-12-02 16:32:21] Ignore non-group frame
+[2025-12-02 16:32:23] Ignore non-group frame
+[2025-12-02 16:32:24] JSON parsed via raw-utf8
+[2025-12-02 16:32:24] Received message from group 943715179 qq号：2285373500: 23 (trimmed: 23)
+[2025-12-02 16:32:24] Replied to group 943715179: [CQ:at,qq=2285373500] 恭喜猜对啦！?? 就是 23 ～ 输入 '猜数' 可重新开始游戏
+[2025-12-02 16:32:24] Ignore non-group frame
+[2025-12-02 16:32:53] Ignore non-group frame
+[2025-12-02 16:33:23] Ignore non-group frame
+[2025-12-02 16:33:53] Ignore non-group frame
+[2025-12-02 16:34:23] Ignore non-group frame
+[2025-12-02 16:34:53] Ignore non-group frame
+[2025-12-02 16:35:23] Ignore non-group frame
+[2025-12-02 16:35:53] Ignore non-group frame
+[2025-12-02 16:36:23] Ignore non-group frame
+[2025-12-02 16:36:40] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 16:36:40] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 16:36:40] Waiting for group messages...
+[2025-12-02 16:36:40] Loaded group mapping entries: 2
+[2025-12-02 16:36:40] Member cache initialized, groups: 0
+[2025-12-02 16:36:40] Ignore non-group frame
+[2025-12-02 16:37:53] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 16:37:54] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 16:37:54] Waiting for group messages...
+[2025-12-02 16:37:54] Loaded group mapping entries: 2
+[2025-12-02 16:37:54] Member cache initialized, groups: 0
+[2025-12-02 16:37:54] Ignore non-group frame
+[2025-12-02 16:39:00] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 16:39:00] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 16:39:00] Waiting for group messages...
+[2025-12-02 16:39:00] Loaded group mapping entries: 2
+[2025-12-02 16:39:00] Member cache initialized, groups: 0
+[2025-12-02 16:39:00] Ignore non-group frame
+[2025-12-02 16:40:49] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 16:40:50] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 16:40:50] Waiting for group messages...
+[2025-12-02 16:40:50] Loaded group mapping entries: 2
+[2025-12-02 16:40:50] Member cache initialized, groups: 0
+[2025-12-02 16:40:50] Ignore non-group frame
+[2025-12-02 16:40:53] Ignore non-group frame
+[2025-12-02 16:41:03] JSON parsed via raw-utf8
+[2025-12-02 16:41:03] Received message from group 943715179 qq号：2285373500:  有谁在上课 (trimmed: 有谁在上课)
+[2025-12-02 16:41:03] Loaded 18 schedules for 3 senders
+[2025-12-02 16:41:03] Replied to group 943715179: [CQ:at,qq=2285373500] ?? 当前群内上课状态（16:41）：
+
+?? 正在上课的用户：
+  1. 成员：2285373500 | 课程：思政（第7-8节） | 下课：17:30 | 剩余：49分钟
+
+? 暂无课程的用户及下一节：
+  1. 2132245412：下一节：体育（12-04周4） 第7-9节 15:55-17:30 | 开始：15:55 | 距上课：47小时14分钟
+
+[2025-12-02 16:41:09] JSON parsed via raw-utf8
+[2025-12-02 16:41:09] Received message from group 943715179 qq号：2285373500:  有谁在上课 (trimmed: 有谁在上课)
+[2025-12-02 16:41:09] Replied to group 943715179: [CQ:at,qq=2285373500] ?? 当前群内上课状态（16:41）：
+
+?? 正在上课的用户：
+  1. 成员：2285373500 | 课程：思政（第7-8节） | 下课：17:30 | 剩余：49分钟
+
+? 暂无课程的用户及下一节：
+  1. 2132245412：下一节：体育（12-04周4） 第7-9节 15:55-17:30 | 开始：15:55 | 距上课：47小时14分钟
+
+[2025-12-02 16:45:15] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 16:45:15] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 16:45:15] Waiting for group messages...
+[2025-12-02 16:45:15] Loaded group mapping entries: 2
+[2025-12-02 16:45:15] Member cache initialized, groups: 0
+[2025-12-02 16:45:15] Ignore non-group frame
+[2025-12-02 16:45:23] Ignore non-group frame
+[2025-12-02 16:45:34] JSON parsed via raw-utf8
+[2025-12-02 16:45:34] Received message from group 943715179 qq号：2285373500:  绑定群聊 (trimmed: 绑定群聊)
+[2025-12-02 16:45:34] Loaded 18 schedules for 3 senders
+[2025-12-02 16:45:34] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:45:53] Ignore non-group frame
+[2025-12-02 16:46:04] JSON parsed via raw-utf8
+[2025-12-02 16:46:04] Received message from group 943715179 qq号：2285373500: 绑定查询群 (trimmed: 绑定查询群)
+[2025-12-02 16:46:04] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:46:21] JSON parsed via raw-utf8
+[2025-12-02 16:46:21] Received message from group 943715179 qq号：2285373500:  帮顶查询群 943715179 (trimmed: 帮顶查询群 943715179)
+[2025-12-02 16:46:21] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 16:46:23] Ignore non-group frame
+[2025-12-02 17:05:18] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 17:05:19] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 17:05:19] Waiting for group messages...
+[2025-12-02 17:05:19] Group mapping loaded: 0 bindings, 0 query groups, reminder=<empty>
+[2025-12-02 17:05:19] Member cache initialized, groups: 0
+[2025-12-02 17:05:19] Ignore non-group frame
+[2025-12-02 17:05:23] Ignore non-group frame
+[2025-12-02 17:05:28] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 17:05:28] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 17:05:28] Waiting for group messages...
+[2025-12-02 17:05:28] Group mapping loaded: 0 bindings, 0 query groups, reminder=<empty>
+[2025-12-02 17:05:28] Member cache initialized, groups: 0
+[2025-12-02 17:05:28] Ignore non-group frame
+[2025-12-02 17:05:53] Ignore non-group frame
+[2025-12-02 17:05:56] WebSocket connection failed: ????????????????????е?????? [system:10054], Error code: 10054
+[2025-12-02 17:06:34] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 17:06:34] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 17:06:34] Waiting for group messages...
+[2025-12-02 17:06:34] Group mapping loaded: 0 bindings, 0 query groups, reminder=<empty>
+[2025-12-02 17:06:34] Member cache initialized, groups: 0
+[2025-12-02 17:06:34] Ignore non-group frame
+[2025-12-02 17:06:42] JSON parsed via raw-utf8
+[2025-12-02 17:06:42] Received message from group 943715179 qq号：2285373500:   1 (trimmed: 1)
+[2025-12-02 17:06:42] Replied to group 943715179: [CQ:at,qq=2285373500] true
+[2025-12-02 17:06:56] Ignore non-group frame
+[2025-12-02 17:07:17] JSON parsed via raw-utf8
+[2025-12-02 17:07:17] Received message from group 943715179 qq号：2285373500:  绑定群聊 (trimmed: 绑定群聊)
+[2025-12-02 17:07:17] Loaded 18 schedules for 3 senders
+[2025-12-02 17:07:17] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 17:07:26] Ignore non-group frame
+[2025-12-02 17:07:56] Ignore non-group frame
+[2025-12-02 17:08:26] Ignore non-group frame
+[2025-12-02 17:08:56] Ignore non-group frame
+[2025-12-02 17:09:26] Ignore non-group frame
+[2025-12-02 17:09:38] JSON parsed via raw-utf8
+[2025-12-02 17:09:38] Received message from group 1061042473 qq号：1060400340: 牛大了bro (trimmed: 牛大了bro)
+[2025-12-02 17:09:38] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-02 17:09:56] Ignore non-group frame
+[2025-12-02 17:10:15] JSON parsed via raw-utf8
+[2025-12-02 17:10:15] Received message from group 943715179 qq号：2285373500: 绑定群聊 (trimmed: 绑定群聊)
+[2025-12-02 17:10:15] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 17:10:26] Ignore non-group frame
+[2025-12-02 17:10:56] Ignore non-group frame
+[2025-12-02 17:11:26] Ignore non-group frame
+[2025-12-02 17:11:56] Ignore non-group frame
+[2025-12-02 17:12:26] Ignore non-group frame
+[2025-12-02 17:12:56] Ignore non-group frame
+[2025-12-02 17:13:26] Ignore non-group frame
+[2025-12-02 17:13:56] Ignore non-group frame
+[2025-12-02 17:14:26] Ignore non-group frame
+[2025-12-02 17:14:49] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 17:14:49] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 17:14:49] Waiting for group messages...
+[2025-12-02 17:14:49] Group mapping loaded: 0 bindings, 0 query groups, reminder=<empty>
+[2025-12-02 17:14:49] Member cache initialized, groups: 0
+[2025-12-02 17:14:49] Ignore non-group frame
+[2025-12-02 17:14:54] JSON parsed via raw-utf8
+[2025-12-02 17:14:54] Received message from group 943715179 qq号：2285373500:  绑定群聊 (trimmed: 绑定群聊)
+[2025-12-02 17:14:54] Loaded 18 schedules for 3 senders
+[2025-12-02 17:14:54] Replied to group 943715179: ? 已将本群绑定为查询群，可直接发送「有谁在上课」查看。
+[2025-12-02 17:14:56] Ignore non-group frame
+[2025-12-02 17:14:59] JSON parsed via raw-utf8
+[2025-12-02 17:14:59] Received message from group 943715179 qq号：2285373500: 有谁在上课 (trimmed: 有谁在上课)
+[2025-12-02 17:14:59] Group 943715179: Message does not meet reply conditions, ignored
+[2025-12-02 17:15:05] JSON parsed via raw-utf8
+[2025-12-02 17:15:05] Received message from group 943715179 qq号：2285373500:  有谁在上课 (trimmed: 有谁在上课)
+[2025-12-02 17:15:05] Replied to group 943715179: [CQ:at,qq=2285373500] 当前群内暂无用户绑定提醒群，请先发送「设置提醒群」完成绑定～
+[2025-12-02 17:15:26] Ignore non-group frame
+[2025-12-02 17:15:56] Ignore non-group frame
+[2025-12-02 17:15:56] JSON parsed via raw-utf8
+[2025-12-02 17:15:56] Received message from group 1061042473 qq号：2285373500: ？ (trimmed: ？)
+[2025-12-02 17:15:56] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-02 17:16:25] JSON parsed via raw-utf8
+[2025-12-02 17:16:25] Received message from group 1061042473 qq号：1060400340: 我说你太牛比了 (trimmed: 我说你太牛比了)
+[2025-12-02 17:16:25] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-02 17:16:26] Ignore non-group frame
+[2025-12-02 17:16:56] Ignore non-group frame
+[2025-12-02 17:17:26] Ignore non-group frame
+[2025-12-02 17:17:56] Ignore non-group frame
+[2025-12-02 17:18:26] Ignore non-group frame
+[2025-12-02 17:18:56] Ignore non-group frame
+[2025-12-02 17:19:26] Ignore non-group frame
+[2025-12-02 17:19:56] Ignore non-group frame
+[2025-12-02 17:20:26] Ignore non-group frame
+[2025-12-02 17:20:56] Ignore non-group frame
+[2025-12-02 17:21:26] Ignore non-group frame
+[2025-12-02 17:21:56] Ignore non-group frame
+[2025-12-02 17:22:26] Ignore non-group frame
+[2025-12-02 17:22:56] Ignore non-group frame
+[2025-12-02 17:23:26] Ignore non-group frame
+[2025-12-02 17:23:51] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 17:23:51] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 17:23:51] Waiting for group messages...
+[2025-12-02 17:23:51] Group mapping loaded: 0 bindings, 1 query groups, reminder=<empty>
+[2025-12-02 17:23:51] Member cache initialized, groups: 0
+[2025-12-02 17:23:51] Ignore non-group frame
+[2025-12-02 17:23:56] Ignore non-group frame
+[2025-12-02 17:23:57] JSON parsed via raw-utf8
+[2025-12-02 17:23:57] Received message from group 943715179 qq号：2285373500:  绑定群聊 (trimmed: 绑定群聊)
+[2025-12-02 17:23:57] Loaded 18 schedules for 3 senders
+[2025-12-02 17:23:57] Replied to group 943715179: ? 已将本群绑定为查询群，可直接发送「有谁在上课」查看。
+[2025-12-02 17:24:02] JSON parsed via raw-utf8
+[2025-12-02 17:24:02] Received message from group 943715179 qq号：2285373500:  有谁在上课 (trimmed: 有谁在上课)
+[2025-12-02 17:24:02] Replied to group 943715179: [CQ:at,qq=2285373500] ?? 当前群内上课状态（17:24）：
+
+?? 正在上课的用户：
+  1. 成员：宁随 | 课程：思政（第7-8节） | 下课：17:30 | 剩余：6分钟
+
+? 暂无课程的用户：无
+
+[2025-12-02 17:24:11] JSON parsed via raw-utf8
+[2025-12-02 17:24:11] Received message from group 1061042473 qq号：2285373500:  绑定群聊 (trimmed: 绑定群聊)
+[2025-12-02 17:24:11] Replied to group 1061042473: ? 已将本群绑定为查询群，可直接发送「有谁在上课」查看。
+[2025-12-02 17:24:15] JSON parsed via raw-utf8
+[2025-12-02 17:24:15] Received message from group 1061042473 qq号：2285373500:  有谁在上课 (trimmed: 有谁在上课)
+[2025-12-02 17:24:15] Replied to group 1061042473: [CQ:at,qq=2285373500] ?? 当前群内上课状态（17:24）：
+
+?? 正在上课的用户：
+  1. 成员：宁随 | 课程：思政（第7-8节） | 下课：17:30 | 剩余：6分钟
+
+? 暂无课程的用户：无
+

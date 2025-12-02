@@ -39,6 +39,18 @@
     <ClInclude Include="schedule_reminder.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="group_mapping.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="class_inquiry.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="member_cache.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="onebot_ws_api.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="utils.cpp">
@@ -63,6 +75,18 @@
       <Filter>资源文件</Filter>
     </ClCompile>
     <ClCompile Include="schedule_reminder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="group_mapping.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="class_inquiry.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="member_cache.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="onebot_ws_api.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -12,19 +12,6 @@ enum class ScheduleType {
 };
 
 class ScheduleReminder {
-private:
-    // 学期第一周的起始日期（用于计算当前周数）
-    static std::tm term_start_date;
-
-    // 根据日期判断当前作息类型
-    static ScheduleType get_schedule_type(const std::tm& date);
-
-    // 计算指定日期是学期的第几周
-    static int get_week_of_term(const std::tm& date);
-
-    // 检查课程是否在指定日期上课
-    static bool is_course_on_date(const Schedule& course, const std::tm& date);
-
 public:
     // 设置学期第一周开始日期（格式：YYYY-MM-DD）
     static bool set_term_start_date(const std::string& date_str);
@@ -40,4 +27,17 @@ public:
 
     // 获取明日课程提醒消息（用于晚10点推送）
     static std::string get_tomorrow_courses_reminder(const std::string& qq_number);
+
+    // 根据时间获取当前作息类型
+    static ScheduleType get_schedule_type(const std::tm& date);
+
+private:
+    // 学期第一周的起始日期（用于计算当前周数）
+    static std::tm term_start_date;
+
+    // 计算指定日期是学期的第几周
+    static int get_week_of_term(const std::tm& date);
+
+    // 检查课程是否在指定日期上课
+    static bool is_course_on_date(const Schedule& course, const std::tm& date);
 };
