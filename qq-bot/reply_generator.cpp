@@ -4,6 +4,39 @@
 
 // 内置默认规则（原 keyword_rules 迁移至此，保持原有功能）
 static const std::vector<ReplyRule> default_rules = {
+    // 📖 功能总览（@机器人 + 帮助/功能/指令/空内容）
+    {
+        [](const json& msg_data, const std::string& content) {
+            const bool at_me = is_at_bot(msg_data);
+            const bool is_help = content.empty() || content == u8"帮助" || content == u8"功能" || content == u8"指令";
+            return at_me && is_help;
+        },
+        [](const std::string& /*group_id*/) {
+            std::string s;
+            s += u8"📖 功能总览\n\n";
+            s += u8"一、课表管理\n";
+            s += u8"- @机器人 导入课表：获取导入格式说明；支持中文逗号\n";
+            s += u8"- 直接发送课程多行文本：自动批量导入（换行或中文分号“；”分隔）\n";
+            s += u8"- @机器人 查询课表：查看你已导入的全部课程\n";
+            s += u8"- @机器人 清空课表：清空你的课程（注意目前无法删除单个课程）\n";
+            s += u8"- @机器人 今日课程：查看你今天的课程提醒\n\n";
+            s += u8"二、上课查询（群内）\n";
+            s += u8"- @机器人 有谁在上课：统计当前群内成员的上课状态\n";
+            s += u8"- 绑定群聊 / 取消绑定群聊：把本群启用/关闭“上课查询”功能\n\n";
+            s += u8"三、提醒功能\n";
+            s += u8"- 设置提醒群：将“你的个人提醒”绑定到本群（22:00 推送你的明日课程）\n";
+            s += u8"- 绑定群提醒 / 取消绑定群提醒：设置/取消“全局唯一提醒群”（22:00 推送全体有课成员的明日课程）\n\n";
+            s += u8"四、小游戏\n";
+            s += u8"- @机器人 猜数：开始1-100猜数字游戏\n";
+            s += u8"- @机器人 退出：结束当前群的猜数游戏\n\n";
+            s += u8"提示\n";
+            s += u8"- 以上指令均在群内使用；标注“@机器人”的需要先@本机器人\n";
+            s += u8"- 发生异常或无响应时，可再次尝试或稍后重试\n";
+            s += u8"- 当前所有指令只能在群聊中实现\n";
+            s += u8"- 项目地址：https://github.com/Ningsui0714/qq-bot\n";
+            return s;
+        }
+    },
     {
         [](const json& msg_data, const std::string& content) {
             return is_at_bot(msg_data) && content == "1";

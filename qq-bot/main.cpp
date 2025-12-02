@@ -94,8 +94,8 @@ static void reminder_task(websocket::stream<tcp::socket>& ws) {
 
         // 设定目标为今天的 22:00，并规范化
         std::tm target_tm = local_tm;
-        target_tm.tm_hour = 22;
-        target_tm.tm_min = 0;
+        target_tm.tm_hour = 19;
+        target_tm.tm_min = 44;
         target_tm.tm_sec = 0;
         target_tm.tm_isdst = -1;
         auto target_time = std::chrono::system_clock::from_time_t(std::mktime(&target_tm));
