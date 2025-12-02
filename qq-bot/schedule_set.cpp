@@ -4,6 +4,7 @@
 #include "schedule.h"
 #include "schedule_loader.h"
 #include "msg_handler.h"
+#include "schedule_reminder.h"
 #include <vector>
 #include <string>
 #include <sstream>
@@ -154,6 +155,38 @@ std::vector<ReplyRule> Schedule::get_schedule_rules() {
                 }
                 save_schedules_to_file();
                 return u8"你的课表已清空！";
+            }
+        },
+        // 规则5：@机器人 + "今日课程" → 返回今日课程提醒
+        ReplyRule{
+            [](const json& msg_data, const std::string& content) {
+                return is_at_bot(msg_data) && content == u8"今日课程";
+            },
+            [](const std::string&, const std::string&) -> std::string {
+                const std::string& sender_qq = get_current_sender_qq();
+                return ScheduleReminder::get_today_courses_reminder(sender_qq);
+            }
+        },
+        // 规则6： "设置学期 YYYY-MM-DD"（允许不@）
+        ReplyRule{
+            [](const json& msg_data, const std::string& content) {
+                const std::string prefix = u8"设置学期";
+                return !content.empty() && content.compare(0, prefix.size(), prefix) == 0;
+            },
+            [](const std::string&, const std::string& content) -> std::string {
+                const std::string prefix = u8"设置学期";
+                std::string date_str;
+                if (content.size() > prefix.size()) {
+                    date_str = content.substr(prefix.size());
+                }
+                date_str = trim_space(date_str);
+
+                // 兼容中文或半角空格、大小写格式（如 2025-9-1 -> 2025-09-01）
+                if (ScheduleReminder::set_term_start_date(date_str)) {
+                    // 提示中返回用户输入的规范化结果（建议与 set_term_start_date 的规范化一致）
+                    return u8"学期开始日期已设置为：" + date_str + u8"（格式：YYYY-MM-DD）";
+                }
+                return u8"设置失败！请使用格式：设置学期 YYYY-MM-DD";
             }
         }
     };

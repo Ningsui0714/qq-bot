@@ -130,6 +130,7 @@
     <ClInclude Include="reply_generator.h" />
     <ClInclude Include="schedule_loader.h" />
     <ClInclude Include="schedule.h" />
+    <ClInclude Include="schedule_reminder.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +139,7 @@
     <ClCompile Include="msg_handler.cpp" />
     <ClCompile Include="reply_generator.cpp" />
     <ClCompile Include="schedule_loader.cpp" />
+    <ClCompile Include="schedule_reminder.cpp" />
     <ClCompile Include="schedule_set.cpp" />
     <ClCompile Include="utils.cpp" />
   </ItemGroup>

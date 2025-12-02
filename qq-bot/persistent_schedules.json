@@ -1,6 +1,26 @@
 {
   "data": {
-    "1061042473": []
+    "1061042473": [],
+    "2285373500": [
+      {
+        "end_class": 2,
+        "end_week": 16,
+        "name": "高等数学",
+        "qq_number": "2285373500",
+        "start_class": 1,
+        "start_week": 1,
+        "weekday": 1
+      },
+      {
+        "end_class": 2,
+        "end_week": 16,
+        "name": "C语言",
+        "qq_number": "2285373500",
+        "start_class": 1,
+        "start_week": 1,
+        "weekday": 2
+      }
+    ]
   },
   "version": 1
 }

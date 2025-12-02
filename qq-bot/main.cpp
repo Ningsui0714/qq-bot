@@ -1,16 +1,33 @@
 ﻿#include "config.h"
 #include "utils.h"
 #include "msg_handler.h"
+#include "schedule_reminder.h"
+#include "schedule_loader.h"
 #include <boost/asio.hpp>
 #include <boost/beast.hpp>
 #include <iostream>
 #include <sstream>
 #include <iomanip>
+#include <thread>
+#include <chrono>
+#include <ctime>
+#include <Windows.h>
 
 namespace asio = boost::asio;
 namespace beast = boost::beast;
 namespace websocket = beast::websocket;
 using tcp = asio::ip::tcp;
+using nlohmann::json;
+
+// 与其他模块保持一致的课表持久化文件路径
+static const char* SCHEDULE_FILE = "persistent_schedules.json";
+
+// 占位：根据 qq 映射群号。请替换为真实实现（从配置或数据库加载）。
+static std::string get_group_id_by_qq(const std::string& qq) {
+    // TODO: 替换为真实映射逻辑
+    write_log("get_group_id_by_qq not implemented. QQ=" + qq);
+    return std::string(); // 返回空表示未知群
+}
 
 // UTF-8 校验：仅检查结构合法性
 static bool is_valid_utf8(const std::string& s) {
@@ -39,7 +56,6 @@ static bool is_valid_utf8(const std::string& s) {
         for (size_t k = 1; k < len; ++k) {
             if ((p[i + k] >> 6) != 0x2) return false;
         }
-        // 过度严格检查可选：排除非法码点（UTF-16代理区等），此处略
         i += len;
     }
     return true;
@@ -71,17 +87,73 @@ static std::string hex_preview(const std::string& s, size_t max_len = 32) {
     return oss.str();
 }
 
-void run_robot() {
+// 每晚 22:00 推送明日课程提醒
+static void reminder_task(websocket::stream<tcp::socket>& ws) {
+    while (true) {
+        // 当前本地时间
+        auto now = std::chrono::system_clock::now();
+        std::time_t now_tt = std::chrono::system_clock::to_time_t(now);
+        std::tm local_tm;
+        localtime_s(&local_tm, &now_tt);
+
+        // 设定目标为今天的 22:00，并规范化
+        std::tm target_tm = local_tm;
+        target_tm.tm_hour = 22;
+        target_tm.tm_min = 0;
+        target_tm.tm_sec = 0;
+        target_tm.tm_isdst = -1;
+        auto target_time = std::chrono::system_clock::from_time_t(std::mktime(&target_tm));
+
+        // 如果当前时间已过今晚 22:00，则推迟到明天 22:00
+        if (now > target_time) {
+            target_time += std::chrono::hours(24);
+        }
+
+        // 等待到目标时间
+        std::this_thread::sleep_until(target_time);
+
+        // 发送明日课程提醒给所有有课的用户
+        auto all_schedules = ScheduleLoader::load_from_file(SCHEDULE_FILE);
+        for (const auto& kv : all_schedules) {
+            const std::string& qq = kv.first;
+            std::string reminder = ScheduleReminder::get_tomorrow_courses_reminder(qq);
+            if (reminder.find(u8"明天没有课程") == std::string::npos) {
+                std::string group_id = get_group_id_by_qq(qq); // 请实现真实映射
+                if (!group_id.empty()) {
+                    json reply = {
+                        {"action", "send_group_msg"},
+                        {"params", {
+                            {"group_id", group_id},
+                            {"message", "[CQ:at,qq=" + qq + "] " + reminder}
+                        }}
+                    };
+                    try {
+                        ws.write(asio::buffer(reply.dump()));
+                    } catch (const beast::system_error& e) {
+                        write_log("Reminder send failed: " + std::string(e.what()));
+                    }
+                }
+            }
+        }
+    }
+}
+
+static void run_robot() {
     try {
         asio::io_context ioc;
         tcp::resolver resolver(ioc);
         websocket::stream<tcp::socket> ws(ioc);
+
         auto results = resolver.resolve(WS_HOST, WS_PORT);
         asio::connect(ws.next_layer(), results.begin(), results.end());
         ws.handshake(WS_HOST, WS_PATH);
         ws.text(true); // 明确文本帧（UTF-8）
+
         write_log("WebSocket connected successfully! Robot started, QQ: " + std::string(BOT_QQ));
         write_log("Waiting for group messages...");
+
+        // 握手成功后启动提醒线程
+        std::thread(reminder_task, std::ref(ws)).detach();
 
         beast::flat_buffer buffer;
         while (true) {
@@ -100,7 +172,7 @@ void run_robot() {
                 }
                 if (s.size() > lim) oss << " ...";
                 return oss.str();
-                };
+            };
 
             json msg_data;
             bool ok = false;
@@ -133,7 +205,6 @@ void run_robot() {
             }
 
             if (!ok) {
-                // 最终失败：输出前 120 可见字符辅助诊断
                 std::string preview = frame.substr(0, std::min<size_t>(120, frame.size()));
                 write_log("Drop frame (unparsed). Preview: " + preview);
                 continue;
@@ -149,6 +220,7 @@ void run_robot() {
                 write_log("Ignore non-group frame");
             }
         }
+
         ws.close(websocket::close_code::normal);
     }
     catch (const beast::system_error& e) {

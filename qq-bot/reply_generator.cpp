@@ -40,15 +40,33 @@ bool ReplyGenerator::generate_with_rules(const json& msg_data, const std::string
     const std::vector<ReplyRule>& custom_rules, json& reply) {
     // 遍历规则，匹配成功则生成回复
     for (const auto& rule : custom_rules) {
-        if (rule.matcher(msg_data, content)) {
-            reply = {
-                {"action", "send_group_msg"},
-                {"params", {
-                    {"group_id", group_id},
-                    {"message", rule.reply_generator(group_id, content)}
-                }}
-            };
-            return true;
+        bool matched = false;
+        try {
+            matched = rule.matcher(msg_data, content);
+        } catch (const std::exception& e) {
+            write_log(std::string("Rule matcher threw: ") + e.what());
+            matched = false;
+        } catch (...) {
+            write_log("Rule matcher threw: unknown exception");
+            matched = false;
+        }
+
+        if (matched) {
+            try {
+                reply = {
+                    {"action", "send_group_msg"},
+                    {"params", {
+                        {"group_id", group_id},
+                        {"message", rule.reply_generator(group_id, content)}
+                    }}
+                };
+                return true;
+            } catch (const std::exception& e) {
+                write_log(std::string("Rule reply_generator threw: ") + e.what());
+                // 若生成回复失败，继续尝试下一条规则
+            } catch (...) {
+                write_log("Rule reply_generator threw: unknown exception");
+            }
         }
     }
     return false;

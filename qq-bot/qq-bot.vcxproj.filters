@@ -36,6 +36,9 @@
     <ClInclude Include="schedule_loader.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="schedule_reminder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="utils.cpp">
@@ -58,6 +61,9 @@
     </ClCompile>
     <ClCompile Include="schedule_loader.cpp">
       <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="schedule_reminder.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
