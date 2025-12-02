@@ -1362,3 +1362,258 @@ C语言（周2） 第1-2节 8:00-9:40
 2. 课程：C语言，周次：1-16，节次：1-2，星期：2
 
 [2025-12-02 14:19:25] Ignore non-group frame
+[2025-12-02 14:35:53] WebSocket connection failed: connect: ???????????????????????????? [system:10061 at C:\Users\majia\vcpkg\installed\x64-windows\include\boost\asio\detail\win_iocp_socket_service.hpp:629:5 in function 'class boost::system::error_code __cdecl boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::connect(struct boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::implementation_type &,const class boost::asio::ip::basic_endpoint<class boost::asio::ip::tcp> &,class boost::system::error_code &)'], Error code: 10061
+[2025-12-02 14:36:17] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 14:36:17] Waiting for group messages...
+[2025-12-02 14:36:17] Ignore non-group frame
+[2025-12-02 14:39:00] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 14:39:00] Waiting for group messages...
+[2025-12-02 14:39:00] Ignore non-group frame
+[2025-12-02 14:39:04] Ignore non-group frame
+[2025-12-02 14:39:23] JSON parsed via raw-utf8
+[2025-12-02 14:39:23] Received message from group 1061042473 qq号：2285373500:  导入课表 (trimmed: 导入课表)
+[2025-12-02 14:39:23] Loaded 2 schedules for 2 senders
+[2025-12-02 14:39:23] Replied to group 1061042473: 请发送用中文逗号分隔的课程信息，格式：
+课程名，星期，开始周，结束周，开始节，结束节
+支持一次发送多条，使用换行或中文分号“；”分隔
+示例：高等数学，1，1，16，1，2
+[2025-12-02 14:39:24] Ignore non-group frame
+[2025-12-02 14:39:34] Ignore non-group frame
+[2025-12-02 14:39:41] JSON parsed via raw-utf8
+[2025-12-02 14:39:41] Received message from group 1061042473 qq号：2285373500:  清空课表 (trimmed: 清空课表)
+[2025-12-02 14:39:41] Schedules saved, total: 0 for 2 senders
+[2025-12-02 14:39:41] Replied to group 1061042473: 你的课表已清空！
+[2025-12-02 14:39:41] Ignore non-group frame
+[2025-12-02 14:40:04] Ignore non-group frame
+[2025-12-02 14:40:06] JSON parsed via raw-utf8
+[2025-12-02 14:40:06] Received message from group 1061042473 qq号：1060400340:  导入课表 (trimmed: 导入课表)
+[2025-12-02 14:40:06] Replied to group 1061042473: 请发送用中文逗号分隔的课程信息，格式：
+课程名，星期，开始周，结束周，开始节，结束节
+支持一次发送多条，使用换行或中文分号“；”分隔
+示例：高等数学，1，1，16，1，2
+[2025-12-02 14:40:06] Ignore non-group frame
+[2025-12-02 14:40:18] JSON parsed via raw-utf8
+[2025-12-02 14:40:18] Received message from group 1061042473 qq号：1060400340: 清空课表 (trimmed: 清空课表)
+[2025-12-02 14:40:18] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-02 14:40:27] JSON parsed via raw-utf8
+[2025-12-02 14:40:27] Received message from group 1061042473 qq号：1060400340:  清空课表 (trimmed: 清空课表)
+[2025-12-02 14:40:27] Schedules saved, total: 0 for 2 senders
+[2025-12-02 14:40:27] Replied to group 1061042473: 你的课表已清空！
+[2025-12-02 14:40:28] Ignore non-group frame
+[2025-12-02 14:40:34] Ignore non-group frame
+[2025-12-02 14:40:37] JSON parsed via raw-utf8
+[2025-12-02 14:40:37] Received message from group 1061042473 qq号：1060400340: @风 清空课表 (trimmed: @风 清空课表)
+[2025-12-02 14:40:37] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-02 14:40:49] JSON parsed via raw-utf8
+[2025-12-02 14:40:49] Received message from group 1061042473 qq号：1060400340: @风 导入课表 (trimmed: @风 导入课表)
+[2025-12-02 14:40:49] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-02 14:40:54] JSON parsed via raw-utf8
+[2025-12-02 14:40:54] Received message from group 1061042473 qq号：1060400340: @风 导入课表 (trimmed: @风 导入课表)
+[2025-12-02 14:40:54] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-02 14:41:04] Ignore non-group frame
+[2025-12-02 14:41:27] JSON parsed via raw-utf8
+[2025-12-02 14:41:27] Received message from group 1061042473 qq号：2285373500: C语言，1，4，15，3，4；
+C语言，3，4，15，5，6 (trimmed: C语言，1，4，15，3，4；C语言，3，4，15，5，6)
+[2025-12-02 14:41:27] Schedules saved, total: 2 for 2 senders
+[2025-12-02 14:41:27] Replied to group 1061042473: 课表导入成功 2 条！
+课程：C语言，周次：4-15，节次：5-6，星期：3
+发送“查询课表”查看全部
+[2025-12-02 14:41:28] Ignore non-group frame
+[2025-12-02 14:41:34] Ignore non-group frame
+[2025-12-02 14:41:37] JSON parsed via raw-utf8
+[2025-12-02 14:41:37] Received message from group 1061042473 qq号：2285373500:  导入课表 (trimmed: 导入课表)
+[2025-12-02 14:41:37] Replied to group 1061042473: 请发送用中文逗号分隔的课程信息，格式：
+课程名，星期，开始周，结束周，开始节，结束节
+支持一次发送多条，使用换行或中文分号“；”分隔
+示例：高等数学，1，1，16，1，2
+[2025-12-02 14:41:37] Ignore non-group frame
+[2025-12-02 14:41:42] JSON parsed via raw-utf8
+[2025-12-02 14:41:42] Received message from group 1061042473 qq号：2285373500:  查询课表 (trimmed: 查询课表)
+[2025-12-02 14:41:42] Replied to group 1061042473: 你的课表（按星期、节次升序，共2门）：
+1. 课程：C语言，周次：4-15，节次：3-4，星期：1
+2. 课程：C语言，周次：4-15，节次：5-6，星期：3
+
+[2025-12-02 14:41:43] Ignore non-group frame
+[2025-12-02 14:42:04] Ignore non-group frame
+[2025-12-02 14:42:06] JSON parsed via raw-utf8
+[2025-12-02 14:42:06] Received message from group 1061042473 qq号：1060400340:  导入课表 (trimmed: 导入课表)
+[2025-12-02 14:42:06] Replied to group 1061042473: 请发送用中文逗号分隔的课程信息，格式：
+课程名，星期，开始周，结束周，开始节，结束节
+支持一次发送多条，使用换行或中文分号“；”分隔
+示例：高等数学，1，1，16，1，2
+[2025-12-02 14:42:07] Ignore non-group frame
+[2025-12-02 14:42:14] JSON parsed via raw-utf8
+[2025-12-02 14:42:14] Received message from group 1061042473 qq号：1060400340: @风 导入课表 (trimmed: @风 导入课表)
+[2025-12-02 14:42:14] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-02 14:42:34] Ignore non-group frame
+[2025-12-02 14:43:00] JSON parsed via raw-utf8
+[2025-12-02 14:43:00] Received message from group 1061042473 qq号：1060400340: cnm,c,n,m,c,c (trimmed: cnm,c,n,m,c,c)
+[2025-12-02 14:43:00] Replied to group 1061042473: 导入失败！请使用中文逗号分隔：课程名，星期，开始周，结束周，开始节，结束节
+支持多条：用换行或中文分号“；”分隔
+示例：高等数学，1，1，16，1，2
+[2025-12-02 14:43:01] Ignore non-group frame
+[2025-12-02 14:43:04] Ignore non-group frame
+[2025-12-02 14:43:34] Ignore non-group frame
+[2025-12-02 14:43:40] JSON parsed via raw-utf8
+[2025-12-02 14:43:40] Received message from group 1061042473 qq号：1060400340: cnm，c，n，m，c，c (trimmed: cnm，c，n，m，c，c)
+[2025-12-02 14:43:40] Replied to group 1061042473: 导入失败！请使用中文逗号分隔：课程名，星期，开始周，结束周，开始节，结束节
+支持多条：用换行或中文分号“；”分隔
+示例：高等数学，1，1，16，1，2
+[2025-12-02 14:43:41] Ignore non-group frame
+[2025-12-02 14:43:53] JSON parsed via raw-utf8
+[2025-12-02 14:43:53] Received message from group 1061042473 qq号：2285373500: C语言实验，4，9，16，9，12；计算思维，3，13，18，7，8；计算思维，5，13，18，5，6；计算思维，4，17，18，，9，12 (trimmed: C语言实验，4，9，16，9，12；计算思维，3，13，18，7，8；计算思维，5，13，18，5，6；计算思维，4，17，18，，9，12)
+[2025-12-02 14:43:53] Schedules saved, total: 6 for 2 senders
+[2025-12-02 14:43:53] Replied to group 1061042473: 课表导入成功 4 条！
+课程：计算思维，周次：17-18，节次：9-12，星期：4
+发送“查询课表”查看全部
+[2025-12-02 14:43:54] Ignore non-group frame
+[2025-12-02 14:44:04] Ignore non-group frame
+[2025-12-02 14:44:05] JSON parsed via raw-utf8
+[2025-12-02 14:44:05] Received message from group 1061042473 qq号：2285373500:  查询课表 (trimmed: 查询课表)
+[2025-12-02 14:44:05] Replied to group 1061042473: 你的课表（按星期、节次升序，共6门）：
+1. 课程：C语言，周次：4-15，节次：3-4，星期：1
+2. 课程：C语言，周次：4-15，节次：5-6，星期：3
+3. 课程：计算思维，周次：13-18，节次：7-8，星期：3
+4. 课程：C语言实验，周次：9-16，节次：9-12，星期：4
+5. 课程：计算思维，周次：17-18，节次：9-12，星期：4
+6. 课程：计算思维，周次：13-18，节次：5-6，星期：5
+
+[2025-12-02 14:44:05] Ignore non-group frame
+[2025-12-02 14:44:34] Ignore non-group frame
+[2025-12-02 14:45:04] Ignore non-group frame
+[2025-12-02 14:45:26] JSON parsed via raw-utf8
+[2025-12-02 14:45:26] Received message from group 1061042473 qq号：1060400340: ，，1，2，3，4，5 (trimmed: ，，1，2，3，4，5)
+[2025-12-02 14:45:26] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-02 14:45:34] Ignore non-group frame
+[2025-12-02 14:45:38] JSON parsed via raw-utf8
+[2025-12-02 14:45:38] Received message from group 1061042473 qq号：1060400340:  导入课表 (trimmed: 导入课表)
+[2025-12-02 14:45:38] Replied to group 1061042473: 请发送用中文逗号分隔的课程信息，格式：
+课程名，星期，开始周，结束周，开始节，结束节
+支持一次发送多条，使用换行或中文分号“；”分隔
+示例：高等数学，1，1，16，1，2
+[2025-12-02 14:45:39] Ignore non-group frame
+[2025-12-02 14:45:46] JSON parsed via raw-utf8
+[2025-12-02 14:45:46] Received message from group 1061042473 qq号：1060400340: ，，1，2，3，4，5 (trimmed: ，，1，2，3，4，5)
+[2025-12-02 14:45:46] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-02 14:46:04] Ignore non-group frame
+[2025-12-02 14:46:07] JSON parsed via raw-utf8
+[2025-12-02 14:46:07] Received message from group 1061042473 qq号：2285373500: 篮球，2，4，17，3，4；思政，2，4，19，7，8；思政，1，17，17，11，12 (trimmed: 篮球，2，4，17，3，4；思政，2，4，19，7，8；思政，1，17，17，11，12)
+[2025-12-02 14:46:07] Schedules saved, total: 9 for 2 senders
+[2025-12-02 14:46:07] Replied to group 1061042473: 课表导入成功 3 条！
+课程：思政，周次：17-17，节次：11-12，星期：1
+发送“查询课表”查看全部
+[2025-12-02 14:46:08] Ignore non-group frame
+[2025-12-02 14:46:15] JSON parsed via raw-utf8
+[2025-12-02 14:46:15] Received message from group 1061042473 qq号：1060400340: 高等，数学，1，1，16，1，2 (trimmed: 高等，数学，1，1，16，1，2)
+[2025-12-02 14:46:15] Group 1061042473: Message does not meet reply conditions, ignored
+[2025-12-02 14:46:34] Ignore non-group frame
+[2025-12-02 14:47:04] Ignore non-group frame
+[2025-12-02 14:47:19] JSON parsed via raw-utf8
+[2025-12-02 14:47:19] Received message from group 1061042473 qq号：2285373500: vjf，1，4，18，7，8；vjf，3，4，18，1，2；vjf，5，4，17，3，4 (trimmed: vjf，1，4，18，7，8；vjf，3，4，18，1，2；vjf，5，4，17，3，4)
+[2025-12-02 14:47:19] Schedules saved, total: 12 for 2 senders
+[2025-12-02 14:47:19] Replied to group 1061042473: 课表导入成功 3 条！
+课程：vjf，周次：4-17，节次：3-4，星期：5
+发送“查询课表”查看全部
+[2025-12-02 14:47:19] Ignore non-group frame
+[2025-12-02 14:47:34] Ignore non-group frame
+[2025-12-02 14:48:04] Ignore non-group frame
+[2025-12-02 14:48:12] JSON parsed via raw-utf8
+[2025-12-02 14:48:12] Received message from group 1061042473 qq号：2285373500: 线代，2，8，19，5，6；线代，4，8，19，3，4 (trimmed: 线代，2，8，19，5，6；线代，4，8，19，3，4)
+[2025-12-02 14:48:12] Schedules saved, total: 14 for 2 senders
+[2025-12-02 14:48:12] Replied to group 1061042473: 课表导入成功 2 条！
+课程：线代，周次：8-19，节次：3-4，星期：4
+发送“查询课表”查看全部
+[2025-12-02 14:48:12] Ignore non-group frame
+[2025-12-02 14:48:34] Ignore non-group frame
+[2025-12-02 14:48:48] JSON parsed via raw-utf8
+[2025-12-02 14:48:48] Received message from group 1061042473 qq号：2285373500: 中国语文，3，7，17，9，10 (trimmed: 中国语文，3，7，17，9，10)
+[2025-12-02 14:48:48] Schedules saved, total: 15 for 2 senders
+[2025-12-02 14:48:48] Replied to group 1061042473: 课表导入成功 1 条！
+课程：中国语文，周次：7-17，节次：9-10，星期：3
+发送“查询课表”查看全部
+[2025-12-02 14:48:48] Ignore non-group frame
+[2025-12-02 14:48:52] JSON parsed via raw-utf8
+[2025-12-02 14:48:52] Received message from group 1061042473 qq号：2285373500:  今日课程 (trimmed: 今日课程)
+[2025-12-02 14:48:52] Replied to group 1061042473: 今天没有课程哦～
+[2025-12-02 14:48:53] Ignore non-group frame
+[2025-12-02 14:49:04] Ignore non-group frame
+[2025-12-02 14:49:29] JSON parsed via raw-utf8
+[2025-12-02 14:49:29] Received message from group 1061042473 qq号：2285373500: 设置学期 2025-9-1 (trimmed: 设置学期 2025-9-1)
+[2025-12-02 14:49:29] 学期开始日期已设置为: 2025-09-01
+[2025-12-02 14:49:29] Replied to group 1061042473: 学期开始日期已设置为：2025-9-1（格式：YYYY-MM-DD）
+[2025-12-02 14:49:30] Ignore non-group frame
+[2025-12-02 14:49:34] Ignore non-group frame
+[2025-12-02 14:49:36] JSON parsed via raw-utf8
+[2025-12-02 14:49:36] Received message from group 1061042473 qq号：2285373500:  今日课程 (trimmed: 今日课程)
+[2025-12-02 14:49:36] Replied to group 1061042473: 今日课程安排：
+篮球（周2） 第3-4节 10:10-11:50
+线代（周2） 第5-6节 14:00-15:35
+思政（周2） 第7-8节 15:55-17:30
+
+[2025-12-02 14:49:36] Ignore non-group frame
+[2025-12-02 14:51:26] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 14:51:26] Waiting for group messages...
+[2025-12-02 14:51:26] Ignore non-group frame
+[2025-12-02 14:51:33] JSON parsed via raw-utf8
+[2025-12-02 14:51:33] Received message from group 943715179 qq号：2285373500: 设置学期 2025-9-1 (trimmed: 设置学期 2025-9-1)
+[2025-12-02 14:51:33] Loaded 15 schedules for 2 senders
+[2025-12-02 14:51:33] 学期开始日期已设置为: 2025-09-01
+[2025-12-02 14:51:33] Replied to group 943715179: 学期开始日期已设置为：2025-9-1（格式：YYYY-MM-DD）
+[2025-12-02 14:51:33] Ignore non-group frame
+[2025-12-02 14:51:34] Ignore non-group frame
+[2025-12-02 14:51:38] JSON parsed via raw-utf8
+[2025-12-02 14:51:38] Received message from group 943715179 qq号：2285373500:  查询课表 (trimmed: 查询课表)
+[2025-12-02 14:51:38] Replied to group 943715179: 你的课表（按星期、节次升序，共15门）：
+1. 课程：C语言，周次：4-15，节次：3-4，星期：1
+2. 课程：vjf，周次：4-18，节次：7-8，星期：1
+3. 课程：思政，周次：17-17，节次：11-12，星期：1
+4. 课程：篮球，周次：4-17，节次：3-4，星期：2
+5. 课程：线代，周次：8-19，节次：5-6，星期：2
+6. 课程：思政，周次：4-19，节次：7-8，星期：2
+7. 课程：vjf，周次：4-18，节次：1-2，星期：3
+8. 课程：C语言，周次：4-15，节次：5-6，星期：3
+9. 课程：计算思维，周次：13-18，节次：7-8，星期：3
+10. 课程：中国语文，周次：7-17，节次：9-10，星期：3
+11. 课程：线代，周次：8-19，节次：3-4，星期：4
+12. 课程：C语言实验，周次：9-16，节次：9-12，星期：4
+13. 课程：计算思维，周次：17-18，节次：9-12，星期：4
+14. 课程：vjf，周次：4-17，节次：3-4，星期：5
+15. 课程：计算思维，周次：13-18，节次：5-6，星期：5
+
+[2025-12-02 14:51:38] Ignore non-group frame
+[2025-12-02 14:51:44] JSON parsed via raw-utf8
+[2025-12-02 14:51:44] Received message from group 943715179 qq号：2285373500:  今日课程 (trimmed: 今日课程)
+[2025-12-02 14:51:44] Replied to group 943715179: 今日课程安排：
+篮球（周2） 第3-4节 10:10-11:50
+线代（周2） 第5-6节 14:00-15:35
+思政（周2） 第7-8节 15:55-17:30
+
+[2025-12-02 14:51:45] Ignore non-group frame
+[2025-12-02 14:52:04] Ignore non-group frame
+[2025-12-02 14:52:34] Ignore non-group frame
+[2025-12-02 14:52:45] 学期开始日期持久化文件不存在，使用默认值 2024-09-02
+[2025-12-02 14:52:46] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 14:52:46] Waiting for group messages...
+[2025-12-02 14:52:46] Ignore non-group frame
+[2025-12-02 14:52:54] JSON parsed via raw-utf8
+[2025-12-02 14:52:54] Received message from group 943715179 qq号：2285373500: 设置学期 2025-9-1 (trimmed: 设置学期 2025-9-1)
+[2025-12-02 14:52:54] Loaded 15 schedules for 2 senders
+[2025-12-02 14:52:54] 学期开始日期已设置并持久化为: 2025-09-01
+[2025-12-02 14:52:54] Replied to group 943715179: 学期开始日期已设置为：2025-9-1（格式：YYYY-MM-DD）
+[2025-12-02 14:52:54] Ignore non-group frame
+[2025-12-02 14:52:58] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 14:52:58] WebSocket connected successfully! Robot started, QQ: 3373368470
+[2025-12-02 14:52:58] Waiting for group messages...
+[2025-12-02 14:52:58] Ignore non-group frame
+[2025-12-02 14:53:04] Ignore non-group frame
+[2025-12-02 14:53:08] JSON parsed via raw-utf8
+[2025-12-02 14:53:08] Received message from group 943715179 qq号：2285373500:  今日课程 (trimmed: 今日课程)
+[2025-12-02 14:53:08] Loaded 15 schedules for 2 senders
+[2025-12-02 14:53:08] Replied to group 943715179: 今日课程安排：
+篮球（周2） 第3-4节 10:10-11:50
+线代（周2） 第5-6节 14:00-15:35
+思政（周2） 第7-8节 15:55-17:30
+
+[2025-12-02 14:53:08] Ignore non-group frame
+[2025-12-02 14:56:06] 已从持久化文件加载学期开始日期: 2025-09-01
+[2025-12-02 14:56:08] WebSocket connection failed: connect: ???????????????????????????? [system:10061 at C:\Users\majia\vcpkg\installed\x64-windows\include\boost\asio\detail\win_iocp_socket_service.hpp:629:5 in function 'class boost::system::error_code __cdecl boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::connect(struct boost::asio::detail::win_iocp_socket_service<class boost::asio::ip::tcp>::implementation_type &,const class boost::asio::ip::basic_endpoint<class boost::asio::ip::tcp> &,class boost::system::error_code &)'], Error code: 10061
