@@ -432,3 +432,4 @@ FodyWeavers.xsd
 *.msm
 *.msp
 _codeql_detected_source_root
+qq-bot/persistent_schedules.json
