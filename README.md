@@ -26,23 +26,22 @@
 
 ```
 qq-bot/
-├── qq-bot/                    # 源代码目录
-│   ├── main.cpp              # 程序入口，WebSocket连接管理
-│   ├── config.h              # 配置文件（服务器地址、机器人QQ等）
-│   ├── msg_handler.cpp/h     # 群消息处理器
-│   ├── private_msg_handler.cpp/h  # 私聊消息处理器
-│   ├── reply_generator.cpp/h # 回复生成器（规则引擎）
-│   ├── guess_number.cpp/h    # 猜数游戏模块
-│   ├── schedule.h            # 课表数据结构
-│   ├── schedule_set.cpp      # 课表规则集
-│   ├── schedule_loader.cpp/h # 课表持久化加载器
-│   ├── schedule_data.h       # 课表示例数据
-│   ├── utils.cpp/h           # 工具函数（编码转换、日志等）
-│   ├── qq-bot.sln            # Visual Studio 解决方案
-│   └── qq-bot.vcxproj        # Visual Studio 项目文件
-├── LICENSE                    # MIT 许可证
-├── .gitignore                 # Git忽略配置
-└── README.md                  # 项目说明文档
+├── qq-bot/                        # 源代码目录
+│   ├── main.cpp                  # 程序入口，WebSocket连接管理
+│   ├── config.h                  # 配置文件（服务器地址、机器人QQ等）
+│   ├── msg_handler.cpp/h         # 群消息处理器
+│   ├── private_msg_handler.cpp/h # 私聊消息处理器
+│   ├── reply_generator.cpp/h     # 回复生成器（规则引擎）
+│   ├── guess_number.cpp/h        # 猜数游戏模块
+│   ├── schedule.h                # 课表数据结构
+│   ├── schedule_set.cpp          # 课表规则集
+│   ├── schedule_loader.cpp/h     # 课表持久化加载器
+│   ├── utils.cpp/h               # 工具函数（编码转换、日志等）
+│   ├── qq-bot.sln                # Visual Studio 解决方案
+│   └── qq-bot.vcxproj            # Visual Studio 项目文件
+├── LICENSE                        # MIT 许可证
+├── .gitignore                     # Git忽略配置
+└── README.md                      # 项目说明文档
 ```
 
 > **注意**：运行时会自动生成 `robot_log.txt`（日志文件）和 `persistent_schedules.json`（课表持久化文件），这些文件已被 .gitignore 排除。
@@ -112,8 +111,8 @@ const char* const BOT_QQ = "你的机器人QQ号";
 ### 课表管理
 
 1. @机器人 **导入课表** - 查看导入格式
-2. 发送 `课程名,开始周,结束周,开始节,结束节` - 导入课程
-   - 示例：`高等数学,1,16,1,2`
+2. 发送 `课程名,星期,开始周,结束周,开始节,结束节` - 导入课程
+   - 示例：`高等数学,1,1,16,1,2`（星期一，第1-16周，第1-2节）
 3. @机器人 **查询课表** - 查看所有已导入课程
 4. @机器人 **清空课表** - 清空所有课程
 
