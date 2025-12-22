@@ -60,6 +60,14 @@ static const std::vector<ReplyRule> default_rules = {
         [](const std::string& group_id) {
             return u8"你好你好~";
         }
+    },
+    {
+        [](const json& msg_data, const std::string& content) {
+            return  content == "350234";
+        },
+        [](const std::string& group_id) {
+            return u8"带着你的苦命鸳鸯吃大份去吧";
+        }
     }
 };
 

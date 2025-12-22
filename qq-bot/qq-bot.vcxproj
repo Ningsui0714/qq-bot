@@ -76,6 +76,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\github\qq-bot\qq-bot\src\small_function;D:\github\qq-bot\qq-bot\src\utils;D:\github\qq-bot\qq-bot\src\schedule;D:\github\qq-bot\qq-bot\src\core;D:\github\qq-bot\qq-bot\src;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -90,6 +91,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\github\qq-bot\qq-bot\src\small_function;D:\github\qq-bot\qq-bot\src\utils;D:\github\qq-bot\qq-bot\src\schedule;D:\github\qq-bot\qq-bot\src\core;D:\github\qq-bot\qq-bot\src;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -103,6 +105,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\github\qq-bot\qq-bot\src\small_function;D:\github\qq-bot\qq-bot\src\utils;D:\github\qq-bot\qq-bot\src\schedule;D:\github\qq-bot\qq-bot\src\core;D:\github\qq-bot\qq-bot\src;D:\github\qq-bot\qq-bot\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -117,6 +120,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\github\qq-bot\qq-bot\src\small_function;D:\github\qq-bot\qq-bot\src\utils;D:\github\qq-bot\qq-bot\src\schedule;D:\github\qq-bot\qq-bot\src\core;D:\github\qq-bot\qq-bot\src;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -124,32 +128,43 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="class_inquiry.h" />
-    <ClInclude Include="config.h" />
-    <ClInclude Include="group_mapping.h" />
-    <ClInclude Include="guess_number.h" />
-    <ClInclude Include="member_cache.h" />
-    <ClInclude Include="msg_handler.h" />
-    <ClInclude Include="onebot_ws_api.h" />
-    <ClInclude Include="reply_generator.h" />
-    <ClInclude Include="schedule_loader.h" />
-    <ClInclude Include="schedule.h" />
-    <ClInclude Include="schedule_reminder.h" />
-    <ClInclude Include="utils.h" />
+    <ClInclude Include="src\config.h" />
+    <ClInclude Include="src\core\group_mapping.h" />
+    <ClInclude Include="src\core\member_cache.h" />
+    <ClInclude Include="src\core\msg_handler.h" />
+    <ClInclude Include="src\core\reply_generator.h" />
+    <ClInclude Include="src\onebot_ws_api.h" />
+    <ClInclude Include="src\schedule\class_inquiry.h" />
+    <ClInclude Include="src\schedule\schedule.h" />
+    <ClInclude Include="src\schedule\schedule_loader.h" />
+    <ClInclude Include="src\schedule\schedule_reminder.h" />
+    <ClInclude Include="src\small_function\guess_number.h" />
+    <ClInclude Include="src\small_function\plusone_kill.h" />
+    <ClInclude Include="src\utils\utils.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="class_inquiry.cpp" />
-    <ClCompile Include="group_mapping.cpp" />
-    <ClCompile Include="guess_number.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="member_cache.cpp" />
-    <ClCompile Include="msg_handler.cpp" />
-    <ClCompile Include="onebot_ws_api.cpp" />
-    <ClCompile Include="reply_generator.cpp" />
-    <ClCompile Include="schedule_loader.cpp" />
-    <ClCompile Include="schedule_reminder.cpp" />
-    <ClCompile Include="schedule_set.cpp" />
-    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="src\core\group_mapping.cpp" />
+    <ClCompile Include="src\core\member_cache.cpp" />
+    <ClCompile Include="src\core\msg_handler.cpp" />
+    <ClCompile Include="src\core\reply_generator.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\onebot_ws_api.cpp" />
+    <ClCompile Include="src\schedule\class_inquiry.cpp" />
+    <ClCompile Include="src\schedule\schedule_loader.cpp" />
+    <ClCompile Include="src\schedule\schedule_reminder.cpp" />
+    <ClCompile Include="src\schedule\schedule_set.cpp" />
+    <ClCompile Include="src\small_function\guess_number.cpp" />
+    <ClCompile Include="src\small_function\plusone_kill.cpp" />
+    <ClCompile Include="src\utils\utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="group_mapping.json" />
+    <None Include="group_member_names.json" />
+    <None Include="persistent_schedules.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="robot_log.txt" />
+    <Text Include="term_start_date.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

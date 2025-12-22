@@ -204,10 +204,11 @@ std::vector<ReplyRule> Schedule::get_schedule_rules() {
                 return reply;
             }
         },
-        // 规则3：自动导入（无需@），支持中文逗号与批量导入
+        // 规则3：@机器人 + 课表文本 → 导入（支持中文逗号与批量导入）
         ReplyRule{
-            [](const json&, const std::string& content) {
-                return is_course_import_message(content);
+            [](const json& msg_data, const std::string& content) {
+                // 需要先 @ 机器人，且文本格式符合课表导入格式
+                return is_at_bot(msg_data) && is_course_import_message(content);
             },
             [](const std::string&, const std::string& content) -> std::string {
                 const std::string& sender_qq = get_current_sender_qq();

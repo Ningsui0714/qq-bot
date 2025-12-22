@@ -15,79 +15,104 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="config.h">
+    <ClInclude Include="src\core\group_mapping.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="utils.h">
+    <ClInclude Include="src\core\member_cache.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="msg_handler.h">
+    <ClInclude Include="src\core\msg_handler.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="reply_generator.h">
+    <ClInclude Include="src\core\reply_generator.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="guess_number.h">
+    <ClInclude Include="src\schedule\class_inquiry.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="schedule.h">
+    <ClInclude Include="src\schedule\schedule.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="schedule_loader.h">
+    <ClInclude Include="src\schedule\schedule_loader.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="schedule_reminder.h">
+    <ClInclude Include="src\schedule\schedule_reminder.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="group_mapping.h">
+    <ClInclude Include="src\utils\utils.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="class_inquiry.h">
+    <ClInclude Include="src\config.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="member_cache.h">
+    <ClInclude Include="src\onebot_ws_api.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="onebot_ws_api.h">
+    <ClInclude Include="src\small_function\guess_number.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\small_function\plusone_kill.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="utils.cpp">
-      <Filter>资源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="msg_handler.cpp">
-      <Filter>资源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="src\schedule\class_inquiry.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="reply_generator.cpp">
+    <ClCompile Include="src\schedule\schedule_loader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\schedule\schedule_reminder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\schedule\schedule_set.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\group_mapping.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\member_cache.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\msg_handler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\reply_generator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\utils.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\onebot_ws_api.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\small_function\guess_number.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\small_function\plusone_kill.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="group_mapping.json">
       <Filter>资源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="guess_number.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="schedule_set.cpp">
+    </None>
+    <None Include="group_member_names.json">
       <Filter>资源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="schedule_loader.cpp">
+    </None>
+    <None Include="persistent_schedules.json">
       <Filter>资源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="schedule_reminder.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="group_mapping.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="class_inquiry.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="member_cache.cpp">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="robot_log.txt">
       <Filter>资源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="onebot_ws_api.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
+    </Text>
+    <Text Include="term_start_date.txt">
+      <Filter>资源文件</Filter>
+    </Text>
   </ItemGroup>
 </Project>

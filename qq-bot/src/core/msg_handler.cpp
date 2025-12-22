@@ -12,6 +12,7 @@
 #include "group_mapping.h"
 #include "class_inquiry.h"
 #include "member_cache.h" // + 引入
+#include "plusone_kill.h" 
 
 // 线程局部保存当前 sender_qq，供规则内部调用
 static thread_local std::string g_current_sender_qq;
@@ -201,12 +202,36 @@ void handle_group_message(const json& msg_data, websocket::stream<tcp_socket>& w
                 need_reply = true;
             }
         }
+        // 步骤5：检测是否连续发送三次相同原始消息（包括CQ码），触发表情包回复
+        if (!need_reply) {
+            std::string raw_content = msg_data["raw_message"].get<std::string>();
+            if (PlusOneKill::HandleMessage(group_id, sender_qq, raw_content, msg_data, reply)) {
+                need_reply = true;
+            }
+        }
 
         // 发送
         if (need_reply) {
             std::string reply_str = reply.dump();
             ws.write(boost::asio::buffer(reply_str));
-            write_log("Replied to group " + group_id + ": " + reply["params"]["message"].get<std::string>());
+
+            // 安全输出日志：message 可能是字符串，也可能是数组/对象
+            std::string msg_log;
+            try {
+                const auto &params = reply.at("params");
+                if (params.contains("message")) {
+                    const auto &m = params["message"];
+                    if (m.is_string()) {
+                        msg_log = m.get<std::string>();
+                    } else {
+                        msg_log = m.dump();
+                    }
+                }
+            } catch (...) {
+                msg_log = "<invalid message field>";
+            }
+
+            write_log("Replied to group " + group_id + ": " + msg_log);
         }
         else {
             write_log("Group " + group_id + ": Message does not meet reply conditions, ignored");

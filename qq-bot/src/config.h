@@ -4,7 +4,7 @@
 
 // WebSocket 配置（NapCat 地址）
 const char* const WS_HOST = "127.0.0.1";
-const char* const WS_PORT = "3001";
+const char* const WS_PORT = "5140";
 const char* const WS_PATH = "/ws";
 
 // 机器人配置
